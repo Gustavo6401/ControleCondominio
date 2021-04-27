@@ -1,8 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <ItemGroup>
-        <Compile Update="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-    </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Apartamento\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Apartamento\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Apartamento\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Apartamento\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Apartamento\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Condominio\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Condominio\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Condominio\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Condominio\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Condominio\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Garagem\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Garagem\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Garagem\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Garagem\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Garagem\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Login\ucLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Morador\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Morador\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Morador\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Morador\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Morador\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Predio\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Predio\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Predio\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Predio\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Predio\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PrestadorDeServicos\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PrestadorDeServicos\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PrestadorDeServicos\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PrestadorDeServicos\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PrestadorDeServicos\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RecuperacaoSenha\ucRecuperacao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Sindico\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Sindico\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Sindico\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Sindico\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Sindico\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Veiculo\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Veiculo\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Veiculo\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Veiculo\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Veiculo\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Visitante\ucConsultar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Visitante\ucDeletar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Visitante\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Visitante\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Visitante\ucModificar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
