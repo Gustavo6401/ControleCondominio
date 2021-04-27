@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServicoPortaria.Domain.Enttities
 {
-    class Visitante
+    public class Visitante
     {
         public int Id { get; set; }
         public string Nome { get; set; }

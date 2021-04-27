@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServicoPortaria.Domain.Enttities
 {
-    class Apartamento
+    public class Apartamento
     {
         public int Id { get; set; }
         public int Numero { get; set; }

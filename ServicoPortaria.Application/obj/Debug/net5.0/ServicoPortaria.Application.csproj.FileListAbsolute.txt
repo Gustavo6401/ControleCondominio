@@ -1,0 +1,12 @@
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\bin\Debug\net5.0\ServicoPortaria.Application.deps.json
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\bin\Debug\net5.0\ServicoPortaria.Application.dll
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\bin\Debug\net5.0\ref\ServicoPortaria.Application.dll
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\bin\Debug\net5.0\ServicoPortaria.Application.pdb
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ServicoPortaria.Application.csprojAssemblyReference.cache
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ServicoPortaria.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ServicoPortaria.Application.AssemblyInfoInputs.cache
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ServicoPortaria.Application.AssemblyInfo.cs
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ServicoPortaria.Application.csproj.CoreCompileInputs.cache
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ServicoPortaria.Application.dll
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ref\ServicoPortaria.Application.dll
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Application\obj\Debug\net5.0\ServicoPortaria.Application.pdb

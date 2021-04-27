@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServicoPortaria.Domain.Enttities
 {
-    class Predio
+    public class Predio
     {
         public int Id { get; set; }
         public string Nome { get; set; }

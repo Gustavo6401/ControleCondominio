@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServicoPortaria.Domain.Enttities
 {
-    class RecuperacaoSenha
+    public class RecuperacaoSenha
     {
         public int Id { get; set; }
         public string EMail { get; set; }
