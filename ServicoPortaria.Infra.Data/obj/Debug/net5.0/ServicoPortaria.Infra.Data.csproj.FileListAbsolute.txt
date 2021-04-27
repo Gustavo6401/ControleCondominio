@@ -1,0 +1,5 @@
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\bin\Debug\net5.0\ServicoPortaria.Domain.dll
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\obj\Debug\net5.0\ServicoPortaria.Infra.Data.csprojAssemblyReference.cache
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\obj\Debug\net5.0\ServicoPortaria.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\obj\Debug\net5.0\ServicoPortaria.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\obj\Debug\net5.0\ServicoPortaria.Infra.Data.AssemblyInfo.cs
