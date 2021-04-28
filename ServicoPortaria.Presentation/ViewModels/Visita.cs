@@ -24,8 +24,8 @@ namespace ServicoPortaria.Presentation.ViewModels
         [DisplayName("Código do Apartamento")]
         public int IdApartamento { get; set; }
 
-        public Condominio Condominio { get; set; }
-        public Predio Predio { get; set; }
+        public CondominioViewModel Condominio { get; set; }
+        public PredioViewModel Predio { get; set; }
         public Apartamento Apartamento { get; set; }
     }
 }

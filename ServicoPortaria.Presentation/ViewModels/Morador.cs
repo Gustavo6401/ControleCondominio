@@ -67,6 +67,6 @@ namespace ServicoPortaria.Presentation.ViewModels
         [DisplayName("Código do Condomínio")]
         public int IdCondominio { get; set; }
 
-        public Condominio Condominio { get; set; }
+        public CondominioViewModel Condominio { get; set; }
     }
 }

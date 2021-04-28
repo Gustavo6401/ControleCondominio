@@ -4,6 +4,80 @@
     "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Presentation\\ServicoPortaria.Presentation.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Domain\\ServicoPortaria.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Domain\\ServicoPortaria.Domain.csproj",
+        "projectName": "ServicoPortaria.Domain",
+        "projectPath": "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Domain\\ServicoPortaria.Domain.csproj",
+        "packagesPath": "C:\\Users\\Maxi4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Maxi4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Presentation\\ServicoPortaria.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +101,11 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Domain\\ServicoPortaria.Domain.csproj": {
+                "projectPath": "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Domain\\ServicoPortaria.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,11 +118,19 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[5.0.5, )"
             },

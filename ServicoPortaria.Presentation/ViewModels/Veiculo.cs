@@ -16,7 +16,7 @@ namespace ServicoPortaria.Presentation.ViewModels
         public int IdCondominio { get; set; }
 
         public Morador Morador { get; set; }
-        public Predio Predio { get; set; }
-        public Condominio Condominio { get; set; }
+        public PredioViewModel Predio { get; set; }
+        public CondominioViewModel Condominio { get; set; }
     }
 }
