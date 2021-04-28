@@ -8,6 +8,7 @@ namespace ServicoPortaria.Domain.Interfaces
 {
     public interface IRepositoryBase<TEntity> where TEntity : class
     {
+        // Dito as regras de Utilização de cada coisa.
         void Inserir(TEntity obj);
         TEntity ConsultarPorId(int id); 
         IEnumerable<TEntity> ConsultarComFiltros(object obj, object obj2);

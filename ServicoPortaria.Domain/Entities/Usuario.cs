@@ -11,6 +11,6 @@ namespace ServicoPortaria.Domain.Enttities
         public int Id { get; set; }
         public string UserName { get; set; }
         public string Senha { get; set; }
-        public string NívelDeAcesso { get; set; }
+        public string NivelDeAcesso { get; set; }
     }
 }

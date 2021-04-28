@@ -1,4 +1,5 @@
-﻿using ServicoPortaria.Domain.Enttities;
+﻿using System.Linq;
+using ServicoPortaria.Domain.Enttities;
 using ServicoPortaria.Domain.Interfaces;
 using System.Collections.Generic;
 
@@ -8,62 +9,62 @@ namespace ServicoPortaria.Infra.Data.Repositories
     {
         public IEnumerable<Morador> BuscarPorCelular(string celular)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.Celular.Contains(celular));
         }
 
         public IEnumerable<Morador> BuscarPorCEP(string cep)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.CEP.Contains(cep));
         }
 
         public IEnumerable<Morador> BuscarPorCodPostal(string codPostal)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.CodigoPostal.Contains(codPostal));
         }
 
         public IEnumerable<Morador> BuscarPorCPF(string cpf)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.CPF.Contains(cpf));
         }
 
         public IEnumerable<Morador> BuscarPorDocCivil(string docCivil)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.DocCivil.Contains(docCivil));
         }
 
         public IEnumerable<Morador> BuscarPorEMail(string email)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.EMail.Contains(email));
         }
 
         public IEnumerable<Morador> BuscarPorFoneFixo(string fixo)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.Fixo.Contains(fixo));
         }
 
         public IEnumerable<Morador> BuscarPorNome(string nome)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.Nome.Contains(nome));
         }
 
         public IEnumerable<Morador> BuscarPorNumero(int numero)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.Numero == numero);
         }
 
         public IEnumerable<Morador> BuscarPorRG(string rg)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.RG.Contains(rg));
         }
 
         public IEnumerable<Morador> BuscarPorRua(string rua)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.Rua.Contains(rua));
         }
 
         public IEnumerable<Morador> BuscarPorSobrenome(string sobrenome)
         {
-            throw new System.NotImplementedException();
+            return Db.Morador.Where(t => t.Sobrenome.Contains(sobrenome));
         }
     }
 }

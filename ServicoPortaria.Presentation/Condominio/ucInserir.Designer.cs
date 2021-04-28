@@ -45,6 +45,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox10
@@ -175,10 +176,22 @@ namespace ServicoPortaria.Presentation.Condominio
             this.lblNome.TabIndex = 19;
             this.lblNome.Text = "Nome";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(335, 417);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(256, 84);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // ucnInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
@@ -196,7 +209,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblNome);
             this.Name = "ucnInserir";
-            this.Size = new System.Drawing.Size(724, 490);
+            this.Size = new System.Drawing.Size(1310, 652);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,5 +233,6 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Button button1;
     }
 }

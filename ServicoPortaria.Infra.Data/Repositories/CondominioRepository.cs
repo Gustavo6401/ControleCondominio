@@ -1,4 +1,6 @@
-﻿using ServicoPortaria.Domain.Enttities;
+﻿using System.Linq;
+using System.Text.RegularExpressions;
+using ServicoPortaria.Domain.Enttities;
 using ServicoPortaria.Domain.Interfaces;
 using System.Collections.Generic;
 
@@ -6,24 +8,31 @@ namespace ServicoPortaria.Infra.Data.Repositories
 {
     public class CondominioRepository : RepositoryBase<Condominio>, ICondominioRepository
     {
+        Regex er = new Regex(@".");
         public IEnumerable<Condominio> BuscarPorCEP(string cep)
         {
-            throw new System.NotImplementedException();
+            er.Match(cep);
+
+            return Db.Condominio.Where(t => t.CEP.Contains(cep));
         }
 
         public IEnumerable<Condominio> BuscarPorCodPostal(string codPostal)
         {
-            throw new System.NotImplementedException();
+            er.Match(codPostal);
+
+            return Db.Condominio.Where(t => t.CodPostal.Contains(codPostal));
         }
 
         public IEnumerable<Condominio> BuscarPorNome(string nome)
         {
-            throw new System.NotImplementedException();
+            er.Match(nome);
+
+            return Db.Condominio.Where(t => t.Nome.Contains(nome));
         }
 
         public IEnumerable<Condominio> BuscarPorNumero(int numero)
         {
-            throw new System.NotImplementedException();
+            return Db.Condominio.Where(t => t.Numero == numero);
         }
     }
 }

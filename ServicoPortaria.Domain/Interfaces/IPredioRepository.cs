@@ -7,6 +7,6 @@ namespace ServicoPortaria.Domain.Interfaces
     {
         IEnumerable<Predio> BuscarPorNome(string nome);
         IEnumerable<Predio> BuscarPorNumero(int numero);
-        IEnumerable<Predio> BuscarPorCondominio(string nome);
+        IEnumerable<Predio> BuscarPorCondominio(int id);
     }
 }

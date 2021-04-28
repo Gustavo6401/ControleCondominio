@@ -13,7 +13,7 @@ namespace ServicoPortaria.Domain.Entities
         public int IdVisitante { get; set; }
         public int IdMorador { get; set; }
         public TimeSpan Chegada { get; set; }
-        public TimeSpan Saída { get; set; }
+        public TimeSpan Saida { get; set; }
         public int IdCondominio { get; set; }
         public int IdPredio { get; set; }
         public int IdApartamento { get; set; }
