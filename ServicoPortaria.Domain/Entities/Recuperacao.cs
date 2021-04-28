@@ -10,8 +10,9 @@ namespace ServicoPortaria.Domain.Enttities
     {
         public int Id { get; set; }
         public string EMail { get; set; }
+        public string Senha { get; set; }
         public int IdUsuario { get; set; }
 
-        public int Usuario { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

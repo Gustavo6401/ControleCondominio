@@ -18,12 +18,5 @@ namespace ServicoPortaria.Domain.Enttities
         public string Celular { get; set; }
         public string Fixo { get; set; }
         public string EMail { get; set; }
-        public int IdCondominio { get; set; }
-        public int IdPredio { get; set; }
-        public int IdApartamento { get; set; }
-
-        public Condominio Condominio { get; set; }
-        public Predio Predio { get; set; }
-        public Apartamento Apartamento { get; set; }
     }
 }

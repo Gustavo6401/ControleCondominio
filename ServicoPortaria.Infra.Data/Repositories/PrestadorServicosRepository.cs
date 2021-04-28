@@ -1,12 +1,10 @@
-﻿using System;
+﻿using ServicoPortaria.Domain.Enttities;
+using ServicoPortaria.Domain.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServicoPortaria.Infra.Data.Repositories
 {
-    public class PrestadorServicosRepository
+    public class PrestadorServicosRepository : RepositoryBase<PrestadorSevicos>, IPrestadorSevicos
     {
     }
 }

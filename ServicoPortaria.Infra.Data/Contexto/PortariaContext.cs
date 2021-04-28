@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ServicoPortaria.Domain.Entities;
 using ServicoPortaria.Domain.Enttities;
 
 namespace ServicoPortaria.Infra.Data.Contexto
@@ -16,6 +17,7 @@ namespace ServicoPortaria.Infra.Data.Contexto
         public DbSet<Sindico> Sindico { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<RecuperacaoSenha> RecuperacaoSenha { get; set; }
+        public DbSet<Visita> Visita { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.EnableSensitiveDataLogging();
