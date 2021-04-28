@@ -11,8 +11,8 @@ namespace ServicoPortaria.Presentation.ViewModels
         [MaxLength(100, ErrorMessage = "Nome Inválido!")]
         public string UserName { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
-        [MinLength(1, ErrorMessage = "Nome Inválido!")]
-        [MaxLength(100, ErrorMessage = "Nome Inválido!")]
+        [MinLength(1, ErrorMessage = "Senha Inválida!")]
+        [MaxLength(100, ErrorMessage = "Senha Inválida!")]
         public string Senha { get; set; }
         public string NivelDeAcesso { get; set; }
     }

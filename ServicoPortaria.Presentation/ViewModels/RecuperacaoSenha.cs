@@ -6,12 +6,13 @@ namespace ServicoPortaria.Presentation.ViewModels
     {
         [Key]
         public int Id { get; set; }
-        [MinLength(1, ErrorMessage = "Nome Inválido!")]
-        [MaxLength(255, ErrorMessage = "Nome Inválido!")]
+        [MinLength(1, ErrorMessage = "E-Mail Inválido!")]
+        [MaxLength(255, ErrorMessage = "E-Mail Inválido!")]
+        [EmailAddress(ErrorMessage = "E-Mail Inválido!")]
         public string EMail { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
-        [MinLength(1, ErrorMessage = "Nome Inválido!")]
-        [MaxLength(20, ErrorMessage = "Nome Inválido!")]
+        [MinLength(1, ErrorMessage = "Número Inválido!")]
+        [MaxLength(20, ErrorMessage = "Número Inválido!")]
         public string Celular { get; set; }
         public int IdUsuario { get; set; }
 

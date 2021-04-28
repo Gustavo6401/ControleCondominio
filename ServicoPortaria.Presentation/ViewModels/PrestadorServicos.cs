@@ -11,12 +11,12 @@ namespace ServicoPortaria.Presentation.ViewModels
         [MaxLength(45, ErrorMessage = "Nome Inválido!")]
         public string Nome { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
-        [MinLength(1, ErrorMessage = "Nome Inválido!")]
-        [MaxLength(18, ErrorMessage = "Nome Inválido!")]
+        [MinLength(1, ErrorMessage = "CNPJ Inválido!")]
+        [MaxLength(18, ErrorMessage = "CNPJ Inválido!")]
         public string CNPJ { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
-        [MinLength(1, ErrorMessage = "Nome Inválido!")]
-        [MaxLength(14, ErrorMessage = "Nome Inválido!")]
+        [MinLength(1, ErrorMessage = "CPF Inválido!")]
+        [MaxLength(14, ErrorMessage = "CPF Inválido!")]
         public string CPF { get; set; }
         public int IdPredio { get; set; }
         public int IdCondominio { get; set; }

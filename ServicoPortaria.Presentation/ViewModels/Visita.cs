@@ -9,7 +9,9 @@ namespace ServicoPortaria.Presentation.ViewModels
         public int Id { get; set; }
         public int IdVisitante { get; set; }
         public int IdMorador { get; set; }
+        [Timestamp]
         public TimeSpan Chegada { get; set; }
+        [Timestamp]
         public TimeSpan Saida { get; set; }
         public int IdCondominio { get; set; }
         public int IdPredio { get; set; }
