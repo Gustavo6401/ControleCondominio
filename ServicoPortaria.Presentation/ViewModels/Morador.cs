@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Presentation.ViewModels
 {
     public class Morador
     {
         [Key]
+        [DisplayName("Código do Morador")]
         public int Id { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "Nome Inválido!")]
@@ -22,6 +24,7 @@ namespace ServicoPortaria.Presentation.ViewModels
         public string RG { get; set; }
         [MinLength(1, ErrorMessage = "DocCivil Inválido!")]
         [MaxLength(20, ErrorMessage = "DocCivil Inválido!")]
+        [DisplayName("Documento Civil")]
         public string DocCivil { get; set; }
         [MinLength(1, ErrorMessage = "Sexo Inválido!")]
         [MaxLength(20, ErrorMessage = "Sexo Inválido!")]
@@ -31,6 +34,7 @@ namespace ServicoPortaria.Presentation.ViewModels
         public string CEP { get; set; }
         [MinLength(1, ErrorMessage = "Código Postal Inválido!")]
         [MaxLength(20, ErrorMessage = "Código Postal Inválido!")]
+        [DisplayName("Código Postal")]
         public string CodigoPostal { get; set; }
         [MinLength(3, ErrorMessage = "Nome Inválido!")]
         [MaxLength(60, ErrorMessage = "Nome Inválido!")]
@@ -53,11 +57,14 @@ namespace ServicoPortaria.Presentation.ViewModels
         public string Celular { get; set; }
         [MinLength(1, ErrorMessage = "Número Inválido!")]
         [MaxLength(20, ErrorMessage = "Número Inválido!")]
+        [DisplayName("Telefone Fixo")]
         public string Fixo { get; set; }
         [MinLength(1, ErrorMessage = "E-Mail Inválido!")]
         [MaxLength(255, ErrorMessage = "E-Mail Inválido!")]
         [EmailAddress(ErrorMessage = "E-Mail Inválido!")]
+        [DisplayName("E-Mail")]
         public string EMail { get; set; }
+        [DisplayName("Código do Condomínio")]
         public int IdCondominio { get; set; }
 
         public Condominio Condominio { get; set; }
