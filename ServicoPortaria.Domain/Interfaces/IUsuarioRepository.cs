@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IUsuarioRepository : IRepositoryBase<Usuario>
+    public interface IUsuarioRepository : IRepositoryBase<Usuario>
     {
     }
 }

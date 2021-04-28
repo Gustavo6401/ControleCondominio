@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IVeiculoRepository : IRepositoryBase<Veiculo>
+    public interface IVeiculoRepository : IRepositoryBase<Veiculo>
     {
     }
 }

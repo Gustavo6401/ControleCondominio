@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IPredioInterface : IRepositoryBase<Predio> 
+    public interface IPredioRepository : IRepositoryBase<Predio> 
     {
     }
 }

@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IGaragemRepository : IRepositoryBase<Garagem>
+    public interface IGaragemRepository : IRepositoryBase<Garagem>
     {
     }
 }

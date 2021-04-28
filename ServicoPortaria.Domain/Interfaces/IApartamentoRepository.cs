@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IApartamentoRepository : IRepositoryBase<Apartamento>
+    public interface IApartamentoRepository : IRepositoryBase<Apartamento>
     {
     }
 }

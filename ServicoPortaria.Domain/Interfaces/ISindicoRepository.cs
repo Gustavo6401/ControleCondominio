@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface ISindicoRepository : IRepositoryBase<Sindico>
+    public interface ISindicoRepository : IRepositoryBase<Sindico>
     {
     }
 }

@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IRecuperacaoSenha : IRepositoryBase<RecuperacaoSenha>
+    public interface IRecuperacaoSenhaRepository : IRepositoryBase<RecuperacaoSenha>
     {
     }
 }

@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IMoradorRepository : IRepositoryBase<Morador>
+    public interface IMoradorRepository : IRepositoryBase<Morador>
     {
     }
 }

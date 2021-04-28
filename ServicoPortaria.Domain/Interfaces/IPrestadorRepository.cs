@@ -2,7 +2,7 @@
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    interface IPrestadorRepository : IRepositoryBase<PrestadorSevicos>
+    public interface IPrestadorRepository : IRepositoryBase<PrestadorSevicos>
     {
     }
 }
