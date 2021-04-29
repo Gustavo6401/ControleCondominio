@@ -44,8 +44,9 @@ namespace ServicoPortaria.Presentation.Login
             this.lblUser = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.mstMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +71,7 @@ namespace ServicoPortaria.Presentation.Login
             this.mstMenu.Size = new System.Drawing.Size(144, 334);
             this.mstMenu.TabIndex = 0;
             this.mstMenu.Text = "Menu";
+            this.mstMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mstMenu_ItemClicked);
             // 
             // tsmCondominio
             // 
@@ -177,28 +179,43 @@ namespace ServicoPortaria.Presentation.Login
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // textBox1
+            // txtPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(335, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 23);
-            this.textBox1.TabIndex = 5;
+            this.txtPassword.Location = new System.Drawing.Point(335, 185);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(148, 23);
+            this.txtPassword.TabIndex = 5;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // textBox2
+            // txtUser
             // 
-            this.textBox2.Location = new System.Drawing.Point(335, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 23);
-            this.textBox2.TabIndex = 6;
+            this.txtUser.Location = new System.Drawing.Point(335, 152);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(148, 23);
+            this.txtUser.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Red;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(523, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 25);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "X";
             // 
             // ucLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblUser);
@@ -229,7 +246,8 @@ namespace ServicoPortaria.Presentation.Login
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Label label1;
     }
 }

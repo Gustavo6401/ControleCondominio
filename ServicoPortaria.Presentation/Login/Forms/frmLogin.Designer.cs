@@ -29,49 +29,20 @@ namespace ServicoPortaria.Presentation.Login.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.mnsMenu = new System.Windows.Forms.MenuStrip();
-            this.tlsCondominio = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mnsMenu
-            // 
-            this.mnsMenu.BackColor = System.Drawing.Color.Black;
-            this.mnsMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.mnsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tlsCondominio});
-            this.mnsMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.mnsMenu.Location = new System.Drawing.Point(0, 0);
-            this.mnsMenu.Name = "mnsMenu";
-            this.mnsMenu.Size = new System.Drawing.Size(94, 450);
-            this.mnsMenu.TabIndex = 1;
-            this.mnsMenu.Text = "Menu Principal";
-            // 
-            // tlsCondominio
-            // 
-            this.tlsCondominio.ForeColor = System.Drawing.Color.White;
-            this.tlsCondominio.Name = "tlsCondominio";
-            this.tlsCondominio.Size = new System.Drawing.Size(86, 446);
-            this.tlsCondominio.Text = "Condominio";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.mnsMenu);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
-            this.mnsMenu.ResumeLayout(false);
-            this.mnsMenu.PerformLayout();
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip mnsMenu;
-        private System.Windows.Forms.ToolStripMenuItem tlsCondominio;
     }
 }

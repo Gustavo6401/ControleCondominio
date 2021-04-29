@@ -16,5 +16,15 @@ namespace ServicoPortaria.Presentation.Login
         {
             InitializeComponent();
         }
+
+        private void mstMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

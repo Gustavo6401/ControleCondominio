@@ -10,8 +10,8 @@ namespace ServicoPortaria.Presentation.AutoMapper
         {
             get { return "ViewModelToDomainMappings"; }
         }
-
-        protected override void Configure()
+        // Tive problemas com automapping
+        /* protected override void Configure()
         {
             Mapper.CreatingMap<CondominioViewModel, ServicoPortaria.Domain.Enttities.Condominio>();
             Mapper.CreatingMap<PredioViewModel, ServicoPortaria.Domain.Enttities.Predio>();
@@ -25,6 +25,6 @@ namespace ServicoPortaria.Presentation.AutoMapper
             Mapper.CreatingMap<UsuarioViewModel, ServicoPortaria.Domain.Enttities.Usuario>();
             Mapper.CreatingMap<RecuperacaoSenhaViewModel, ServicoPortaria.Domain.Enttities.RecuperacaoSenha>();
             Mapper.CreatingMap<VisitaViewModel, ServicoPortaria.Domain.Entities.Visita>();
-        }
+        } */
     }
 }

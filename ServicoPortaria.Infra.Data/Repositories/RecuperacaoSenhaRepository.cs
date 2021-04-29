@@ -9,7 +9,7 @@ namespace ServicoPortaria.Infra.Data.Repositories
     {
         public IEnumerable<RecuperacaoSenha> ConsultarPorNivelAcesso(string nivelAcesso)
         {
-            return Db.RecuperacaoSenha.Where(t => t.Usuario.NívelDeAcesso.Contains(nivelAcesso));
+            return Db.RecuperacaoSenha.Where(t => t.Usuario.NivelDeAcesso.Contains(nivelAcesso));
         }
 
         public IEnumerable<RecuperacaoSenha> ConsultarPorEMail(string email)
@@ -20,6 +20,16 @@ namespace ServicoPortaria.Infra.Data.Repositories
         public IEnumerable<RecuperacaoSenha> ConsultarPorCelular(string celular)
         {
             return Db.RecuperacaoSenha.Where(t => t.Celular.Contains(celular));
+        }
+
+        IEnumerable<RecuperacaoSenha> IRecuperacaoSenhaRepository.ConsultarPorUsuario(string usuario)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        IEnumerable<RecuperacaoSenha> IRecuperacaoSenhaRepository.ConsultarPorSenha(string senha)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

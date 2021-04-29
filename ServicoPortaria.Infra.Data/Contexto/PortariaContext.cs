@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using ServicoPortaria.Domain.Entities;
 using ServicoPortaria.Domain.Enttities;
 
@@ -6,6 +7,10 @@ namespace ServicoPortaria.Infra.Data.Contexto
 {
     public class PortariaContext : DbContext
     {
+        public PortariaContext() : base() 
+        { 
+
+        }
         public DbSet<Condominio> Condominio { get; set; }
         public DbSet<Predio> Predio { get; set; }
         public DbSet<Morador> Morador { get; set; }
@@ -21,7 +26,7 @@ namespace ServicoPortaria.Infra.Data.Contexto
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.EnableSensitiveDataLogging();
-            optionsBuilder.UseMySql(@"Server=localhost;Database=Portaria;Uid=root;Psw=0123456789abcdef");
+            optionsBuilder.UseMySQL(@"Server=localhost;Database=Portaria;Uid=root;Psw=0123456789abcdef");
         }
         public virtual void SetModified(object entity)
         {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8l7DFwhEx41u4jZXFb+1eKraK89GylJEISLtRVh6ArqZSHtjPSxCwm16xtbD9PYRA5rdgj6iNMgkiNX0mi39qg==",
+  "dgSpecHash": "iRnm/peodC+KfAsj82Ht67IpTzNzcjeYfHrGJfBMla6t6tFiv8ufLAUtD7I/nzpISveWCg6b9B1a9FJW2180Mg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Presentation\\ServicoPortaria.Presentation.csproj",
   "expectedPackageFiles": [
@@ -29,10 +29,9 @@
     "C:\\Users\\Maxi4\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\mysql.data\\8.0.24\\mysql.data.8.0.24.nupkg.sha512",
-    "C:\\Users\\Maxi4\\.nuget\\packages\\mysqlconnector\\0.69.10\\mysqlconnector.0.69.10.nupkg.sha512",
-    "C:\\Users\\Maxi4\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
-    "C:\\Users\\Maxi4\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.2.5\\pomelo.entityframeworkcore.mysql.3.2.5.nupkg.sha512",
-    "C:\\Users\\Maxi4\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
+    "C:\\Users\\Maxi4\\.nuget\\packages\\mysql.data.entityframeworkcore\\8.0.22\\mysql.data.entityframeworkcore.8.0.22.nupkg.sha512",
+    "C:\\Users\\Maxi4\\.nuget\\packages\\mysqlconnector\\1.3.7\\mysqlconnector.1.3.7.nupkg.sha512",
+    "C:\\Users\\Maxi4\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0\\pomelo.entityframeworkcore.mysql.5.0.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -55,16 +54,5 @@
     "C:\\Users\\Maxi4\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Versão detectada do pacote fora da restrição de dependência: Pomelo.EntityFrameworkCore.MySql 3.2.5 requer Microsoft.EntityFrameworkCore.Relational (>= 3.1.14 && < 5.0.0), mas a versão Microsoft.EntityFrameworkCore.Relational 5.0.5 foi resolvida.",
-      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
