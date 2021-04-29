@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ServicoPortaria.Domain.Entities;
-using ServicoPortaria.Domain.Enttities;
+using ServicoPortaria.Domain.Entities;
 
 namespace ServicoPortaria.Infra.Data.Contexto
 {

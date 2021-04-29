@@ -1,4 +1,4 @@
-﻿using ServicoPortaria.Domain.Enttities;
+﻿using ServicoPortaria.Domain.Entities;
 using ServicoPortaria.Domain.Interfaces;
 
 namespace ServicoPortaria.Infra.Data.Repositories

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Text.RegularExpressions;
-using ServicoPortaria.Domain.Enttities;
+using ServicoPortaria.Domain.Entities;
 using ServicoPortaria.Domain.Interfaces;
 using System.Collections.Generic;
 

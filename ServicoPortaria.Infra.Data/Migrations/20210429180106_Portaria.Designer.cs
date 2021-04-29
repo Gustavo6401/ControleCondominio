@@ -69,7 +69,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Visita");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Apartamento", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Apartamento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -108,7 +108,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Apartamento");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Condominio", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Condominio", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -144,7 +144,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Condominio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Garagem", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Garagem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -172,7 +172,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Garagem");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Morador", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Morador", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -243,7 +243,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Morador");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Predio", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Predio", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -269,7 +269,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Predio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.PrestadorSevicos", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.PrestadorSevicos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -306,7 +306,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("PrestadorServicos");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.RecuperacaoSenha", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.RecuperacaoSenha", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -335,7 +335,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("RecuperacaoSenha");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Sindico", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Sindico", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -384,7 +384,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Sindico");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Usuario", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Usuario", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -405,7 +405,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Usuario");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Veiculo", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Veiculo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -441,7 +441,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Veiculo");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Visitante", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Visitante", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -482,15 +482,15 @@ namespace ServicoPortaria.Infra.Data.Migrations
 
             modelBuilder.Entity("ServicoPortaria.Domain.Entities.Visita", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Apartamento", "Apartamento")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Apartamento", "Apartamento")
                         .WithMany()
                         .HasForeignKey("ApartamentoId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Predio", "Predio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Predio", "Predio")
                         .WithMany()
                         .HasForeignKey("PredioId");
 
@@ -501,17 +501,17 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Navigation("Predio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Apartamento", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Apartamento", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Morador", "Morador")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Morador", "Morador")
                         .WithMany()
                         .HasForeignKey("MoradorId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Predio", "Predio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Predio", "Predio")
                         .WithMany()
                         .HasForeignKey("PredioId");
 
@@ -522,13 +522,13 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Navigation("Predio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Garagem", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Garagem", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Predio", "Predio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Predio", "Predio")
                         .WithMany()
                         .HasForeignKey("PredioId");
 
@@ -537,31 +537,31 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Navigation("Predio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Morador", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Morador", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
                     b.Navigation("Condominio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Predio", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Predio", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
                     b.Navigation("Condominio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.PrestadorSevicos", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.PrestadorSevicos", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Predio", "Predio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Predio", "Predio")
                         .WithMany()
                         .HasForeignKey("PredioId");
 
@@ -570,22 +570,22 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Navigation("Predio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.RecuperacaoSenha", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.RecuperacaoSenha", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Usuario", "Usuario")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Usuario", "Usuario")
                         .WithMany()
                         .HasForeignKey("UsuarioId");
 
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Sindico", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Sindico", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Predio", "Predio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Predio", "Predio")
                         .WithMany()
                         .HasForeignKey("PredioId");
 
@@ -594,17 +594,17 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Navigation("Predio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Enttities.Veiculo", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.Veiculo", b =>
                 {
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Condominio", "Condominio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()
                         .HasForeignKey("CondominioId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Morador", "Morador")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Morador", "Morador")
                         .WithMany()
                         .HasForeignKey("MoradorId");
 
-                    b.HasOne("ServicoPortaria.Domain.Enttities.Predio", "Predio")
+                    b.HasOne("ServicoPortaria.Domain.Entities.Predio", "Predio")
                         .WithMany()
                         .HasForeignKey("PredioId");
 

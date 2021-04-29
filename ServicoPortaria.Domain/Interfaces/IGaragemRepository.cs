@@ -1,4 +1,4 @@
-﻿using ServicoPortaria.Domain.Enttities;
+﻿using ServicoPortaria.Domain.Entities;
 
 namespace ServicoPortaria.Domain.Interfaces
 {

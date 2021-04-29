@@ -12,17 +12,17 @@ namespace ServicoPortaria.Presentation.AutoMapper
 
         /* protected override void Configure()
         {
-            Mapper.CreatingMap<CondominioViewModel, ServicoPortaria.Domain.Enttities.Condominio>();
-            Mapper.CreatingMap<PredioViewModel, ServicoPortaria.Domain.Enttities.Predio>();
-            Mapper.CreatingMap<MoradorViewModel, ServicoPortaria.Domain.Enttities.Morador>();
-            Mapper.CreatingMap<ApartamentoViewModel, ServicoPortaria.Domain.Enttities.Apartamento>();
-            Mapper.CreatingMap<VisitanteViewModel, ServicoPortaria.Domain.Enttities.Visitante>();
-            Mapper.CreatingMap<GaragemViewModel, ServicoPortaria.Domain.Enttities.Garagem>();
-            Mapper.CreatingMap<VeiculoViewModel, ServicoPortaria.Domain.Enttities.Veiculo>();
-            Mapper.CreatingMap<PrestadorServicosViewModel, ServicoPortaria.Domain.Enttities.PrestadorSevicos>();
-            Mapper.CreatingMap<SindicoViewModel, ServicoPortaria.Domain.Enttities.Sindico>();
-            Mapper.CreatingMap<UsuarioViewModel, ServicoPortaria.Domain.Enttities.Usuario>();
-            Mapper.CreatingMap<RecuperacaoSenhaViewModel, ServicoPortaria.Domain.Enttities.RecuperacaoSenha>();
+            Mapper.CreatingMap<CondominioViewModel, ServicoPortaria.Domain.Entities.Condominio>();
+            Mapper.CreatingMap<PredioViewModel, ServicoPortaria.Domain.Entities.Predio>();
+            Mapper.CreatingMap<MoradorViewModel, ServicoPortaria.Domain.Entities.Morador>();
+            Mapper.CreatingMap<ApartamentoViewModel, ServicoPortaria.Domain.Entities.Apartamento>();
+            Mapper.CreatingMap<VisitanteViewModel, ServicoPortaria.Domain.Entities.Visitante>();
+            Mapper.CreatingMap<GaragemViewModel, ServicoPortaria.Domain.Entities.Garagem>();
+            Mapper.CreatingMap<VeiculoViewModel, ServicoPortaria.Domain.Entities.Veiculo>();
+            Mapper.CreatingMap<PrestadorServicosViewModel, ServicoPortaria.Domain.Entities.PrestadorSevicos>();
+            Mapper.CreatingMap<SindicoViewModel, ServicoPortaria.Domain.Entities.Sindico>();
+            Mapper.CreatingMap<UsuarioViewModel, ServicoPortaria.Domain.Entities.Usuario>();
+            Mapper.CreatingMap<RecuperacaoSenhaViewModel, ServicoPortaria.Domain.Entities.RecuperacaoSenha>();
             Mapper.CreatingMap<VisitaViewModel, ServicoPortaria.Domain.Entities.Visita>();
         } */
     }

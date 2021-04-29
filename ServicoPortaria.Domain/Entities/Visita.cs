@@ -1,21 +1,27 @@
-﻿using ServicoPortaria.Domain.Enttities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Domain.Entities
 {
     public class Visita
     {
+        [Key]
+        [DisplayName("Código da Visita")]
         public int Id { get; set; }
+        [DisplayName("Código do Visitante")]
         public int IdVisitante { get; set; }
+        [DisplayName("Código do Morador")]
         public int IdMorador { get; set; }
+        [Timestamp]
         public TimeSpan Chegada { get; set; }
+        [Timestamp]
         public TimeSpan Saida { get; set; }
+        [DisplayName("Código do Condomínio")]
         public int IdCondominio { get; set; }
+        [DisplayName("Código do Prédio")]
         public int IdPredio { get; set; }
+        [DisplayName("Código do Apartamento")]
         public int IdApartamento { get; set; }
 
         public Condominio Condominio { get; set; }
