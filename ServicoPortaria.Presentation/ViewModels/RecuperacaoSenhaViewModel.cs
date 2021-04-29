@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Presentation.ViewModels
 {
-    public class RecuperacaoSenha
+    public class RecuperacaoSenhaViewModel
     {
         [Key]
         [DisplayName("Código da Recuperação")]
@@ -20,6 +20,6 @@ namespace ServicoPortaria.Presentation.ViewModels
         [DisplayName("Código do Usuário")]
         public int IdUsuario { get; set; }
 
-        public Usuario Usuario { get; set; }
+        public UsuarioViewModel Usuario { get; set; }
     }
 }

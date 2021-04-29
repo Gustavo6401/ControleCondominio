@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Presentation.ViewModels
 {
-    public class Usuario
+    public class UsuarioViewModel
     {
         [Key]
         [DisplayName("Código do Usuário")]

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Presentation.ViewModels
 {
-    public class Visita
+    public class VisitaViewModel
     {
         [Key]
         [DisplayName("Código da Visita")]
@@ -26,6 +26,6 @@ namespace ServicoPortaria.Presentation.ViewModels
 
         public CondominioViewModel Condominio { get; set; }
         public PredioViewModel Predio { get; set; }
-        public Apartamento Apartamento { get; set; }
+        public ApartamentoViewModel Apartamento { get; set; }
     }
 }
