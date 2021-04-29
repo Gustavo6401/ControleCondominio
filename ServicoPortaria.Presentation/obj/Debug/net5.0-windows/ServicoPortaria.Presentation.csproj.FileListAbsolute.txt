@@ -126,3 +126,4 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\ServicoPortaria.Infra.Data.pdb
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\Humanizer.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.Forms.frmInserir.resources

@@ -47,6 +47,9 @@ namespace ServicoPortaria.Presentation.Login
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblNivel = new System.Windows.Forms.Label();
+            this.cmbNivelDeAcesso = new System.Windows.Forms.ComboBox();
+            this.lllRegistro = new System.Windows.Forms.LinkLabel();
             this.mstMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,10 +78,12 @@ namespace ServicoPortaria.Presentation.Login
             // 
             // tsmCondominio
             // 
+            this.tsmCondominio.CheckOnClick = true;
             this.tsmCondominio.ForeColor = System.Drawing.Color.White;
             this.tsmCondominio.Name = "tsmCondominio";
             this.tsmCondominio.Size = new System.Drawing.Size(131, 19);
             this.tsmCondominio.Text = "Condomínio";
+            this.tsmCondominio.Click += new System.EventHandler(this.tsmCondominio_Click);
             // 
             // tsmPredio
             // 
@@ -209,11 +214,47 @@ namespace ServicoPortaria.Presentation.Login
             this.label1.Text = "X";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // lblNivel
+            // 
+            this.lblNivel.AutoSize = true;
+            this.lblNivel.Location = new System.Drawing.Point(246, 117);
+            this.lblNivel.Name = "lblNivel";
+            this.lblNivel.Size = new System.Drawing.Size(90, 15);
+            this.lblNivel.TabIndex = 40;
+            this.lblNivel.Text = "Nível de Acesso";
+            this.lblNivel.Visible = false;
+            // 
+            // cmbNivelDeAcesso
+            // 
+            this.cmbNivelDeAcesso.FormattingEnabled = true;
+            this.cmbNivelDeAcesso.Items.AddRange(new object[] {
+            "Master",
+            "Síndico"});
+            this.cmbNivelDeAcesso.Location = new System.Drawing.Point(335, 114);
+            this.cmbNivelDeAcesso.Name = "cmbNivelDeAcesso";
+            this.cmbNivelDeAcesso.Size = new System.Drawing.Size(148, 23);
+            this.cmbNivelDeAcesso.TabIndex = 41;
+            this.cmbNivelDeAcesso.Visible = false;
+            // 
+            // lllRegistro
+            // 
+            this.lllRegistro.AutoSize = true;
+            this.lllRegistro.Location = new System.Drawing.Point(335, 223);
+            this.lllRegistro.Name = "lllRegistro";
+            this.lllRegistro.Size = new System.Drawing.Size(66, 15);
+            this.lllRegistro.TabIndex = 42;
+            this.lllRegistro.TabStop = true;
+            this.lllRegistro.Text = "Registre-Se";
+            this.lllRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllRegistro_LinkClicked);
+            // 
             // ucLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lllRegistro);
+            this.Controls.Add(this.cmbNivelDeAcesso);
+            this.Controls.Add(this.lblNivel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.txtPassword);
@@ -223,6 +264,7 @@ namespace ServicoPortaria.Presentation.Login
             this.Controls.Add(this.mstMenu);
             this.Name = "ucLogin";
             this.Size = new System.Drawing.Size(547, 334);
+            this.Load += new System.EventHandler(this.ucLogin_Load);
             this.mstMenu.ResumeLayout(false);
             this.mstMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -250,5 +292,8 @@ namespace ServicoPortaria.Presentation.Login
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNivel;
+        private System.Windows.Forms.ComboBox cmbNivelDeAcesso;
+        private System.Windows.Forms.LinkLabel lllRegistro;
     }
 }
