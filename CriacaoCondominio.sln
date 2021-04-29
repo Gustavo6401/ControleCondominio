@@ -17,13 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - CrossCutting", "4.1 - CrossCutting", "{765DB728-D04A-4703-A291-E751FF81F361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicoPortaria.Presentation", "ServicoPortaria.Presentation\ServicoPortaria.Presentation.csproj", "{202C383F-466D-4177-A3CA-14C52E41EF35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicoPortaria.Presentation", "ServicoPortaria.Presentation\ServicoPortaria.Presentation.csproj", "{202C383F-466D-4177-A3CA-14C52E41EF35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicoPortaria.Domain", "ServicoPortaria.Domain\ServicoPortaria.Domain.csproj", "{A160E1C1-601D-402B-A0FF-08AF4FA013A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicoPortaria.Domain", "ServicoPortaria.Domain\ServicoPortaria.Domain.csproj", "{A160E1C1-601D-402B-A0FF-08AF4FA013A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicoPortaria.Infra.Data", "ServicoPortaria.Infra.Data\ServicoPortaria.Infra.Data.csproj", "{EA230C07-60F9-47BC-AC22-EAB4E9902712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicoPortaria.Infra.Data", "ServicoPortaria.Infra.Data\ServicoPortaria.Infra.Data.csproj", "{EA230C07-60F9-47BC-AC22-EAB4E9902712}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicoPortaria.Application", "ServicoPortaria.Application\ServicoPortaria.Application.csproj", "{40800CA6-47B5-43A1-BE52-58BCF9A22AF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicoPortaria.Application", "ServicoPortaria.Application\ServicoPortaria.Application.csproj", "{40800CA6-47B5-43A1-BE52-58BCF9A22AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicoPortaria.Infra.Data.Contexto", "ServicoPortaria.Infra.Data.Contexto\ServicoPortaria.Infra.Data.Contexto.csproj", "{71F4BABC-DED4-4407-BF99-BB81D49D61EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{40800CA6-47B5-43A1-BE52-58BCF9A22AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40800CA6-47B5-43A1-BE52-58BCF9A22AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40800CA6-47B5-43A1-BE52-58BCF9A22AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F4BABC-DED4-4407-BF99-BB81D49D61EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F4BABC-DED4-4407-BF99-BB81D49D61EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F4BABC-DED4-4407-BF99-BB81D49D61EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F4BABC-DED4-4407-BF99-BB81D49D61EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{A160E1C1-601D-402B-A0FF-08AF4FA013A1} = {1A3ECAA9-7D0A-4C4F-9343-F8C781FF4206}
 		{EA230C07-60F9-47BC-AC22-EAB4E9902712} = {A7F2D13C-DCBB-4B55-A499-A231CC5F8EF3}
 		{40800CA6-47B5-43A1-BE52-58BCF9A22AF2} = {A6D6B0FA-0064-489D-BFFB-7E6EAF538A21}
+		{71F4BABC-DED4-4407-BF99-BB81D49D61EF} = {A7F2D13C-DCBB-4B55-A499-A231CC5F8EF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F610736F-5A9A-493C-B9EB-DB94EE44EC49}

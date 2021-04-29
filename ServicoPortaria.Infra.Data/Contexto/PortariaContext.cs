@@ -7,10 +7,6 @@ namespace ServicoPortaria.Infra.Data.Contexto
 {
     public class PortariaContext : DbContext
     {
-        public PortariaContext() : base() 
-        { 
-
-        }
         public DbSet<Condominio> Condominio { get; set; }
         public DbSet<Predio> Predio { get; set; }
         public DbSet<Morador> Morador { get; set; }
@@ -25,8 +21,22 @@ namespace ServicoPortaria.Infra.Data.Contexto
         public DbSet<Visita> Visita { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.EnableSensitiveDataLogging();
-            optionsBuilder.UseMySQL(@"Server=localhost;Database=Portaria;Uid=root;Psw=0123456789abcdef");
+            optionsBuilder.UseMySQL(@"Server=localhost;Database=Portaria;User=root;Psw=0123456789abcdef");
+        }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Condominio>().ToTable("Condominio");
+            builder.Entity<Predio>().ToTable("Predio");
+            builder.Entity<Morador>().ToTable("Morador");
+            builder.Entity<Apartamento>().ToTable("Apartamento");
+            builder.Entity<Visitante>().ToTable("Visitante");
+            builder.Entity<Garagem>().ToTable("Garagem");
+            builder.Entity<Veiculo>().ToTable("Veiculo");
+            builder.Entity<PrestadorSevicos>().ToTable("PrestadorServicos");
+            builder.Entity<Sindico>().ToTable("Sindico");
+            builder.Entity<Usuario>().ToTable("Usuario");
+            builder.Entity<RecuperacaoSenha>().ToTable("RecuperacaoSenha");
+            builder.Entity<Visita>().ToTable("Visita");
         }
         public virtual void SetModified(object entity)
         {

@@ -6,11 +6,11 @@ namespace ServicoPortaria.Presentation.AutoMapper
     {
         public static void RegisterMapping()
         {
-            Mapper.Initialize(x =>
+            /*Mapper.Initialize(x =>
             {
                 x.AddProfile<DomainToWindowsFormsMappingProfile>();
                 x.AddProfile<WindowsFormsToDomainMappingProfile>();
-            });
+            });*/
         }
     }
 }
