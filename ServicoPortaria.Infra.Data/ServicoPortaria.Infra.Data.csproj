@@ -11,6 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Migrations\20210429180106_Portaria.cs" />
+    <Compile Include="Migrations\20210429180106_Portaria.Designer.cs" />
+    <Compile Include="Migrations\PortariaContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="EntityConfig\" />
   </ItemGroup>
 

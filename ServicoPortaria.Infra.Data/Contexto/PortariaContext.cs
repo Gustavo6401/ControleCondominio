@@ -21,7 +21,7 @@ namespace ServicoPortaria.Infra.Data.Contexto
         public DbSet<Visita> Visita { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL(@"Server=localhost;Database=Portaria;User=root;Psw=0123456789abcdef");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Portaria;Trusted_Connection=True;");
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {

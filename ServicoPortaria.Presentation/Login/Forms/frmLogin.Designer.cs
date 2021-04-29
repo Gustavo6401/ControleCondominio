@@ -29,20 +29,33 @@ namespace ServicoPortaria.Presentation.Login.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.ucLogin1 = new ServicoPortaria.Presentation.Login.ucLogin();
             this.SuspendLayout();
+            // 
+            // ucLogin1
+            // 
+            this.ucLogin1.BackColor = System.Drawing.Color.White;
+            this.ucLogin1.Location = new System.Drawing.Point(0, 0);
+            this.ucLogin1.Name = "ucLogin1";
+            this.ucLogin1.Size = new System.Drawing.Size(547, 334);
+            this.ucLogin1.TabIndex = 0;
+            this.ucLogin1.Load += new System.EventHandler(this.ucLogin1_Load);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(548, 331);
+            this.Controls.Add(this.ucLogin1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.Text = "frmLogin";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private ucLogin ucLogin1;
     }
 }

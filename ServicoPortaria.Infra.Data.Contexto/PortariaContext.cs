@@ -24,9 +24,9 @@ namespace ServicoPortaria.Infra.Data.Contexto
         public DbSet<Visita> Visita { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=Portaria;User=root;Psw=0123456789abcdef");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=ServicoPortaria;Trusted_Connection=True;");
         }
-        protected override void OnModelCreating(ModelBuilder builder)
+        /* protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Condominio>().ToTable("Condominio");
             builder.Entity<Predio>().ToTable("Predio");
@@ -40,7 +40,7 @@ namespace ServicoPortaria.Infra.Data.Contexto
             builder.Entity<Usuario>().ToTable("Usuario");
             builder.Entity<RecuperacaoSenha>().ToTable("RecuperacaoSenha");
             builder.Entity<Visita>().ToTable("Visita");
-        }
+        }*/
         public virtual void SetModified(object entity)
         {
             Entry(entity).State = EntityState.Modified;

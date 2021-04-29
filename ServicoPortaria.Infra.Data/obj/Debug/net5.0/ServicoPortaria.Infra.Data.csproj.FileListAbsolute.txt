@@ -16,4 +16,3 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\obj\Deb
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\bin\Debug\net5.0\ServicoPortaria.Infra.Data.runtimeconfig.json
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\bin\Debug\net5.0\ServicoPortaria.Infra.Data.runtimeconfig.dev.json
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\obj\Debug\net5.0\ServicoPortaria.Infra.Data.genruntimeconfig.cache
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Infra.Data\bin\Debug\net5.0\ServicoPortaria.Infra.Data.dll.config

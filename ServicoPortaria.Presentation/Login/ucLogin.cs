@@ -26,5 +26,10 @@ namespace ServicoPortaria.Presentation.Login
         {
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
