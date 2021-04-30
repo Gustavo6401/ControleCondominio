@@ -10,5 +10,7 @@ namespace ServicoPortaria.Domain.Interfaces
         IEnumerable<Condominio> BuscarPorCEP(string cep);
         IEnumerable<Condominio> BuscarPorCodPostal(string codPostal);
         IEnumerable<Condominio> BuscarPorNumero(int numero);
+        IEnumerable<Condominio> BuscarPorCidade(string cidade);
+        IEnumerable<Condominio> BuscarComTodosOsFiltros(string nome, string cep, string codPostal, int numero, string cidade);
     }
 }

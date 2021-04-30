@@ -5,9 +5,9 @@ using ServicoPortaria.Infra.Data.Repositories;
 
 namespace ServicoPortaria.Presentation.Condominio
 {
-    public partial class ucnInserir : UserControl
+    public partial class ucInserir : UserControl
     {
-        public ucnInserir()
+        public ucInserir()
         {
             InitializeComponent();
         }
@@ -101,6 +101,14 @@ namespace ServicoPortaria.Presentation.Condominio
         private void mnsCondominio_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void tsmConsultar_Click(object sender, PaintEventArgs e)
+        {
+            frmConsultar form = new frmConsultar();
+            Dispose();
+
+            form.Show();
         }
     }
 }

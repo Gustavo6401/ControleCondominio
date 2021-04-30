@@ -1,7 +1,7 @@
 ﻿
 namespace ServicoPortaria.Presentation.Condominio
 {
-    partial class ucnInserir
+    partial class ucInserir
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -29,7 +29,7 @@ namespace ServicoPortaria.Presentation.Condominio
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucnInserir));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucInserir));
             this.txtPais = new System.Windows.Forms.TextBox();
             this.txtProvincia = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
@@ -46,7 +46,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.lblNome = new System.Windows.Forms.Label();
             this.btnInserir = new System.Windows.Forms.Button();
             this.mtxCEP = new System.Windows.Forms.MaskedTextBox();
-            this.lblClose = new System.Windows.Forms.Label();
             this.nudNumero = new System.Windows.Forms.NumericUpDown();
             this.lblRua = new System.Windows.Forms.Label();
             this.txtRua = new System.Windows.Forms.TextBox();
@@ -92,13 +91,13 @@ namespace ServicoPortaria.Presentation.Condominio
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsCondominio = new System.Windows.Forms.MenuStrip();
-            this.tsmCondominio = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmInserir = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmConsultar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmConsultarComId = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmRemove = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblClose = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
@@ -238,19 +237,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.mtxCEP.Name = "mtxCEP";
             this.mtxCEP.Size = new System.Drawing.Size(123, 23);
             this.mtxCEP.TabIndex = 37;
-            // 
-            // lblClose
-            // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.BackColor = System.Drawing.Color.Red;
-            this.lblClose.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(1346, 0);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(24, 25);
-            this.lblClose.TabIndex = 38;
-            this.lblClose.Text = "X";
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // nudNumero
             // 
@@ -610,7 +596,6 @@ namespace ServicoPortaria.Presentation.Condominio
             // 
             this.mnsCondominio.BackColor = System.Drawing.Color.Black;
             this.mnsCondominio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmCondominio,
             this.tsmInserir,
             this.tsmConsultar,
             this.tsmConsultarComId,
@@ -622,13 +607,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.mnsCondominio.Size = new System.Drawing.Size(1233, 24);
             this.mnsCondominio.TabIndex = 44;
             this.mnsCondominio.Text = "Condomínio";
-            // 
-            // tsmCondominio
-            // 
-            this.tsmCondominio.ForeColor = System.Drawing.Color.White;
-            this.tsmCondominio.Name = "tsmCondominio";
-            this.tsmCondominio.Size = new System.Drawing.Size(86, 20);
-            this.tsmCondominio.Text = "Condomínio";
             // 
             // tsmInserir
             // 
@@ -644,6 +622,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultar.Name = "tsmConsultar";
             this.tsmConsultar.Size = new System.Drawing.Size(70, 20);
             this.tsmConsultar.Text = "Consultar";
+            this.tsmConsultar.Paint += new System.Windows.Forms.PaintEventHandler(this.tsmConsultar_Click);
             // 
             // tsmConsultarComId
             // 
@@ -651,6 +630,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultarComId.Name = "tsmConsultarComId";
             this.tsmConsultarComId.Size = new System.Drawing.Size(141, 20);
             this.tsmConsultarComId.Text = "Consultar Com Código";
+            this.tsmConsultarComId.Text += new System.Windows.Forms.PaintEventHandler(this.tsmConsultarComId_Click);
             // 
             // tsmConsultarTodos
             // 
@@ -658,6 +638,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultarTodos.Name = "tsmConsultarTodos";
             this.tsmConsultarTodos.Size = new System.Drawing.Size(101, 20);
             this.tsmConsultarTodos.Text = "ConsultarTodos";
+            this.tsmConsultarTodos.Text += new System.Windows.Forms.PaintEventHandler(this.tsmConsultarTodos_Click);
             // 
             // tsmUpdate
             // 
@@ -665,6 +646,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmUpdate.Name = "tsmUpdate";
             this.tsmUpdate.Size = new System.Drawing.Size(106, 20);
             this.tsmUpdate.Text = "Modificar Dados";
+            this.tsmConsultarComId.Text += new System.Windows.Forms.PaintEventHandler(this.tsmUpdate_Click);
             // 
             // tsmRemove
             // 
@@ -672,17 +654,30 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmRemove.Name = "tsmRemove";
             this.tsmRemove.Size = new System.Drawing.Size(92, 20);
             this.tsmRemove.Text = "Deletar Dados";
+            this.tsmConsultarComId.Text += new System.Windows.Forms.PaintEventHandler(this.tsmRemove_Click);
+            // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1346, 0);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(24, 25);
+            this.lblClose.TabIndex = 45;
+            this.lblClose.Text = "X";
             // 
             // ucnInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
             this.Controls.Add(this.txtRua);
             this.Controls.Add(this.lblRua);
             this.Controls.Add(this.nudNumero);
-            this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mtxCEP);
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.txtPais);
@@ -730,7 +725,6 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.MaskedTextBox mtxCEP;
         private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.NumericUpDown nudNumero;
         private System.Windows.Forms.Label lblRua;
         private System.Windows.Forms.TextBox txtRua;
@@ -776,12 +770,12 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.MenuStrip mnsCondominio;
-        private System.Windows.Forms.ToolStripMenuItem tsmCondominio;
         private System.Windows.Forms.ToolStripMenuItem tsmInserir;
         private System.Windows.Forms.ToolStripMenuItem tsmConsultar;
         private System.Windows.Forms.ToolStripMenuItem tsmConsultarComId;
         private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
         private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
         private System.Windows.Forms.ToolStripMenuItem tsmRemove;
+        private System.Windows.Forms.Label lblClose;
     }
 }

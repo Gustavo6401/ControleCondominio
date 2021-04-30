@@ -31,32 +31,32 @@ namespace ServicoPortaria.Presentation.Condominio.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.Inserir = new ucnInserir();
+            this.Inserir = new ucInserir();
             this.SuspendLayout();
+            //
+            // ucConsultar
+            //
+            this.Inserir.BackColor = System.Drawing.Color.White;
+            this.Inserir.Location = new System.Drawing.Point(1, 1);
+            this.Inserir.Name = "ListarTodos";
+            this.Inserir.Size = new System.Drawing.Size(1370, 800);
+            this.Inserir.TabIndex = 0;
+            this.Inserir.Load += new System.EventHandler(this.ucInserir_Load);
             // 
             // frmInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.ClientSize = new System.Drawing.Size(1370, 788);
             this.Controls.Add(this.Inserir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInserir";
             this.Text = "frmInserir";
-            this.ResumeLayout(false);
-            //
-            // ucnInserir
-            //
-            this.Inserir.BackColor = System.Drawing.Color.White;
-            this.Inserir.Location = new System.Drawing.Point(1, 1);
-            this.Inserir.Name = "ucnInserir";
-            this.Inserir.Size = new System.Drawing.Size(1370, 800);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Inserir.TabIndex = 0;
-            this.Inserir.Load += new System.EventHandler(this.ucInserir_Load);
-        }        
+            this.ResumeLayout(false);            
+        }
 
         #endregion
 
-        private ucnInserir Inserir;
+        private ucInserir Inserir;
     }
 }

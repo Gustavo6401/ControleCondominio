@@ -47,7 +47,6 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Apartamento.ucModificar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucConsultar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucDeletar.resources
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucnInserir.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucListarTodos.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucModificar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Garagem.ucConsultar.resources
@@ -133,3 +132,4 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.Forms.frmDeletar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.Forms.frmModificar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucConsultarPorId.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucInserir.resources
