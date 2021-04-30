@@ -54,6 +54,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.mtxCEP = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.nudNumero = new System.Windows.Forms.NumericUpDown();
+            this.tsmRemove = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsCondominio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
             this.SuspendLayout();
@@ -193,10 +194,11 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultar,
             this.tsmConsultarComId,
             this.tsmConsultarTodos,
-            this.tsmUpdate});
+            this.tsmUpdate,
+            this.tsmRemove});
             this.mnsCondominio.Location = new System.Drawing.Point(0, 0);
             this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(622, 24);
+            this.mnsCondominio.Size = new System.Drawing.Size(720, 24);
             this.mnsCondominio.TabIndex = 36;
             this.mnsCondominio.Text = "Condomínio";
             // 
@@ -256,7 +258,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(599, -1);
+            this.label1.Location = new System.Drawing.Point(696, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 25);
             this.label1.TabIndex = 38;
@@ -268,6 +270,13 @@ namespace ServicoPortaria.Presentation.Condominio
             this.nudNumero.Name = "nudNumero";
             this.nudNumero.Size = new System.Drawing.Size(123, 23);
             this.nudNumero.TabIndex = 39;
+            // 
+            // tsmRemove
+            // 
+            this.tsmRemove.ForeColor = System.Drawing.Color.White;
+            this.tsmRemove.Name = "tsmRemove";
+            this.tsmRemove.Size = new System.Drawing.Size(92, 20);
+            this.tsmRemove.Text = "Deletar Dados";
             // 
             // ucnInserir
             // 
@@ -293,7 +302,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.mnsCondominio);
             this.Name = "ucnInserir";
-            this.Size = new System.Drawing.Size(622, 476);
+            this.Size = new System.Drawing.Size(720, 476);
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).EndInit();
@@ -330,5 +339,6 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown nudNumero;
+        private System.Windows.Forms.ToolStripMenuItem tsmRemove;
     }
 }

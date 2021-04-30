@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Windows.Forms;
 using ServicoPortaria.Presentation.Condominio.Forms;
+using ServicoPortaria.Presentation.Login.Forms;
 using ServicoPortaria.Infra.Data.Contexto;
 using ServicoPortaria.Infra.Data.Repositories;
 using ServicoPortaria.Domain.Entities;
@@ -54,6 +55,9 @@ namespace ServicoPortaria.Presentation.Login
                     txtPassword.Visible = false;
                     btnLogin.Visible = false;
                     lllRegistro.Visible = false;
+
+                    frmLogin form = new frmLogin();
+                    form.Hide();
                 }
                 else
                 {

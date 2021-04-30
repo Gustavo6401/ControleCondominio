@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace ServicoPortaria.Presentation.Condominio.Forms
 {
-    public partial class frmConsultarTodos : Form
+    public partial class frmModificar : Form
     {
-        public frmConsultarTodos()
+        public frmModificar()
         {
             InitializeComponent();
-        }
-
-        private void frmConsultarTodos_Load(object sender, EventArgs e)
-        {
-        }
-        private void ListarTodos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

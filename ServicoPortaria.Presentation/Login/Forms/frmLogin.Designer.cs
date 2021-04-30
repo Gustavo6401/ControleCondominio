@@ -35,7 +35,7 @@ namespace ServicoPortaria.Presentation.Login.Forms
             // ucLogin1
             // 
             this.ucLogin1.BackColor = System.Drawing.Color.White;
-            this.ucLogin1.Location = new System.Drawing.Point(0, 0);
+            this.ucLogin1.Location = new System.Drawing.Point(1, -2);
             this.ucLogin1.Name = "ucLogin1";
             this.ucLogin1.Size = new System.Drawing.Size(547, 334);
             this.ucLogin1.TabIndex = 0;
