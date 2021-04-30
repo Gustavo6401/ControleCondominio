@@ -15,11 +15,7 @@ namespace ServicoPortaria.Presentation.Condominio.Forms
         public frmConsultarTodos()
         {
             InitializeComponent();
-        }
-
-        private void frmConsultarTodos_Load(object sender, EventArgs e)
-        {
-        }
+        }        
         private void ListarTodos_Load(object sender, EventArgs e)
         {
 

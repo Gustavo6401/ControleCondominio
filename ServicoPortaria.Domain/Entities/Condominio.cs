@@ -11,7 +11,7 @@ namespace ServicoPortaria.Domain.Entities
         [DisplayName("Nome")]
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "Nome Inválido!")]
-        [MaxLength(20, ErrorMessage = "Nome Inválido!")]
+        [MaxLength(50, ErrorMessage = "Nome Inválido!")]
         public string Nome { get; set; }
         [MinLength(9, ErrorMessage = "CEP Inválido!")]
         [MaxLength(9, ErrorMessage = "CEP Inválido!")]
@@ -19,6 +19,9 @@ namespace ServicoPortaria.Domain.Entities
         [MaxLength(20, ErrorMessage = "Código Postal Inválido!")]
         [DisplayName("Código Postal")]
         public string CodPostal { get; set; }
+        [MinLength(1, ErrorMessage = "Nome Inválido!")]
+        [MaxLength(90, ErrorMessage = "Nome Inválido!")]
+        public string Rua { get; set; }
         [DisplayName("Número do Condomínio")]
         public int Numero { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]

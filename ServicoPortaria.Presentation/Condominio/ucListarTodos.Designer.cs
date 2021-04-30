@@ -57,7 +57,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmRemove});
             this.mnsCondominio.Location = new System.Drawing.Point(0, 0);
             this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(745, 24);
+            this.mnsCondominio.Size = new System.Drawing.Size(1370, 24);
             this.mnsCondominio.TabIndex = 38;
             this.mnsCondominio.Text = "Condomínio";
             // 
@@ -122,7 +122,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.lblClose.BackColor = System.Drawing.Color.Red;
             this.lblClose.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(721, 0);
+            this.lblClose.Location = new System.Drawing.Point(1345, 0);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(24, 25);
             this.lblClose.TabIndex = 39;
@@ -131,17 +131,21 @@ namespace ServicoPortaria.Presentation.Condominio
             // 
             // dgvData
             // 
+            this.dgvData.AllowUserToAddRows = false;
+            this.dgvData.AllowUserToDeleteRows = false;
+            this.dgvData.AllowUserToResizeColumns = false;
+            this.dgvData.AllowUserToResizeRows = false;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(193, 89);
+            this.dgvData.Location = new System.Drawing.Point(386, 240);
             this.dgvData.Name = "dgvData";
             this.dgvData.RowTemplate.Height = 25;
-            this.dgvData.Size = new System.Drawing.Size(360, 209);
+            this.dgvData.Size = new System.Drawing.Size(545, 290);
             this.dgvData.TabIndex = 40;
             // 
             // lblPresentation
             // 
             this.lblPresentation.AutoSize = true;
-            this.lblPresentation.Location = new System.Drawing.Point(226, 56);
+            this.lblPresentation.Location = new System.Drawing.Point(505, 222);
             this.lblPresentation.Name = "lblPresentation";
             this.lblPresentation.Size = new System.Drawing.Size(299, 15);
             this.lblPresentation.TabIndex = 41;
@@ -156,7 +160,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Name = "ucListarTodos";
-            this.Size = new System.Drawing.Size(745, 372);
+            this.Size = new System.Drawing.Size(1370, 800);
             this.Load += new System.EventHandler(this.ucListarTodos_Load);
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();

@@ -35,9 +35,6 @@ namespace ServicoPortaria.Presentation.Condominio
         {
             frmInserir form = new frmInserir();
             form.Show();
-
-            frmConsultarTodos consultarTodos = new frmConsultarTodos();
-            consultarTodos.Close();
         }
 
         private void tsmConsultar_Click(object sender, EventArgs e)

@@ -13,12 +13,13 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CEP = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CodPostal = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    CEP = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: true),
+                    CodPostal = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Rua = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: true),
                     Numero = table.Column<int>(type: "int", nullable: false),
-                    Cidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Estado = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Cidade = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Estado = table.Column<string>(type: "nvarchar(2)", maxLength: 2, nullable: true),
                     Provincia = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Pais = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -33,8 +34,8 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Senha = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Senha = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     NivelDeAcesso = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -48,15 +49,15 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Sobrenome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CPF = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RG = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DocCivil = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Sexo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Celular = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Fixo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EMail = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nome = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Sobrenome = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
+                    CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: true),
+                    RG = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: true),
+                    DocCivil = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Sexo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Celular = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Fixo = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -69,23 +70,23 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Sobrenome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CPF = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RG = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DocCivil = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Sexo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CEP = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CodigoPostal = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Rua = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Sobrenome = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
+                    CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: true),
+                    RG = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: true),
+                    DocCivil = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Sexo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    CEP = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: true),
+                    CodigoPostal = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Rua = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: true),
                     Numero = table.Column<int>(type: "int", nullable: false),
-                    Cidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Estado = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Provincia = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Pais = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Celular = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Fixo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EMail = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Cidade = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    Estado = table.Column<string>(type: "nvarchar(2)", maxLength: 2, nullable: true),
+                    Provincia = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    Pais = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Celular = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Fixo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
                     CondominioId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -106,7 +107,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: true),
                     Numero = table.Column<int>(type: "int", nullable: false),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
                     CondominioId = table.Column<int>(type: "int", nullable: true)
@@ -128,9 +129,8 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    EMail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Celular = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Senha = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    Celular = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     IdUsuario = table.Column<int>(type: "int", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -216,9 +216,9 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CNPJ = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CPF = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: false),
+                    CNPJ = table.Column<string>(type: "nvarchar(18)", maxLength: 18, nullable: false),
+                    CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: false),
                     IdPredio = table.Column<int>(type: "int", nullable: false),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
                     PredioId = table.Column<int>(type: "int", nullable: true),
@@ -247,13 +247,13 @@ namespace ServicoPortaria.Infra.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Sobrenome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CPF = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RG = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DocCivil = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefone = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EMail = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Sobrenome = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
+                    CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: false),
+                    RG = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
+                    DocCivil = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Telefone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     IdPredio = table.Column<int>(type: "int", nullable: false),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
                     PredioId = table.Column<int>(type: "int", nullable: true),
@@ -320,8 +320,8 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdVisitante = table.Column<int>(type: "int", nullable: false),
                     IdMorador = table.Column<int>(type: "int", nullable: false),
-                    Chegada = table.Column<TimeSpan>(type: "time", nullable: false),
-                    Saida = table.Column<TimeSpan>(type: "time", nullable: false),
+                    Chegada = table.Column<TimeSpan>(type: "time", rowVersion: true, nullable: false),
+                    Saida = table.Column<TimeSpan>(type: "time", rowVersion: true, nullable: false),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
                     IdPredio = table.Column<int>(type: "int", nullable: false),
                     IdApartamento = table.Column<int>(type: "int", nullable: false),

@@ -16,5 +16,9 @@ namespace ServicoPortaria.Presentation.Condominio.Forms
         {
             InitializeComponent();
         }
+        private void ucInserir_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
