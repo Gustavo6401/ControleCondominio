@@ -1,1 +1,1 @@
-Drop Database Portaria;
+Select * From Apartamento

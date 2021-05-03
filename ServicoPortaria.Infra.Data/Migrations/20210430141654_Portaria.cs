@@ -152,6 +152,8 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Numero = table.Column<int>(type: "int", nullable: false),
+                    Bloco = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Ramal = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IdMorador = table.Column<int>(type: "int", nullable: false),
                     IdPredio = table.Column<int>(type: "int", nullable: false),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),

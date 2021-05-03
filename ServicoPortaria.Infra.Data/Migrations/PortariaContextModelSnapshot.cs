@@ -26,6 +26,9 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Bloco")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("CondominioId")
                         .HasColumnType("int");
 
@@ -46,6 +49,9 @@ namespace ServicoPortaria.Infra.Data.Migrations
 
                     b.Property<int?>("PredioId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Ramal")
+                        .HasColumnType("string");
 
                     b.HasKey("Id");
 

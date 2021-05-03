@@ -16,5 +16,10 @@ namespace ServicoPortaria.Presentation.Predio
         {
             InitializeComponent();
         }
+
+        private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

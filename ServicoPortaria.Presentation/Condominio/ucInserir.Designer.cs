@@ -630,7 +630,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultarComId.Name = "tsmConsultarComId";
             this.tsmConsultarComId.Size = new System.Drawing.Size(141, 20);
             this.tsmConsultarComId.Text = "Consultar Com Código";
-            this.tsmConsultarComId.Text += new System.Windows.Forms.PaintEventHandler(this.tsmConsultarComId_Click);
             // 
             // tsmConsultarTodos
             // 
@@ -638,7 +637,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultarTodos.Name = "tsmConsultarTodos";
             this.tsmConsultarTodos.Size = new System.Drawing.Size(101, 20);
             this.tsmConsultarTodos.Text = "ConsultarTodos";
-            this.tsmConsultarTodos.Text += new System.Windows.Forms.PaintEventHandler(this.tsmConsultarTodos_Click);
             // 
             // tsmUpdate
             // 
@@ -646,7 +644,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmUpdate.Name = "tsmUpdate";
             this.tsmUpdate.Size = new System.Drawing.Size(106, 20);
             this.tsmUpdate.Text = "Modificar Dados";
-            this.tsmConsultarComId.Text += new System.Windows.Forms.PaintEventHandler(this.tsmUpdate_Click);
             // 
             // tsmRemove
             // 
@@ -654,7 +651,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmRemove.Name = "tsmRemove";
             this.tsmRemove.Size = new System.Drawing.Size(92, 20);
             this.tsmRemove.Text = "Deletar Dados";
-            this.tsmConsultarComId.Text += new System.Windows.Forms.PaintEventHandler(this.tsmRemove_Click);
             // 
             // lblClose
             // 
@@ -668,7 +664,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.lblClose.TabIndex = 45;
             this.lblClose.Text = "X";
             // 
-            // ucnInserir
+            // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -694,7 +690,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.Controls.Add(this.lblCodPostal);
             this.Controls.Add(this.lblCEP);
             this.Controls.Add(this.lblNome);
-            this.Name = "ucnInserir";
+            this.Name = "ucInserir";
             this.Size = new System.Drawing.Size(1370, 749);
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).EndInit();
             this.mnsPresentation.ResumeLayout(false);
