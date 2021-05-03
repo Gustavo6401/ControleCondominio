@@ -20,6 +20,7 @@
     <Import Project="$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.props" Condition="Exists('$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgVisioForge_DotNet_Core_TRIAL Condition=" '$(PkgVisioForge_DotNet_Core_TRIAL)' == '' ">C:\Users\Maxi4\.nuget\packages\visioforge.dotnet.core.trial\14.0.40</PkgVisioForge_DotNet_Core_TRIAL>
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Maxi4\.nuget\packages\newtonsoft.json\10.0.1</PkgNewtonsoft_Json>
     <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\Maxi4\.nuget\packages\entityframework\6.4.4</PkgEntityFramework>
   </PropertyGroup>

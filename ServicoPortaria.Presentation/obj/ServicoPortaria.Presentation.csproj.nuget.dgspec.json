@@ -217,6 +217,10 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "AForge.Video.DirectShow": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
@@ -246,6 +250,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "VisioForge.DotNet.Core.TRIAL": {
+              "target": "Package",
+              "version": "[14.0.40, )"
             }
           },
           "imports": [

@@ -29,6 +29,7 @@ namespace ServicoPortaria.Presentation.Morador
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucInserir));
             this.mnsPresentation = new System.Windows.Forms.MenuStrip();
             this.tmsCondominio = new System.Windows.Forms.ToolStripMenuItem();
@@ -113,11 +114,13 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupEndereco = new System.Windows.Forms.GroupBox();
             this.nudNumero = new System.Windows.Forms.NumericUpDown();
             this.groupContato = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupCadastrar = new System.Windows.Forms.GroupBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.imgWebCam = new System.Windows.Forms.PictureBox();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.groupNome.SuspendLayout();
@@ -126,6 +129,7 @@ namespace ServicoPortaria.Presentation.Morador
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
             this.groupContato.SuspendLayout();
             this.groupCadastrar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgWebCam)).BeginInit();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -871,6 +875,13 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupContato.TabStop = false;
             this.groupContato.Text = "Contato";
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(211, 106);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(230, 23);
+            this.textBox4.TabIndex = 70;
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(211, 68);
@@ -884,13 +895,6 @@ namespace ServicoPortaria.Presentation.Morador
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(230, 23);
             this.textBox3.TabIndex = 49;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(211, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(230, 23);
-            this.textBox4.TabIndex = 70;
             // 
             // groupCadastrar
             // 
@@ -913,11 +917,21 @@ namespace ServicoPortaria.Presentation.Morador
             this.btnCadastrar.TabIndex = 0;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // imgWebCam
+            // 
+            this.imgWebCam.Location = new System.Drawing.Point(822, 56);
+            this.imgWebCam.Name = "imgWebCam";
+            this.imgWebCam.Size = new System.Drawing.Size(231, 131);
+            this.imgWebCam.TabIndex = 86;
+            this.imgWebCam.TabStop = false;
             // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.imgWebCam);
             this.Controls.Add(this.groupCadastrar);
             this.Controls.Add(this.groupContato);
             this.Controls.Add(this.groupEndereco);
@@ -941,6 +955,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupContato.ResumeLayout(false);
             this.groupContato.PerformLayout();
             this.groupCadastrar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgWebCam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1037,5 +1052,7 @@ namespace ServicoPortaria.Presentation.Morador
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.GroupBox groupCadastrar;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox imgWebCam;
     }
 }
