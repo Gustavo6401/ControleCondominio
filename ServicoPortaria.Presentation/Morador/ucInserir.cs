@@ -16,5 +16,13 @@ namespace ServicoPortaria.Presentation.Morador
         {
             InitializeComponent();
         }
+
+        private void cmbSexo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /* if(cmbSexo.Text == "Outro/Qual?")
+            {
+
+            }*/ 
+        }
     }
 }
