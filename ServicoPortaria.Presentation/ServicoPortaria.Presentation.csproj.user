@@ -166,5 +166,11 @@
     <Compile Update="Visitante\ucModificar.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Visita\ucInserir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Visita\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

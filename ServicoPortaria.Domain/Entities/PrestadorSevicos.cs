@@ -12,11 +12,11 @@ namespace ServicoPortaria.Domain.Entities
         [MinLength(1, ErrorMessage = "Nome Inválido!")]
         [MaxLength(45, ErrorMessage = "Nome Inválido!")]
         public string Nome { get; set; }
-        [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
+        //[Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "CNPJ Inválido!")]
         [MaxLength(18, ErrorMessage = "CNPJ Inválido!")]
         public string CNPJ { get; set; }
-        [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
+        //[Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "CPF Inválido!")]
         [MaxLength(14, ErrorMessage = "CPF Inválido!")]
         public string CPF { get; set; }

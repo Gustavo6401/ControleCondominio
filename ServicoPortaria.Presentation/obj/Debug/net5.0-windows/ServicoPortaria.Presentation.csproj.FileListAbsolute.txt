@@ -134,3 +134,5 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucConsultarPorId.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucInserir.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Properties.Resources.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visita.ucInserir.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visita.ucListarTodos.resources

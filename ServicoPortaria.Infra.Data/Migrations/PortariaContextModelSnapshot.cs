@@ -472,8 +472,11 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("time");
 
-                    b.Property<int?>("CondominioId")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DataChegada")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("DataSaida")
+                        .HasColumnType("date");
 
                     b.Property<int>("IdApartamento")
                         .HasColumnType("int");

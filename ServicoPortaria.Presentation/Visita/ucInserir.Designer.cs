@@ -1,5 +1,5 @@
 ﻿
-namespace ServicoPortaria.Presentation.Sindico
+namespace ServicoPortaria.Presentation.Visita
 {
     partial class ucInserir
     {
@@ -78,40 +78,36 @@ namespace ServicoPortaria.Presentation.Sindico
             this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmRemove = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblNomePredio = new System.Windows.Forms.Label();
-            this.lblEMail = new System.Windows.Forms.Label();
-            this.lblCelular = new System.Windows.Forms.Label();
-            this.lblDocCivil = new System.Windows.Forms.Label();
-            this.lblRG = new System.Windows.Forms.Label();
-            this.lblCPF = new System.Windows.Forms.Label();
-            this.lblSobrenome = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtSobrenome = new System.Windows.Forms.TextBox();
-            this.groupNome = new System.Windows.Forms.GroupBox();
-            this.mtxCPF = new System.Windows.Forms.MaskedTextBox();
-            this.mtxRG = new System.Windows.Forms.MaskedTextBox();
-            this.txtDocCivil = new System.Windows.Forms.TextBox();
-            this.groupDocumentacao = new System.Windows.Forms.GroupBox();
-            this.txtEMail = new System.Windows.Forms.TextBox();
-            this.txtCelular = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupContato = new System.Windows.Forms.GroupBox();
+            this.lblIdApartamento = new System.Windows.Forms.Label();
+            this.lblMorador = new System.Windows.Forms.Label();
             this.lblCondominio = new System.Windows.Forms.Label();
-            this.txtPredio = new System.Windows.Forms.TextBox();
+            this.lblPredio = new System.Windows.Forms.Label();
+            this.lblCPFVisitante = new System.Windows.Forms.Label();
+            this.mtxCPFMorador = new System.Windows.Forms.MaskedTextBox();
             this.txtCondominio = new System.Windows.Forms.TextBox();
-            this.groupLocal = new System.Windows.Forms.GroupBox();
+            this.txtPredio = new System.Windows.Forms.TextBox();
+            this.lblIdMorador = new System.Windows.Forms.Label();
+            this.lblIdCondominio = new System.Windows.Forms.Label();
             this.lblIdPredio = new System.Windows.Forms.Label();
-            this.lblCodCondominio = new System.Windows.Forms.Label();
-            this.groupInserir = new System.Windows.Forms.GroupBox();
-            this.btnInsert = new System.Windows.Forms.Button();
+            this.lblIdVisitante = new System.Windows.Forms.Label();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.groupInfo = new System.Windows.Forms.GroupBox();
+            this.lblDataChegada = new System.Windows.Forms.Label();
+            this.lblDataSaida = new System.Windows.Forms.Label();
+            this.lblHoraChegada = new System.Windows.Forms.Label();
+            this.lblHoraSaida = new System.Windows.Forms.Label();
+            this.dtpHoraChegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataChegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnCadastrarVisita = new System.Windows.Forms.Button();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
-            this.groupNome.SuspendLayout();
-            this.groupDocumentacao.SuspendLayout();
-            this.groupContato.SuspendLayout();
-            this.groupLocal.SuspendLayout();
-            this.groupInserir.SuspendLayout();
+            this.groupInfo.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -137,7 +133,7 @@ namespace ServicoPortaria.Presentation.Sindico
             this.mnsPresentation.Location = new System.Drawing.Point(0, 0);
             this.mnsPresentation.Name = "mnsPresentation";
             this.mnsPresentation.Size = new System.Drawing.Size(137, 800);
-            this.mnsPresentation.TabIndex = 50;
+            this.mnsPresentation.TabIndex = 49;
             // 
             // tmsCondominio
             // 
@@ -452,8 +448,8 @@ namespace ServicoPortaria.Presentation.Sindico
             this.tsmRemove});
             this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
             this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(1233, 24);
-            this.mnsCondominio.TabIndex = 56;
+            this.mnsCondominio.Size = new System.Drawing.Size(1251, 24);
+            this.mnsCondominio.TabIndex = 55;
             this.mnsCondominio.Text = "Condomínio";
             // 
             // tsmCadastroMorador
@@ -498,284 +494,267 @@ namespace ServicoPortaria.Presentation.Sindico
             this.tsmRemove.Size = new System.Drawing.Size(92, 20);
             this.tsmRemove.Text = "Deletar Dados";
             // 
-            // lblNome
+            // lblIdApartamento
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(9, 22);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(40, 15);
-            this.lblNome.TabIndex = 57;
-            this.lblNome.Text = "Nome";
+            this.lblIdApartamento.AutoSize = true;
+            this.lblIdApartamento.Location = new System.Drawing.Point(0, 26);
+            this.lblIdApartamento.Name = "lblIdApartamento";
+            this.lblIdApartamento.Size = new System.Drawing.Size(136, 15);
+            this.lblIdApartamento.TabIndex = 56;
+            this.lblIdApartamento.Text = "Código do Apartamento";
             // 
-            // lblNomePredio
+            // lblMorador
             // 
-            this.lblNomePredio.AutoSize = true;
-            this.lblNomePredio.Location = new System.Drawing.Point(9, 32);
-            this.lblNomePredio.Name = "lblNomePredio";
-            this.lblNomePredio.Size = new System.Drawing.Size(94, 15);
-            this.lblNomePredio.TabIndex = 58;
-            this.lblNomePredio.Text = "Nome do Prédio";
-            // 
-            // lblEMail
-            // 
-            this.lblEMail.AutoSize = true;
-            this.lblEMail.Location = new System.Drawing.Point(428, 560);
-            this.lblEMail.Name = "lblEMail";
-            this.lblEMail.Size = new System.Drawing.Size(41, 15);
-            this.lblEMail.TabIndex = 59;
-            this.lblEMail.Text = "E-Mail";
-            // 
-            // lblCelular
-            // 
-            this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(9, 15);
-            this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(44, 15);
-            this.lblCelular.TabIndex = 60;
-            this.lblCelular.Text = "Celular";
-            // 
-            // lblDocCivil
-            // 
-            this.lblDocCivil.AutoSize = true;
-            this.lblDocCivil.Location = new System.Drawing.Point(9, 113);
-            this.lblDocCivil.Name = "lblDocCivil";
-            this.lblDocCivil.Size = new System.Drawing.Size(96, 15);
-            this.lblDocCivil.TabIndex = 61;
-            this.lblDocCivil.Text = "Documento Civil";
-            // 
-            // lblRG
-            // 
-            this.lblRG.AutoSize = true;
-            this.lblRG.Location = new System.Drawing.Point(9, 66);
-            this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(22, 15);
-            this.lblRG.TabIndex = 62;
-            this.lblRG.Text = "RG";
-            // 
-            // lblCPF
-            // 
-            this.lblCPF.AutoSize = true;
-            this.lblCPF.Location = new System.Drawing.Point(9, 21);
-            this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(28, 15);
-            this.lblCPF.TabIndex = 63;
-            this.lblCPF.Text = "CPF";
-            // 
-            // lblSobrenome
-            // 
-            this.lblSobrenome.AutoSize = true;
-            this.lblSobrenome.Location = new System.Drawing.Point(9, 67);
-            this.lblSobrenome.Name = "lblSobrenome";
-            this.lblSobrenome.Size = new System.Drawing.Size(68, 15);
-            this.lblSobrenome.TabIndex = 64;
-            this.lblSobrenome.Text = "Sobrenome";
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(139, 19);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(277, 23);
-            this.txtNome.TabIndex = 65;
-            // 
-            // txtSobrenome
-            // 
-            this.txtSobrenome.Location = new System.Drawing.Point(139, 64);
-            this.txtSobrenome.Name = "txtSobrenome";
-            this.txtSobrenome.Size = new System.Drawing.Size(277, 23);
-            this.txtSobrenome.TabIndex = 66;
-            // 
-            // groupNome
-            // 
-            this.groupNome.Controls.Add(this.txtSobrenome);
-            this.groupNome.Controls.Add(this.txtNome);
-            this.groupNome.Controls.Add(this.lblSobrenome);
-            this.groupNome.Controls.Add(this.lblNome);
-            this.groupNome.Location = new System.Drawing.Point(419, 234);
-            this.groupNome.Name = "groupNome";
-            this.groupNome.Size = new System.Drawing.Size(423, 103);
-            this.groupNome.TabIndex = 67;
-            this.groupNome.TabStop = false;
-            this.groupNome.Text = "Nome";
-            // 
-            // mtxCPF
-            // 
-            this.mtxCPF.Location = new System.Drawing.Point(139, 18);
-            this.mtxCPF.Mask = "000.000.000-00";
-            this.mtxCPF.Name = "mtxCPF";
-            this.mtxCPF.Size = new System.Drawing.Size(277, 23);
-            this.mtxCPF.TabIndex = 68;
-            // 
-            // mtxRG
-            // 
-            this.mtxRG.Location = new System.Drawing.Point(139, 63);
-            this.mtxRG.Mask = "00.000.000-0";
-            this.mtxRG.Name = "mtxRG";
-            this.mtxRG.Size = new System.Drawing.Size(277, 23);
-            this.mtxRG.TabIndex = 69;
-            // 
-            // txtDocCivil
-            // 
-            this.txtDocCivil.Location = new System.Drawing.Point(139, 110);
-            this.txtDocCivil.Name = "txtDocCivil";
-            this.txtDocCivil.Size = new System.Drawing.Size(277, 23);
-            this.txtDocCivil.TabIndex = 67;
-            // 
-            // groupDocumentacao
-            // 
-            this.groupDocumentacao.Controls.Add(this.groupBox1);
-            this.groupDocumentacao.Controls.Add(this.txtDocCivil);
-            this.groupDocumentacao.Controls.Add(this.mtxRG);
-            this.groupDocumentacao.Controls.Add(this.mtxCPF);
-            this.groupDocumentacao.Controls.Add(this.lblCPF);
-            this.groupDocumentacao.Controls.Add(this.lblRG);
-            this.groupDocumentacao.Controls.Add(this.lblDocCivil);
-            this.groupDocumentacao.Location = new System.Drawing.Point(419, 343);
-            this.groupDocumentacao.Name = "groupDocumentacao";
-            this.groupDocumentacao.Size = new System.Drawing.Size(423, 151);
-            this.groupDocumentacao.TabIndex = 70;
-            this.groupDocumentacao.TabStop = false;
-            this.groupDocumentacao.Text = "Documentação Civil";
-            // 
-            // txtEMail
-            // 
-            this.txtEMail.Location = new System.Drawing.Point(558, 557);
-            this.txtEMail.Name = "txtEMail";
-            this.txtEMail.Size = new System.Drawing.Size(277, 23);
-            this.txtEMail.TabIndex = 70;
-            // 
-            // txtCelular
-            // 
-            this.txtCelular.Location = new System.Drawing.Point(139, 12);
-            this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(277, 23);
-            this.txtCelular.TabIndex = 71;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(235, 149);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(181, 65);
-            this.groupBox1.TabIndex = 70;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // groupContato
-            // 
-            this.groupContato.Controls.Add(this.txtCelular);
-            this.groupContato.Controls.Add(this.lblCelular);
-            this.groupContato.Location = new System.Drawing.Point(419, 499);
-            this.groupContato.Name = "groupContato";
-            this.groupContato.Size = new System.Drawing.Size(423, 88);
-            this.groupContato.TabIndex = 72;
-            this.groupContato.TabStop = false;
-            this.groupContato.Text = "Contato";
+            this.lblMorador.AutoSize = true;
+            this.lblMorador.Location = new System.Drawing.Point(0, 66);
+            this.lblMorador.Name = "lblMorador";
+            this.lblMorador.Size = new System.Drawing.Size(94, 15);
+            this.lblMorador.TabIndex = 57;
+            this.lblMorador.Text = "CPF do Morador";
             // 
             // lblCondominio
             // 
             this.lblCondominio.AutoSize = true;
-            this.lblCondominio.Location = new System.Drawing.Point(9, 73);
+            this.lblCondominio.Location = new System.Drawing.Point(0, 109);
             this.lblCondominio.Name = "lblCondominio";
             this.lblCondominio.Size = new System.Drawing.Size(127, 15);
-            this.lblCondominio.TabIndex = 73;
+            this.lblCondominio.TabIndex = 58;
             this.lblCondominio.Text = "Nome do Condomínio";
             // 
-            // txtPredio
+            // lblPredio
             // 
-            this.txtPredio.Location = new System.Drawing.Point(139, 29);
-            this.txtPredio.Name = "txtPredio";
-            this.txtPredio.Size = new System.Drawing.Size(277, 23);
-            this.txtPredio.TabIndex = 67;
+            this.lblPredio.AutoSize = true;
+            this.lblPredio.Location = new System.Drawing.Point(0, 152);
+            this.lblPredio.Name = "lblPredio";
+            this.lblPredio.Size = new System.Drawing.Size(94, 15);
+            this.lblPredio.TabIndex = 59;
+            this.lblPredio.Text = "Nome do Prédio";
+            // 
+            // lblCPFVisitante
+            // 
+            this.lblCPFVisitante.AutoSize = true;
+            this.lblCPFVisitante.Location = new System.Drawing.Point(0, 198);
+            this.lblCPFVisitante.Name = "lblCPFVisitante";
+            this.lblCPFVisitante.Size = new System.Drawing.Size(93, 15);
+            this.lblCPFVisitante.TabIndex = 60;
+            this.lblCPFVisitante.Text = "CPF do Visitante";
+            this.lblCPFVisitante.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // mtxCPFMorador
+            // 
+            this.mtxCPFMorador.Location = new System.Drawing.Point(230, 63);
+            this.mtxCPFMorador.Mask = "000.000.000-00";
+            this.mtxCPFMorador.Name = "mtxCPFMorador";
+            this.mtxCPFMorador.Size = new System.Drawing.Size(190, 23);
+            this.mtxCPFMorador.TabIndex = 61;
             // 
             // txtCondominio
             // 
-            this.txtCondominio.Location = new System.Drawing.Point(139, 70);
+            this.txtCondominio.Location = new System.Drawing.Point(230, 106);
             this.txtCondominio.Name = "txtCondominio";
-            this.txtCondominio.Size = new System.Drawing.Size(277, 23);
-            this.txtCondominio.TabIndex = 74;
+            this.txtCondominio.Size = new System.Drawing.Size(190, 23);
+            this.txtCondominio.TabIndex = 62;
             // 
-            // groupLocal
+            // txtPredio
             // 
-            this.groupLocal.Controls.Add(this.lblCodCondominio);
-            this.groupLocal.Controls.Add(this.lblIdPredio);
-            this.groupLocal.Controls.Add(this.txtCondominio);
-            this.groupLocal.Controls.Add(this.txtPredio);
-            this.groupLocal.Controls.Add(this.lblCondominio);
-            this.groupLocal.Controls.Add(this.lblNomePredio);
-            this.groupLocal.Location = new System.Drawing.Point(419, 113);
-            this.groupLocal.Name = "groupLocal";
-            this.groupLocal.Size = new System.Drawing.Size(652, 115);
-            this.groupLocal.TabIndex = 75;
-            this.groupLocal.TabStop = false;
-            this.groupLocal.Text = "Local";
+            this.txtPredio.Location = new System.Drawing.Point(230, 149);
+            this.txtPredio.Name = "txtPredio";
+            this.txtPredio.Size = new System.Drawing.Size(190, 23);
+            this.txtPredio.TabIndex = 63;
+            // 
+            // lblIdMorador
+            // 
+            this.lblIdMorador.AutoSize = true;
+            this.lblIdMorador.Location = new System.Drawing.Point(544, 66);
+            this.lblIdMorador.Name = "lblIdMorador";
+            this.lblIdMorador.Size = new System.Drawing.Size(112, 15);
+            this.lblIdMorador.TabIndex = 65;
+            this.lblIdMorador.Text = "Código do Morador";
+            // 
+            // lblIdCondominio
+            // 
+            this.lblIdCondominio.AutoSize = true;
+            this.lblIdCondominio.Location = new System.Drawing.Point(1022, 232);
+            this.lblIdCondominio.Name = "lblIdCondominio";
+            this.lblIdCondominio.Size = new System.Drawing.Size(133, 15);
+            this.lblIdCondominio.TabIndex = 66;
+            this.lblIdCondominio.Text = "Código do Condomínio";
             // 
             // lblIdPredio
             // 
             this.lblIdPredio.AutoSize = true;
-            this.lblIdPredio.Location = new System.Drawing.Point(505, 32);
+            this.lblIdPredio.Location = new System.Drawing.Point(544, 152);
             this.lblIdPredio.Name = "lblIdPredio";
             this.lblIdPredio.Size = new System.Drawing.Size(100, 15);
-            this.lblIdPredio.TabIndex = 75;
+            this.lblIdPredio.TabIndex = 67;
             this.lblIdPredio.Text = "Código do Prédio";
             // 
-            // lblCodCondominio
+            // lblIdVisitante
             // 
-            this.lblCodCondominio.AutoSize = true;
-            this.lblCodCondominio.Location = new System.Drawing.Point(505, 73);
-            this.lblCodCondominio.Name = "lblCodCondominio";
-            this.lblCodCondominio.Size = new System.Drawing.Size(133, 15);
-            this.lblCodCondominio.TabIndex = 76;
-            this.lblCodCondominio.Text = "Código do Condomínio";
+            this.lblIdVisitante.AutoSize = true;
+            this.lblIdVisitante.Location = new System.Drawing.Point(544, 198);
+            this.lblIdVisitante.Name = "lblIdVisitante";
+            this.lblIdVisitante.Size = new System.Drawing.Size(111, 15);
+            this.lblIdVisitante.TabIndex = 68;
+            this.lblIdVisitante.Text = "Código do Visitante";
             // 
-            // groupInserir
+            // maskedTextBox2
             // 
-            this.groupInserir.Controls.Add(this.btnInsert);
-            this.groupInserir.Location = new System.Drawing.Point(419, 593);
-            this.groupInserir.Name = "groupInserir";
-            this.groupInserir.Size = new System.Drawing.Size(423, 107);
-            this.groupInserir.TabIndex = 76;
-            this.groupInserir.TabStop = false;
-            this.groupInserir.Text = "Inserir";
+            this.maskedTextBox2.Location = new System.Drawing.Point(230, 195);
+            this.maskedTextBox2.Mask = "000.000.000-00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(190, 23);
+            this.maskedTextBox2.TabIndex = 69;
             // 
-            // btnInsert
+            // groupInfo
             // 
-            this.btnInsert.BackColor = System.Drawing.Color.Black;
-            this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInsert.ForeColor = System.Drawing.Color.White;
-            this.btnInsert.Location = new System.Drawing.Point(36, 22);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(356, 66);
-            this.btnInsert.TabIndex = 0;
-            this.btnInsert.Text = "Cadastrar Síndico";
-            this.btnInsert.UseVisualStyleBackColor = false;
+            this.groupInfo.Controls.Add(this.maskedTextBox2);
+            this.groupInfo.Controls.Add(this.lblIdVisitante);
+            this.groupInfo.Controls.Add(this.lblIdPredio);
+            this.groupInfo.Controls.Add(this.lblIdMorador);
+            this.groupInfo.Controls.Add(this.txtPredio);
+            this.groupInfo.Controls.Add(this.txtCondominio);
+            this.groupInfo.Controls.Add(this.mtxCPFMorador);
+            this.groupInfo.Controls.Add(this.lblCPFVisitante);
+            this.groupInfo.Controls.Add(this.lblPredio);
+            this.groupInfo.Controls.Add(this.lblCondominio);
+            this.groupInfo.Controls.Add(this.lblMorador);
+            this.groupInfo.Controls.Add(this.lblIdApartamento);
+            this.groupInfo.Location = new System.Drawing.Point(478, 123);
+            this.groupInfo.Name = "groupInfo";
+            this.groupInfo.Size = new System.Drawing.Size(689, 235);
+            this.groupInfo.TabIndex = 70;
+            this.groupInfo.TabStop = false;
+            this.groupInfo.Text = "Informações do Apartamento";
+            // 
+            // lblDataChegada
+            // 
+            this.lblDataChegada.AutoSize = true;
+            this.lblDataChegada.Location = new System.Drawing.Point(0, 14);
+            this.lblDataChegada.Name = "lblDataChegada";
+            this.lblDataChegada.Size = new System.Drawing.Size(98, 15);
+            this.lblDataChegada.TabIndex = 71;
+            this.lblDataChegada.Text = "Data De Chegada";
+            // 
+            // lblDataSaida
+            // 
+            this.lblDataSaida.AutoSize = true;
+            this.lblDataSaida.Location = new System.Drawing.Point(0, 57);
+            this.lblDataSaida.Name = "lblDataSaida";
+            this.lblDataSaida.Size = new System.Drawing.Size(78, 15);
+            this.lblDataSaida.TabIndex = 72;
+            this.lblDataSaida.Text = "Data de Saída";
+            // 
+            // lblHoraChegada
+            // 
+            this.lblHoraChegada.AutoSize = true;
+            this.lblHoraChegada.Location = new System.Drawing.Point(0, 102);
+            this.lblHoraChegada.Name = "lblHoraChegada";
+            this.lblHoraChegada.Size = new System.Drawing.Size(99, 15);
+            this.lblHoraChegada.TabIndex = 73;
+            this.lblHoraChegada.Text = "Hora de Chegada";
+            // 
+            // lblHoraSaida
+            // 
+            this.lblHoraSaida.AutoSize = true;
+            this.lblHoraSaida.Location = new System.Drawing.Point(0, 146);
+            this.lblHoraSaida.Name = "lblHoraSaida";
+            this.lblHoraSaida.Size = new System.Drawing.Size(80, 15);
+            this.lblHoraSaida.TabIndex = 74;
+            this.lblHoraSaida.Text = "Hora de Saída";
+            // 
+            // dtpHoraChegada
+            // 
+            this.dtpHoraChegada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraChegada.Location = new System.Drawing.Point(230, 96);
+            this.dtpHoraChegada.Name = "dtpHoraChegada";
+            this.dtpHoraChegada.Size = new System.Drawing.Size(190, 23);
+            this.dtpHoraChegada.TabIndex = 75;
+            // 
+            // dtpDataChegada
+            // 
+            this.dtpDataChegada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataChegada.Location = new System.Drawing.Point(230, 8);
+            this.dtpDataChegada.Name = "dtpDataChegada";
+            this.dtpDataChegada.Size = new System.Drawing.Size(190, 23);
+            this.dtpDataChegada.TabIndex = 76;
+            // 
+            // dtpDataSaida
+            // 
+            this.dtpDataSaida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataSaida.Location = new System.Drawing.Point(230, 51);
+            this.dtpDataSaida.Name = "dtpDataSaida";
+            this.dtpDataSaida.Size = new System.Drawing.Size(190, 23);
+            this.dtpDataSaida.TabIndex = 77;
+            // 
+            // dtpHoraSaida
+            // 
+            this.dtpHoraSaida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraSaida.Location = new System.Drawing.Point(230, 140);
+            this.dtpHoraSaida.Name = "dtpHoraSaida";
+            this.dtpHoraSaida.Size = new System.Drawing.Size(190, 23);
+            this.dtpHoraSaida.TabIndex = 78;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dtpHoraSaida);
+            this.groupBox1.Controls.Add(this.dtpDataSaida);
+            this.groupBox1.Controls.Add(this.dtpDataChegada);
+            this.groupBox1.Controls.Add(this.dtpHoraChegada);
+            this.groupBox1.Controls.Add(this.lblHoraSaida);
+            this.groupBox1.Controls.Add(this.lblHoraChegada);
+            this.groupBox1.Controls.Add(this.lblDataSaida);
+            this.groupBox1.Controls.Add(this.lblDataChegada);
+            this.groupBox1.Location = new System.Drawing.Point(478, 367);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(445, 182);
+            this.groupBox1.TabIndex = 79;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Data da Visita";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnCadastrarVisita);
+            this.groupBox2.Location = new System.Drawing.Point(478, 555);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(440, 97);
+            this.groupBox2.TabIndex = 80;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // btnCadastrarVisita
+            // 
+            this.btnCadastrarVisita.BackColor = System.Drawing.Color.Black;
+            this.btnCadastrarVisita.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCadastrarVisita.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrarVisita.Location = new System.Drawing.Point(67, 25);
+            this.btnCadastrarVisita.Name = "btnCadastrarVisita";
+            this.btnCadastrarVisita.Size = new System.Drawing.Size(301, 59);
+            this.btnCadastrarVisita.TabIndex = 0;
+            this.btnCadastrarVisita.Text = "Cadastrar Visita";
+            this.btnCadastrarVisita.UseVisualStyleBackColor = false;
             // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupInserir);
-            this.Controls.Add(this.groupLocal);
-            this.Controls.Add(this.txtEMail);
-            this.Controls.Add(this.groupDocumentacao);
-            this.Controls.Add(this.groupNome);
-            this.Controls.Add(this.lblEMail);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.lblIdCondominio);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
-            this.Controls.Add(this.groupContato);
+            this.Controls.Add(this.groupInfo);
+            this.Controls.Add(this.groupBox1);
             this.Name = "ucInserir";
-            this.Size = new System.Drawing.Size(1370, 800);
+            this.Size = new System.Drawing.Size(1388, 800);
             this.mnsPresentation.ResumeLayout(false);
             this.mnsPresentation.PerformLayout();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
-            this.groupNome.ResumeLayout(false);
-            this.groupNome.PerformLayout();
-            this.groupDocumentacao.ResumeLayout(false);
-            this.groupDocumentacao.PerformLayout();
-            this.groupContato.ResumeLayout(false);
-            this.groupContato.PerformLayout();
-            this.groupLocal.ResumeLayout(false);
-            this.groupLocal.PerformLayout();
-            this.groupInserir.ResumeLayout(false);
+            this.groupInfo.ResumeLayout(false);
+            this.groupInfo.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -831,32 +810,30 @@ namespace ServicoPortaria.Presentation.Sindico
         private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
         private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
         private System.Windows.Forms.ToolStripMenuItem tsmRemove;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Label lblNomePredio;
-        private System.Windows.Forms.Label lblEMail;
-        private System.Windows.Forms.Label lblCelular;
-        private System.Windows.Forms.Label lblDocCivil;
-        private System.Windows.Forms.Label lblRG;
-        private System.Windows.Forms.Label lblCPF;
-        private System.Windows.Forms.Label lblSobrenome;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtSobrenome;
-        private System.Windows.Forms.GroupBox groupNome;
-        private System.Windows.Forms.MaskedTextBox mtxCPF;
-        private System.Windows.Forms.MaskedTextBox mtxRG;
-        private System.Windows.Forms.TextBox txtDocCivil;
-        private System.Windows.Forms.GroupBox groupDocumentacao;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtEMail;
-        private System.Windows.Forms.TextBox txtCelular;
-        private System.Windows.Forms.GroupBox groupContato;
+        private System.Windows.Forms.Label lblIdApartamento;
+        private System.Windows.Forms.Label lblMorador;
         private System.Windows.Forms.Label lblCondominio;
-        private System.Windows.Forms.TextBox txtPredio;
+        private System.Windows.Forms.Label lblPredio;
+        private System.Windows.Forms.Label lblCPFVisitante;
+        private System.Windows.Forms.MaskedTextBox mtxCPFMorador;
         private System.Windows.Forms.TextBox txtCondominio;
-        private System.Windows.Forms.GroupBox groupLocal;
-        private System.Windows.Forms.Label lblCodCondominio;
+        private System.Windows.Forms.TextBox txtPredio;
+        private System.Windows.Forms.Label lblIdMorador;
+        private System.Windows.Forms.Label lblIdCondominio;
         private System.Windows.Forms.Label lblIdPredio;
-        private System.Windows.Forms.GroupBox groupInserir;
-        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Label lblIdVisitante;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.GroupBox groupInfo;
+        private System.Windows.Forms.Label lblDataChegada;
+        private System.Windows.Forms.Label lblDataSaida;
+        private System.Windows.Forms.Label lblHoraChegada;
+        private System.Windows.Forms.Label lblHoraSaida;
+        private System.Windows.Forms.DateTimePicker dtpHoraChegada;
+        private System.Windows.Forms.DateTimePicker dtpDataChegada;
+        private System.Windows.Forms.DateTimePicker dtpDataSaida;
+        private System.Windows.Forms.DateTimePicker dtpHoraSaida;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnCadastrarVisita;
     }
 }
