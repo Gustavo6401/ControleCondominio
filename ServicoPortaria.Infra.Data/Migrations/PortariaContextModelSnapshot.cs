@@ -425,6 +425,12 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Property<int?>("CondominioId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Marca")
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("Modelo")
+                        .HasColumnType("nvarchar(60)");
+
                     b.Property<int>("IdCondominio")
                         .HasColumnType("int");
 

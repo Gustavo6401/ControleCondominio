@@ -31,6 +31,7 @@ namespace ServicoPortaria.Presentation.Veiculo
         {
             components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Size = new System.Drawing.Size(1370, 800);
         }
 
         #endregion
