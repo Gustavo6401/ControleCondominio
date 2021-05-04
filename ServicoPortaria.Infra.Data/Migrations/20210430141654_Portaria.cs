@@ -88,6 +88,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     Fixo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
+                    Foto = table.Column<byte[]>(type: "image", nullable: true),
                     CondominioId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -99,7 +100,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         principalTable: "Condominio",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                });
+                }) ;
 
             migrationBuilder.CreateTable(
                 name: "Predio",

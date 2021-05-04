@@ -50,7 +50,13 @@ namespace ServicoPortaria.Presentation.Login
             this.lblNivel = new System.Windows.Forms.Label();
             this.cmbNivelDeAcesso = new System.Windows.Forms.ComboBox();
             this.lllRegistro = new System.Windows.Forms.LinkLabel();
+            this.mnsCondominio = new System.Windows.Forms.MenuStrip();
+            this.tsmCadastroMorador = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmConsultarMorador = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmModuloVisitante = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblClose = new System.Windows.Forms.Label();
             this.mstMenu.SuspendLayout();
+            this.mnsCondominio.SuspendLayout();
             this.SuspendLayout();
             // 
             // mstMenu
@@ -207,7 +213,7 @@ namespace ServicoPortaria.Presentation.Login
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(523, 0);
+            this.label1.Location = new System.Drawing.Point(495, -43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 25);
             this.label1.TabIndex = 39;
@@ -247,11 +253,58 @@ namespace ServicoPortaria.Presentation.Login
             this.lllRegistro.Text = "Registre-Se";
             this.lllRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllRegistro_LinkClicked);
             // 
+            // mnsCondominio
+            // 
+            this.mnsCondominio.BackColor = System.Drawing.Color.Black;
+            this.mnsCondominio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmCadastroMorador,
+            this.tsmConsultarMorador,
+            this.tsmModuloVisitante});
+            this.mnsCondominio.Location = new System.Drawing.Point(144, 0);
+            this.mnsCondominio.Name = "mnsCondominio";
+            this.mnsCondominio.Size = new System.Drawing.Size(423, 24);
+            this.mnsCondominio.TabIndex = 52;
+            this.mnsCondominio.Text = "Condomínio";
+            // 
+            // tsmCadastroMorador
+            // 
+            this.tsmCadastroMorador.ForeColor = System.Drawing.Color.White;
+            this.tsmCadastroMorador.Name = "tsmCadastroMorador";
+            this.tsmCadastroMorador.Size = new System.Drawing.Size(131, 20);
+            this.tsmCadastroMorador.Text = "Cadastro de Morador";
+            // 
+            // tsmConsultarMorador
+            // 
+            this.tsmConsultarMorador.ForeColor = System.Drawing.Color.White;
+            this.tsmConsultarMorador.Name = "tsmConsultarMorador";
+            this.tsmConsultarMorador.Size = new System.Drawing.Size(133, 20);
+            this.tsmConsultarMorador.Text = "Bloco do Condomíno";
+            // 
+            // tsmModuloVisitante
+            // 
+            this.tsmModuloVisitante.ForeColor = System.Drawing.Color.White;
+            this.tsmModuloVisitante.Name = "tsmModuloVisitante";
+            this.tsmModuloVisitante.Size = new System.Drawing.Size(125, 20);
+            this.tsmModuloVisitante.Text = "Módulo de Visitante";
+            // 
+            // lblClose
+            // 
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(542, 0);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 25);
+            this.lblClose.TabIndex = 61;
+            this.lblClose.Text = "X";
+            // 
             // ucLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lblClose);
+            this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.lllRegistro);
             this.Controls.Add(this.cmbNivelDeAcesso);
             this.Controls.Add(this.lblNivel);
@@ -263,10 +316,12 @@ namespace ServicoPortaria.Presentation.Login
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.mstMenu);
             this.Name = "ucLogin";
-            this.Size = new System.Drawing.Size(547, 334);
+            this.Size = new System.Drawing.Size(567, 334);
             this.Load += new System.EventHandler(this.ucLogin_Load);
             this.mstMenu.ResumeLayout(false);
             this.mstMenu.PerformLayout();
+            this.mnsCondominio.ResumeLayout(false);
+            this.mnsCondominio.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +350,10 @@ namespace ServicoPortaria.Presentation.Login
         private System.Windows.Forms.Label lblNivel;
         private System.Windows.Forms.ComboBox cmbNivelDeAcesso;
         private System.Windows.Forms.LinkLabel lllRegistro;
+        private System.Windows.Forms.MenuStrip mnsCondominio;
+        private System.Windows.Forms.ToolStripMenuItem tsmCadastroMorador;
+        private System.Windows.Forms.ToolStripMenuItem tsmConsultarMorador;
+        private System.Windows.Forms.ToolStripMenuItem tsmModuloVisitante;
+        private System.Windows.Forms.Label lblClose;
     }
 }

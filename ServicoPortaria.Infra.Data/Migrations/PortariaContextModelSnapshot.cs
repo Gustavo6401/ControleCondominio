@@ -185,6 +185,9 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<byte[]>("Foto")
+                        .HasColumnType("image");
+
                     b.Property<int>("IdCondominio")
                         .HasColumnType("int");
 

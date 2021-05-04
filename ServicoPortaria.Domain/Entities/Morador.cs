@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Drawing;
 
 namespace ServicoPortaria.Domain.Entities
 {
@@ -65,6 +66,8 @@ namespace ServicoPortaria.Domain.Entities
         public string EMail { get; set; }
         [DisplayName("Código do Condomínio")]
         public int IdCondominio { get; set; }
+        [DataType("image")]
+        public byte[] Foto { get; set; }
 
         public Condominio Condominio { get; set; }
     }

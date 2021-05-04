@@ -83,6 +83,7 @@ namespace ServicoPortaria.Presentation.Garagem
             this.txtPredio = new System.Windows.Forms.TextBox();
             this.txtCondominio = new System.Windows.Forms.TextBox();
             this.lblIdCondominio = new System.Windows.Forms.Label();
+            this.lblClose = new System.Windows.Forms.Label();
             this.lblIdPredio = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.mnsPresentation.SuspendLayout();
@@ -109,9 +110,9 @@ namespace ServicoPortaria.Presentation.Garagem
             this.editToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.mnsPresentation.Location = new System.Drawing.Point(0, 0);
+            this.mnsPresentation.Location = new System.Drawing.Point(0, 24);
             this.mnsPresentation.Name = "mnsPresentation";
-            this.mnsPresentation.Size = new System.Drawing.Size(137, 800);
+            this.mnsPresentation.Size = new System.Drawing.Size(137, 776);
             this.mnsPresentation.TabIndex = 45;
             // 
             // tmsCondominio
@@ -425,9 +426,9 @@ namespace ServicoPortaria.Presentation.Garagem
             this.tsmConsultarTodos,
             this.tsmUpdate,
             this.tsmRemove});
-            this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
+            this.mnsCondominio.Location = new System.Drawing.Point(0, 0);
             this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(1233, 24);
+            this.mnsCondominio.Size = new System.Drawing.Size(1370, 24);
             this.mnsCondominio.TabIndex = 51;
             this.mnsCondominio.Text = "Condomínio";
             // 
@@ -514,6 +515,17 @@ namespace ServicoPortaria.Presentation.Garagem
             this.lblIdCondominio.TabIndex = 58;
             this.lblIdCondominio.Text = "Código do Condomínio";
             // 
+            // lblClose
+            // 
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1345, 0);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 25);
+            this.lblClose.TabIndex = 60;
+            this.lblClose.Text = "X";
+            // 
             // lblIdPredio
             // 
             this.lblIdPredio.AutoSize = true;
@@ -546,8 +558,9 @@ namespace ServicoPortaria.Presentation.Garagem
             this.Controls.Add(this.txtPredio);
             this.Controls.Add(this.lblCondominio);
             this.Controls.Add(this.lblPredio);
-            this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
+            this.Controls.Add(this.lblClose);
+            this.Controls.Add(this.mnsCondominio);
             this.Name = "ucInserir";
             this.Size = new System.Drawing.Size(1370, 800);
             this.mnsPresentation.ResumeLayout(false);
@@ -616,5 +629,6 @@ namespace ServicoPortaria.Presentation.Garagem
         private System.Windows.Forms.Label lblIdCondominio;
         private System.Windows.Forms.Label lblIdPredio;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Label lblClose;
     }
 }
