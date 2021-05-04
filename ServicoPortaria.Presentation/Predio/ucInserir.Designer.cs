@@ -33,6 +33,10 @@ namespace ServicoPortaria.Presentation.Predio
             this.mnsPresentation = new System.Windows.Forms.MenuStrip();
             this.tmsCondominio = new System.Windows.Forms.ToolStripMenuItem();
             this.tmsPredio = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmConsultar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmRemove = new System.Windows.Forms.ToolStripMenuItem();
             this.tmsMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,24 +75,22 @@ namespace ServicoPortaria.Presentation.Predio
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsCondominio = new System.Windows.Forms.MenuStrip();
-            this.tsmCadastroMorador = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultar = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultarComId = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmRemove = new System.Windows.Forms.ToolStripMenuItem();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
             this.lblCondominio = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtCondominio = new System.Windows.Forms.TextBox();
+            this.nudNumero = new System.Windows.Forms.NumericUpDown();
             this.lblIdCondominio = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.mnsCondominio = new System.Windows.Forms.MenuStrip();
+            this.tsmCadastroMorador = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmConsultarMorador = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmModuloVisitante = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblClose = new System.Windows.Forms.Label();
             this.mnsPresentation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
             this.mnsCondominio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -118,7 +120,6 @@ namespace ServicoPortaria.Presentation.Predio
             // 
             // tmsCondominio
             // 
-            this.tmsCondominio.Enabled = false;
             this.tmsCondominio.ForeColor = System.Drawing.Color.White;
             this.tmsCondominio.Name = "tmsCondominio";
             this.tmsCondominio.Size = new System.Drawing.Size(124, 19);
@@ -126,10 +127,40 @@ namespace ServicoPortaria.Presentation.Predio
             // 
             // tmsPredio
             // 
+            this.tmsPredio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmConsultar,
+            this.tsmConsultarTodos,
+            this.tsmUpdate,
+            this.tsmRemove});
+            this.tmsPredio.Enabled = false;
             this.tmsPredio.ForeColor = System.Drawing.Color.White;
             this.tmsPredio.Name = "tmsPredio";
             this.tmsPredio.Size = new System.Drawing.Size(124, 19);
             this.tmsPredio.Text = "Prédio";
+            // 
+            // tsmConsultar
+            // 
+            this.tsmConsultar.Name = "tsmConsultar";
+            this.tsmConsultar.Size = new System.Drawing.Size(161, 22);
+            this.tsmConsultar.Text = "Consultar";
+            // 
+            // tsmConsultarTodos
+            // 
+            this.tsmConsultarTodos.Name = "tsmConsultarTodos";
+            this.tsmConsultarTodos.Size = new System.Drawing.Size(161, 22);
+            this.tsmConsultarTodos.Text = "Consultar Todos";
+            // 
+            // tsmUpdate
+            // 
+            this.tsmUpdate.Name = "tsmUpdate";
+            this.tsmUpdate.Size = new System.Drawing.Size(161, 22);
+            this.tsmUpdate.Text = "Modificar Dados";
+            // 
+            // tsmRemove
+            // 
+            this.tsmRemove.Name = "tsmRemove";
+            this.tsmRemove.Size = new System.Drawing.Size(161, 22);
+            this.tsmRemove.Text = "Deletar Dados";
             // 
             // tmsMorador
             // 
@@ -416,64 +447,6 @@ namespace ServicoPortaria.Presentation.Predio
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
-            // mnsCondominio
-            // 
-            this.mnsCondominio.BackColor = System.Drawing.Color.Black;
-            this.mnsCondominio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmCadastroMorador,
-            this.tsmConsultar,
-            this.tsmConsultarComId,
-            this.tsmConsultarTodos,
-            this.tsmUpdate,
-            this.tsmRemove});
-            this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
-            this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(1593, 24);
-            this.mnsCondominio.TabIndex = 46;
-            this.mnsCondominio.Text = "Condomínio";
-            // 
-            // tsmCadastroMorador
-            // 
-            this.tsmCadastroMorador.ForeColor = System.Drawing.Color.White;
-            this.tsmCadastroMorador.Name = "tsmCadastroMorador";
-            this.tsmCadastroMorador.Size = new System.Drawing.Size(131, 20);
-            this.tsmCadastroMorador.Text = "Cadastro de Morador";
-            // 
-            // tsmConsultar
-            // 
-            this.tsmConsultar.ForeColor = System.Drawing.Color.White;
-            this.tsmConsultar.Name = "tsmConsultar";
-            this.tsmConsultar.Size = new System.Drawing.Size(70, 20);
-            this.tsmConsultar.Text = "Consultar";
-            // 
-            // tsmConsultarComId
-            // 
-            this.tsmConsultarComId.ForeColor = System.Drawing.Color.White;
-            this.tsmConsultarComId.Name = "tsmConsultarComId";
-            this.tsmConsultarComId.Size = new System.Drawing.Size(141, 20);
-            this.tsmConsultarComId.Text = "Consultar Com Código";
-            // 
-            // tsmConsultarTodos
-            // 
-            this.tsmConsultarTodos.ForeColor = System.Drawing.Color.White;
-            this.tsmConsultarTodos.Name = "tsmConsultarTodos";
-            this.tsmConsultarTodos.Size = new System.Drawing.Size(101, 20);
-            this.tsmConsultarTodos.Text = "ConsultarTodos";
-            // 
-            // tsmUpdate
-            // 
-            this.tsmUpdate.ForeColor = System.Drawing.Color.White;
-            this.tsmUpdate.Name = "tsmUpdate";
-            this.tsmUpdate.Size = new System.Drawing.Size(106, 20);
-            this.tsmUpdate.Text = "Modificar Dados";
-            // 
-            // tsmRemove
-            // 
-            this.tsmRemove.ForeColor = System.Drawing.Color.White;
-            this.tsmRemove.Name = "tsmRemove";
-            this.tsmRemove.Size = new System.Drawing.Size(92, 20);
-            this.tsmRemove.Text = "Deletar Dados";
-            // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
@@ -501,26 +474,26 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblCondominio.TabIndex = 50;
             this.lblCondominio.Text = "Condomínio";
             // 
-            // textBox2
+            // txtNome
             // 
-            this.textBox2.Location = new System.Drawing.Point(887, 344);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 23);
-            this.textBox2.TabIndex = 52;
+            this.txtNome.Location = new System.Drawing.Point(887, 344);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(207, 23);
+            this.txtNome.TabIndex = 52;
             // 
-            // textBox3
+            // txtCondominio
             // 
-            this.textBox3.Location = new System.Drawing.Point(887, 452);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(207, 23);
-            this.textBox3.TabIndex = 53;
+            this.txtCondominio.Location = new System.Drawing.Point(887, 452);
+            this.txtCondominio.Name = "txtCondominio";
+            this.txtCondominio.Size = new System.Drawing.Size(207, 23);
+            this.txtCondominio.TabIndex = 53;
             // 
-            // numericUpDown1
+            // nudNumero
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(887, 396);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(207, 23);
-            this.numericUpDown1.TabIndex = 54;
+            this.nudNumero.Location = new System.Drawing.Point(887, 396);
+            this.nudNumero.Name = "nudNumero";
+            this.nudNumero.Size = new System.Drawing.Size(207, 23);
+            this.nudNumero.TabIndex = 54;
             // 
             // lblIdCondominio
             // 
@@ -533,34 +506,86 @@ namespace ServicoPortaria.Presentation.Predio
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.Black;
+            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
             this.btnCadastrar.Location = new System.Drawing.Point(784, 556);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(259, 58);
             this.btnCadastrar.TabIndex = 56;
             this.btnCadastrar.Text = "Cadastrar Prédio";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // mnsCondominio
+            // 
+            this.mnsCondominio.BackColor = System.Drawing.Color.Black;
+            this.mnsCondominio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmCadastroMorador,
+            this.tsmConsultarMorador,
+            this.tsmModuloVisitante});
+            this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
+            this.mnsCondominio.Name = "mnsCondominio";
+            this.mnsCondominio.Size = new System.Drawing.Size(1593, 24);
+            this.mnsCondominio.TabIndex = 63;
+            this.mnsCondominio.Text = "Condomínio";
+            // 
+            // tsmCadastroMorador
+            // 
+            this.tsmCadastroMorador.ForeColor = System.Drawing.Color.White;
+            this.tsmCadastroMorador.Name = "tsmCadastroMorador";
+            this.tsmCadastroMorador.Size = new System.Drawing.Size(131, 20);
+            this.tsmCadastroMorador.Text = "Cadastro de Morador";
+            // 
+            // tsmConsultarMorador
+            // 
+            this.tsmConsultarMorador.ForeColor = System.Drawing.Color.White;
+            this.tsmConsultarMorador.Name = "tsmConsultarMorador";
+            this.tsmConsultarMorador.Size = new System.Drawing.Size(133, 20);
+            this.tsmConsultarMorador.Text = "Bloco do Condomíno";
+            // 
+            // tsmModuloVisitante
+            // 
+            this.tsmModuloVisitante.ForeColor = System.Drawing.Color.White;
+            this.tsmModuloVisitante.Name = "tsmModuloVisitante";
+            this.tsmModuloVisitante.Size = new System.Drawing.Size(125, 20);
+            this.tsmModuloVisitante.Text = "Módulo de Visitante";
+            // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1706, -1);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(24, 25);
+            this.lblClose.TabIndex = 64;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblClose);
+            this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.lblIdCondominio);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.nudNumero);
+            this.Controls.Add(this.txtCondominio);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblCondominio);
             this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
             this.Name = "ucInserir";
             this.Size = new System.Drawing.Size(1730, 800);
             this.mnsPresentation.ResumeLayout(false);
             this.mnsPresentation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).EndInit();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -609,20 +634,22 @@ namespace ServicoPortaria.Presentation.Predio
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip mnsCondominio;
-        private System.Windows.Forms.ToolStripMenuItem tsmCadastroMorador;
-        private System.Windows.Forms.ToolStripMenuItem tsmConsultar;
-        private System.Windows.Forms.ToolStripMenuItem tsmConsultarComId;
-        private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
-        private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
-        private System.Windows.Forms.ToolStripMenuItem tsmRemove;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.Label lblCondominio;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtCondominio;
+        private System.Windows.Forms.NumericUpDown nudNumero;
         private System.Windows.Forms.Label lblIdCondominio;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.ToolStripMenuItem tsmConsultar;
+        private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
+        private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
+        private System.Windows.Forms.ToolStripMenuItem tsmRemove;
+        private System.Windows.Forms.MenuStrip mnsCondominio;
+        private System.Windows.Forms.ToolStripMenuItem tsmCadastroMorador;
+        private System.Windows.Forms.ToolStripMenuItem tsmConsultarMorador;
+        private System.Windows.Forms.ToolStripMenuItem tsmModuloVisitante;
+        private System.Windows.Forms.Label lblClose;
     }
 }

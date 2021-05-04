@@ -56,7 +56,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmDeletar = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmsPredio = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmPredio = new System.Windows.Forms.ToolStripMenuItem();
             this.tmsMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
@@ -279,7 +279,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmConsultarTodos,
             this.tsmUpdate,
             this.tsmDeletar,
-            this.tmsPredio,
+            this.tsmPredio,
             this.tmsMorador,
             this.tsmApartamento,
             this.tsmVisitante,
@@ -348,12 +348,13 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmDeletar.Text = "Deletar Dados";
             this.tsmDeletar.Click += new System.EventHandler(this.tsmRemove_Click);
             // 
-            // tmsPredio
+            // tsmPredio
             // 
-            this.tmsPredio.ForeColor = System.Drawing.Color.White;
-            this.tmsPredio.Name = "tmsPredio";
-            this.tmsPredio.Size = new System.Drawing.Size(124, 19);
-            this.tmsPredio.Text = "Prédio";
+            this.tsmPredio.ForeColor = System.Drawing.Color.White;
+            this.tsmPredio.Name = "tsmPredio";
+            this.tsmPredio.Size = new System.Drawing.Size(124, 19);
+            this.tsmPredio.Text = "Prédio";
+            this.tsmPredio.Click += new System.EventHandler(this.tsmPredio_Click);
             // 
             // tmsMorador
             // 
@@ -749,7 +750,7 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.MenuStrip mnsPresentation;
         private System.Windows.Forms.ToolStripMenuItem tmsCondominio;
-        private System.Windows.Forms.ToolStripMenuItem tmsPredio;
+        private System.Windows.Forms.ToolStripMenuItem tsmPredio;
         private System.Windows.Forms.ToolStripMenuItem tmsMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmApartamento;
         private System.Windows.Forms.ToolStripMenuItem tsmVisitante;

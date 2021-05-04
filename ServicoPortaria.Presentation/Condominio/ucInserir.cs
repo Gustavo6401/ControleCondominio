@@ -114,5 +114,11 @@ namespace ServicoPortaria.Presentation.Condominio
         {
 
         }
+
+        private void tsmPredio_Click(object sender, EventArgs e)
+        {
+            ServicoPortaria.Presentation.Predio.Forms.frmInserir inserir = new Predio.Forms.frmInserir();
+            inserir.Show();
+        }
     }
 }
