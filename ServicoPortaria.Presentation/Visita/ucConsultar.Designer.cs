@@ -1,7 +1,7 @@
 ﻿
-namespace ServicoPortaria.Presentation.Condominio
+namespace ServicoPortaria.Presentation.Visita
 {
-    partial class ucInserir
+    partial class ucConsultar
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -29,33 +29,9 @@ namespace ServicoPortaria.Presentation.Condominio
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucInserir));
-            this.txtPais = new System.Windows.Forms.TextBox();
-            this.txtProvincia = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.txtCodPostal = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblPais = new System.Windows.Forms.Label();
-            this.lblProvincia = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.lblCondominio = new System.Windows.Forms.Label();
-            this.lblCodPostal = new System.Windows.Forms.Label();
-            this.lblCEP = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.btnInserir = new System.Windows.Forms.Button();
-            this.mtxCEP = new System.Windows.Forms.MaskedTextBox();
-            this.nudNumero = new System.Windows.Forms.NumericUpDown();
-            this.lblRua = new System.Windows.Forms.Label();
-            this.txtRua = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucConsultar));
             this.mnsPresentation = new System.Windows.Forms.MenuStrip();
             this.tmsCondominio = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmInserir = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultar = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmDeletar = new System.Windows.Forms.ToolStripMenuItem();
             this.tmsPredio = new System.Windows.Forms.ToolStripMenuItem();
             this.tmsMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,178 +71,43 @@ namespace ServicoPortaria.Presentation.Condominio
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblClose = new System.Windows.Forms.Label();
             this.mnsCondominio = new System.Windows.Forms.MenuStrip();
             this.tsmCadastroMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmConsultarMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmModuloVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.lblCPFVisitante = new System.Windows.Forms.Label();
+            this.lblIdApartamento = new System.Windows.Forms.Label();
+            this.lblCodigoPredio = new System.Windows.Forms.Label();
+            this.lblIdVisitante = new System.Windows.Forms.Label();
+            this.lblNomeCondominio = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblNomePredio = new System.Windows.Forms.Label();
+            this.lblIdCondominio = new System.Windows.Forms.Label();
+            this.lblHoraSaida = new System.Windows.Forms.Label();
+            this.lblDataChegada = new System.Windows.Forms.Label();
+            this.lblDataSaida = new System.Windows.Forms.Label();
+            this.lblHoraChegada = new System.Windows.Forms.Label();
+            this.txtPredio = new System.Windows.Forms.TextBox();
+            this.txtApartamento = new System.Windows.Forms.TextBox();
+            this.txtCondominio = new System.Windows.Forms.TextBox();
+            this.dtpDataChegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraChegada = new System.Windows.Forms.DateTimePicker();
+            this.groupDadosVisita = new System.Windows.Forms.GroupBox();
+            this.groupDate = new System.Windows.Forms.GroupBox();
+            this.groupCodigo = new System.Windows.Forms.GroupBox();
+            this.groupConsultar = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.mtxCPF = new System.Windows.Forms.MaskedTextBox();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
+            this.groupDadosVisita.SuspendLayout();
+            this.groupDate.SuspendLayout();
+            this.groupCodigo.SuspendLayout();
+            this.groupConsultar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtPais
-            // 
-            this.txtPais.Location = new System.Drawing.Point(719, 482);
-            this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(243, 23);
-            this.txtPais.TabIndex = 34;
-            // 
-            // txtProvincia
-            // 
-            this.txtProvincia.Location = new System.Drawing.Point(719, 448);
-            this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.Size = new System.Drawing.Size(243, 23);
-            this.txtProvincia.TabIndex = 33;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(719, 416);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(243, 23);
-            this.txtEstado.TabIndex = 32;
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(719, 383);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(243, 23);
-            this.txtCidade.TabIndex = 31;
-            // 
-            // txtCodPostal
-            // 
-            this.txtCodPostal.Location = new System.Drawing.Point(719, 301);
-            this.txtCodPostal.Name = "txtCodPostal";
-            this.txtCodPostal.Size = new System.Drawing.Size(243, 23);
-            this.txtCodPostal.TabIndex = 28;
-            this.txtCodPostal.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(719, 172);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(243, 23);
-            this.txtNome.TabIndex = 27;
-            // 
-            // lblPais
-            // 
-            this.lblPais.AutoSize = true;
-            this.lblPais.Location = new System.Drawing.Point(561, 485);
-            this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(28, 15);
-            this.lblPais.TabIndex = 26;
-            this.lblPais.Text = "País";
-            // 
-            // lblProvincia
-            // 
-            this.lblProvincia.AutoSize = true;
-            this.lblProvincia.Location = new System.Drawing.Point(561, 451);
-            this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(56, 15);
-            this.lblProvincia.TabIndex = 25;
-            this.lblProvincia.Text = "Província";
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(561, 419);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(42, 15);
-            this.lblEstado.TabIndex = 24;
-            this.lblEstado.Text = "Estado";
-            // 
-            // lblCidade
-            // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(561, 383);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(44, 15);
-            this.lblCidade.TabIndex = 23;
-            this.lblCidade.Text = "Cidade";
-            // 
-            // lblCondominio
-            // 
-            this.lblCondominio.AutoSize = true;
-            this.lblCondominio.Location = new System.Drawing.Point(561, 347);
-            this.lblCondominio.Name = "lblCondominio";
-            this.lblCondominio.Size = new System.Drawing.Size(138, 15);
-            this.lblCondominio.TabIndex = 22;
-            this.lblCondominio.Text = "Número do Condomínio";
-            // 
-            // lblCodPostal
-            // 
-            this.lblCodPostal.AutoSize = true;
-            this.lblCodPostal.Location = new System.Drawing.Point(561, 304);
-            this.lblCodPostal.Name = "lblCodPostal";
-            this.lblCodPostal.Size = new System.Drawing.Size(81, 15);
-            this.lblCodPostal.TabIndex = 21;
-            this.lblCodPostal.Text = "Código Postal";
-            // 
-            // lblCEP
-            // 
-            this.lblCEP.AutoSize = true;
-            this.lblCEP.Location = new System.Drawing.Point(561, 220);
-            this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(28, 15);
-            this.lblCEP.TabIndex = 20;
-            this.lblCEP.Text = "CEP";
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(561, 175);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(40, 15);
-            this.lblNome.TabIndex = 19;
-            this.lblNome.Text = "Nome";
-            // 
-            // btnInserir
-            // 
-            this.btnInserir.BackColor = System.Drawing.Color.Blue;
-            this.btnInserir.ForeColor = System.Drawing.Color.White;
-            this.btnInserir.Location = new System.Drawing.Point(666, 538);
-            this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(216, 61);
-            this.btnInserir.TabIndex = 35;
-            this.btnInserir.Text = "Inserir Dados";
-            this.btnInserir.UseVisualStyleBackColor = false;
-            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
-            // 
-            // mtxCEP
-            // 
-            this.mtxCEP.Location = new System.Drawing.Point(719, 217);
-            this.mtxCEP.Mask = "00000-000";
-            this.mtxCEP.Name = "mtxCEP";
-            this.mtxCEP.Size = new System.Drawing.Size(243, 23);
-            this.mtxCEP.TabIndex = 37;
-            // 
-            // nudNumero
-            // 
-            this.nudNumero.Location = new System.Drawing.Point(719, 345);
-            this.nudNumero.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.nudNumero.Name = "nudNumero";
-            this.nudNumero.Size = new System.Drawing.Size(243, 23);
-            this.nudNumero.TabIndex = 39;
-            // 
-            // lblRua
-            // 
-            this.lblRua.AutoSize = true;
-            this.lblRua.Location = new System.Drawing.Point(561, 264);
-            this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(27, 15);
-            this.lblRua.TabIndex = 40;
-            this.lblRua.Text = "Rua";
-            // 
-            // txtRua
-            // 
-            this.txtRua.Location = new System.Drawing.Point(719, 261);
-            this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(243, 23);
-            this.txtRua.TabIndex = 41;
             // 
             // mnsPresentation
             // 
@@ -274,11 +115,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.mnsPresentation.Dock = System.Windows.Forms.DockStyle.Left;
             this.mnsPresentation.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tmsCondominio,
-            this.tsmInserir,
-            this.tsmConsultar,
-            this.tsmConsultarTodos,
-            this.tsmUpdate,
-            this.tsmDeletar,
             this.tmsPredio,
             this.tmsMorador,
             this.tsmApartamento,
@@ -295,58 +131,16 @@ namespace ServicoPortaria.Presentation.Condominio
             this.helpToolStripMenuItem});
             this.mnsPresentation.Location = new System.Drawing.Point(0, 0);
             this.mnsPresentation.Name = "mnsPresentation";
-            this.mnsPresentation.Size = new System.Drawing.Size(137, 749);
-            this.mnsPresentation.TabIndex = 43;
+            this.mnsPresentation.Size = new System.Drawing.Size(137, 800);
+            this.mnsPresentation.TabIndex = 53;
             // 
             // tmsCondominio
             // 
-            this.tmsCondominio.AutoSize = false;
             this.tmsCondominio.Enabled = false;
             this.tmsCondominio.ForeColor = System.Drawing.Color.White;
             this.tmsCondominio.Name = "tmsCondominio";
             this.tmsCondominio.Size = new System.Drawing.Size(124, 19);
             this.tmsCondominio.Text = "Condomínio";
-            // 
-            // tsmInserir
-            // 
-            this.tsmInserir.Enabled = false;
-            this.tsmInserir.ForeColor = System.Drawing.Color.White;
-            this.tsmInserir.Name = "tsmInserir";
-            this.tsmInserir.Size = new System.Drawing.Size(124, 19);
-            this.tsmInserir.Text = "Inserir";
-            this.tsmInserir.Click += new System.EventHandler(this.tsmInserir_Click);
-            // 
-            // tsmConsultar
-            // 
-            this.tsmConsultar.ForeColor = System.Drawing.Color.Red;
-            this.tsmConsultar.Name = "tsmConsultar";
-            this.tsmConsultar.Size = new System.Drawing.Size(124, 19);
-            this.tsmConsultar.Text = "Consultar";
-            this.tsmConsultar.Click += new System.EventHandler(this.tsmConsultar_Click);
-            // 
-            // tsmConsultarTodos
-            // 
-            this.tsmConsultarTodos.ForeColor = System.Drawing.Color.Red;
-            this.tsmConsultarTodos.Name = "tsmConsultarTodos";
-            this.tsmConsultarTodos.Size = new System.Drawing.Size(124, 19);
-            this.tsmConsultarTodos.Text = "Consultar Todos";
-            this.tsmConsultarTodos.Click += new System.EventHandler(this.tsmConsultarTodos_Click);
-            // 
-            // tsmUpdate
-            // 
-            this.tsmUpdate.ForeColor = System.Drawing.Color.Red;
-            this.tsmUpdate.Name = "tsmUpdate";
-            this.tsmUpdate.Size = new System.Drawing.Size(124, 19);
-            this.tsmUpdate.Text = "Modificar";
-            this.tsmUpdate.Click += new System.EventHandler(this.tsmUpdate_Click);
-            // 
-            // tsmDeletar
-            // 
-            this.tsmDeletar.ForeColor = System.Drawing.Color.Red;
-            this.tsmDeletar.Name = "tsmDeletar";
-            this.tsmDeletar.Size = new System.Drawing.Size(124, 19);
-            this.tsmDeletar.Text = "Deletar Dados";
-            this.tsmDeletar.Click += new System.EventHandler(this.tsmRemove_Click);
             // 
             // tmsPredio
             // 
@@ -640,19 +434,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
-            // lblClose
-            // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.BackColor = System.Drawing.Color.Red;
-            this.lblClose.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(1346, -1);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(24, 25);
-            this.lblClose.TabIndex = 45;
-            this.lblClose.Text = "X";
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
-            // 
             // mnsCondominio
             // 
             this.mnsCondominio.BackColor = System.Drawing.Color.Black;
@@ -663,7 +444,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
             this.mnsCondominio.Name = "mnsCondominio";
             this.mnsCondominio.Size = new System.Drawing.Size(1233, 24);
-            this.mnsCondominio.TabIndex = 62;
+            this.mnsCondominio.TabIndex = 61;
             this.mnsCondominio.Text = "Condomínio";
             // 
             // tsmCadastroMorador
@@ -687,39 +468,280 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmModuloVisitante.Size = new System.Drawing.Size(125, 20);
             this.tsmModuloVisitante.Text = "Módulo de Visitante";
             // 
-            // ucInserir
+            // lblClose
+            // 
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1345, 0);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 25);
+            this.lblClose.TabIndex = 64;
+            this.lblClose.Text = "X";
+            // 
+            // lblCPFVisitante
+            // 
+            this.lblCPFVisitante.AutoSize = true;
+            this.lblCPFVisitante.Location = new System.Drawing.Point(32, 28);
+            this.lblCPFVisitante.Name = "lblCPFVisitante";
+            this.lblCPFVisitante.Size = new System.Drawing.Size(93, 15);
+            this.lblCPFVisitante.TabIndex = 65;
+            this.lblCPFVisitante.Text = "CPF do Visitante";
+            // 
+            // lblIdApartamento
+            // 
+            this.lblIdApartamento.AutoSize = true;
+            this.lblIdApartamento.Location = new System.Drawing.Point(74, 109);
+            this.lblIdApartamento.Name = "lblIdApartamento";
+            this.lblIdApartamento.Size = new System.Drawing.Size(136, 15);
+            this.lblIdApartamento.TabIndex = 66;
+            this.lblIdApartamento.Text = "Código do Apartamento";
+            // 
+            // lblCodigoPredio
+            // 
+            this.lblCodigoPredio.AutoSize = true;
+            this.lblCodigoPredio.Location = new System.Drawing.Point(74, 66);
+            this.lblCodigoPredio.Name = "lblCodigoPredio";
+            this.lblCodigoPredio.Size = new System.Drawing.Size(100, 15);
+            this.lblCodigoPredio.TabIndex = 67;
+            this.lblCodigoPredio.Text = "Código do Prédio";
+            this.lblCodigoPredio.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblIdVisitante
+            // 
+            this.lblIdVisitante.AutoSize = true;
+            this.lblIdVisitante.Location = new System.Drawing.Point(74, 28);
+            this.lblIdVisitante.Name = "lblIdVisitante";
+            this.lblIdVisitante.Size = new System.Drawing.Size(111, 15);
+            this.lblIdVisitante.TabIndex = 68;
+            this.lblIdVisitante.Text = "Código do Visitante";
+            // 
+            // lblNomeCondominio
+            // 
+            this.lblNomeCondominio.AutoSize = true;
+            this.lblNomeCondominio.Location = new System.Drawing.Point(32, 157);
+            this.lblNomeCondominio.Name = "lblNomeCondominio";
+            this.lblNomeCondominio.Size = new System.Drawing.Size(127, 15);
+            this.lblNomeCondominio.TabIndex = 69;
+            this.lblNomeCondominio.Text = "Nome do Condomínio";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(32, 114);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 15);
+            this.label6.TabIndex = 70;
+            this.label6.Text = "Nome do Apartamento";
+            // 
+            // lblNomePredio
+            // 
+            this.lblNomePredio.AutoSize = true;
+            this.lblNomePredio.Location = new System.Drawing.Point(32, 71);
+            this.lblNomePredio.Name = "lblNomePredio";
+            this.lblNomePredio.Size = new System.Drawing.Size(94, 15);
+            this.lblNomePredio.TabIndex = 71;
+            this.lblNomePredio.Text = "Nome do Prédio";
+            // 
+            // lblIdCondominio
+            // 
+            this.lblIdCondominio.AutoSize = true;
+            this.lblIdCondominio.Location = new System.Drawing.Point(74, 152);
+            this.lblIdCondominio.Name = "lblIdCondominio";
+            this.lblIdCondominio.Size = new System.Drawing.Size(133, 15);
+            this.lblIdCondominio.TabIndex = 72;
+            this.lblIdCondominio.Text = "Código do Condomínio";
+            // 
+            // lblHoraSaida
+            // 
+            this.lblHoraSaida.AutoSize = true;
+            this.lblHoraSaida.Location = new System.Drawing.Point(32, 132);
+            this.lblHoraSaida.Name = "lblHoraSaida";
+            this.lblHoraSaida.Size = new System.Drawing.Size(80, 15);
+            this.lblHoraSaida.TabIndex = 76;
+            this.lblHoraSaida.Text = "Hora de Saída";
+            // 
+            // lblDataChegada
+            // 
+            this.lblDataChegada.AutoSize = true;
+            this.lblDataChegada.Location = new System.Drawing.Point(32, 19);
+            this.lblDataChegada.Name = "lblDataChegada";
+            this.lblDataChegada.Size = new System.Drawing.Size(97, 15);
+            this.lblDataChegada.TabIndex = 75;
+            this.lblDataChegada.Text = "Data de Chegada";
+            // 
+            // lblDataSaida
+            // 
+            this.lblDataSaida.AutoSize = true;
+            this.lblDataSaida.Location = new System.Drawing.Point(32, 56);
+            this.lblDataSaida.Name = "lblDataSaida";
+            this.lblDataSaida.Size = new System.Drawing.Size(78, 15);
+            this.lblDataSaida.TabIndex = 74;
+            this.lblDataSaida.Text = "Data de Saída";
+            // 
+            // lblHoraChegada
+            // 
+            this.lblHoraChegada.AutoSize = true;
+            this.lblHoraChegada.Location = new System.Drawing.Point(32, 93);
+            this.lblHoraChegada.Name = "lblHoraChegada";
+            this.lblHoraChegada.Size = new System.Drawing.Size(99, 15);
+            this.lblHoraChegada.TabIndex = 73;
+            this.lblHoraChegada.Text = "Hora de Chegada";
+            // 
+            // txtPredio
+            // 
+            this.txtPredio.Location = new System.Drawing.Point(193, 63);
+            this.txtPredio.Name = "txtPredio";
+            this.txtPredio.Size = new System.Drawing.Size(236, 23);
+            this.txtPredio.TabIndex = 78;
+            // 
+            // txtApartamento
+            // 
+            this.txtApartamento.Location = new System.Drawing.Point(193, 106);
+            this.txtApartamento.Name = "txtApartamento";
+            this.txtApartamento.Size = new System.Drawing.Size(236, 23);
+            this.txtApartamento.TabIndex = 79;
+            // 
+            // txtCondominio
+            // 
+            this.txtCondominio.Location = new System.Drawing.Point(193, 149);
+            this.txtCondominio.Name = "txtCondominio";
+            this.txtCondominio.Size = new System.Drawing.Size(236, 23);
+            this.txtCondominio.TabIndex = 80;
+            // 
+            // dtpDataChegada
+            // 
+            this.dtpDataChegada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataChegada.Location = new System.Drawing.Point(193, 15);
+            this.dtpDataChegada.Name = "dtpDataChegada";
+            this.dtpDataChegada.Size = new System.Drawing.Size(104, 23);
+            this.dtpDataChegada.TabIndex = 81;
+            // 
+            // dtpDataSaida
+            // 
+            this.dtpDataSaida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataSaida.Location = new System.Drawing.Point(193, 50);
+            this.dtpDataSaida.Name = "dtpDataSaida";
+            this.dtpDataSaida.Size = new System.Drawing.Size(104, 23);
+            this.dtpDataSaida.TabIndex = 82;
+            // 
+            // dtpHoraSaida
+            // 
+            this.dtpHoraSaida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraSaida.Location = new System.Drawing.Point(193, 126);
+            this.dtpHoraSaida.Name = "dtpHoraSaida";
+            this.dtpHoraSaida.Size = new System.Drawing.Size(104, 23);
+            this.dtpHoraSaida.TabIndex = 84;
+            // 
+            // dtpHoraChegada
+            // 
+            this.dtpHoraChegada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraChegada.Location = new System.Drawing.Point(193, 87);
+            this.dtpHoraChegada.Name = "dtpHoraChegada";
+            this.dtpHoraChegada.Size = new System.Drawing.Size(104, 23);
+            this.dtpHoraChegada.TabIndex = 83;
+            // 
+            // groupDadosVisita
+            // 
+            this.groupDadosVisita.Controls.Add(this.mtxCPF);
+            this.groupDadosVisita.Controls.Add(this.txtCondominio);
+            this.groupDadosVisita.Controls.Add(this.txtApartamento);
+            this.groupDadosVisita.Controls.Add(this.txtPredio);
+            this.groupDadosVisita.Controls.Add(this.lblNomePredio);
+            this.groupDadosVisita.Controls.Add(this.label6);
+            this.groupDadosVisita.Controls.Add(this.lblNomeCondominio);
+            this.groupDadosVisita.Controls.Add(this.lblCPFVisitante);
+            this.groupDadosVisita.Location = new System.Drawing.Point(240, 135);
+            this.groupDadosVisita.Name = "groupDadosVisita";
+            this.groupDadosVisita.Size = new System.Drawing.Size(435, 185);
+            this.groupDadosVisita.TabIndex = 85;
+            this.groupDadosVisita.TabStop = false;
+            this.groupDadosVisita.Text = "Dados da Visita";
+            // 
+            // groupDate
+            // 
+            this.groupDate.Controls.Add(this.dtpHoraSaida);
+            this.groupDate.Controls.Add(this.dtpHoraChegada);
+            this.groupDate.Controls.Add(this.dtpDataSaida);
+            this.groupDate.Controls.Add(this.dtpDataChegada);
+            this.groupDate.Controls.Add(this.lblHoraSaida);
+            this.groupDate.Controls.Add(this.lblDataChegada);
+            this.groupDate.Controls.Add(this.lblDataSaida);
+            this.groupDate.Controls.Add(this.lblHoraChegada);
+            this.groupDate.Location = new System.Drawing.Point(240, 324);
+            this.groupDate.Name = "groupDate";
+            this.groupDate.Size = new System.Drawing.Size(435, 167);
+            this.groupDate.TabIndex = 86;
+            this.groupDate.TabStop = false;
+            this.groupDate.Text = "Data de Chegada";
+            // 
+            // groupCodigo
+            // 
+            this.groupCodigo.Controls.Add(this.lblIdCondominio);
+            this.groupCodigo.Controls.Add(this.lblIdVisitante);
+            this.groupCodigo.Controls.Add(this.lblCodigoPredio);
+            this.groupCodigo.Controls.Add(this.lblIdApartamento);
+            this.groupCodigo.Location = new System.Drawing.Point(785, 135);
+            this.groupCodigo.Name = "groupCodigo";
+            this.groupCodigo.Size = new System.Drawing.Size(249, 184);
+            this.groupCodigo.TabIndex = 87;
+            this.groupCodigo.TabStop = false;
+            this.groupCodigo.Text = "Código";
+            // 
+            // groupConsultar
+            // 
+            this.groupConsultar.Controls.Add(this.btnConsultar);
+            this.groupConsultar.Location = new System.Drawing.Point(785, 332);
+            this.groupConsultar.Name = "groupConsultar";
+            this.groupConsultar.Size = new System.Drawing.Size(248, 159);
+            this.groupConsultar.TabIndex = 88;
+            this.groupConsultar.TabStop = false;
+            this.groupConsultar.Text = "Consultar";
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.Black;
+            this.btnConsultar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultar.ForeColor = System.Drawing.Color.White;
+            this.btnConsultar.Location = new System.Drawing.Point(39, 46);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(164, 78);
+            this.btnConsultar.TabIndex = 0;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            // 
+            // mtxCPF
+            // 
+            this.mtxCPF.Location = new System.Drawing.Point(193, 25);
+            this.mtxCPF.Mask = "000.000.000-00";
+            this.mtxCPF.Name = "mtxCPF";
+            this.mtxCPF.Size = new System.Drawing.Size(236, 23);
+            this.mtxCPF.TabIndex = 81;
+            // 
+            // ucConsultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupConsultar);
+            this.Controls.Add(this.groupCodigo);
+            this.Controls.Add(this.groupDate);
+            this.Controls.Add(this.groupDadosVisita);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
-            this.Controls.Add(this.txtRua);
-            this.Controls.Add(this.lblRua);
-            this.Controls.Add(this.nudNumero);
-            this.Controls.Add(this.mtxCEP);
-            this.Controls.Add(this.btnInserir);
-            this.Controls.Add(this.txtPais);
-            this.Controls.Add(this.txtProvincia);
-            this.Controls.Add(this.txtEstado);
-            this.Controls.Add(this.txtCidade);
-            this.Controls.Add(this.txtCodPostal);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblPais);
-            this.Controls.Add(this.lblProvincia);
-            this.Controls.Add(this.lblEstado);
-            this.Controls.Add(this.lblCidade);
-            this.Controls.Add(this.lblCondominio);
-            this.Controls.Add(this.lblCodPostal);
-            this.Controls.Add(this.lblCEP);
-            this.Controls.Add(this.lblNome);
-            this.Name = "ucInserir";
-            this.Size = new System.Drawing.Size(1370, 749);
-            ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).EndInit();
+            this.Name = "ucConsultar";
+            this.Size = new System.Drawing.Size(1370, 800);
             this.mnsPresentation.ResumeLayout(false);
             this.mnsPresentation.PerformLayout();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
+            this.groupDadosVisita.ResumeLayout(false);
+            this.groupDadosVisita.PerformLayout();
+            this.groupDate.ResumeLayout(false);
+            this.groupDate.PerformLayout();
+            this.groupCodigo.ResumeLayout(false);
+            this.groupCodigo.PerformLayout();
+            this.groupConsultar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -727,26 +749,6 @@ namespace ServicoPortaria.Presentation.Condominio
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtPais;
-        private System.Windows.Forms.TextBox txtProvincia;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.TextBox txtCodPostal;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label lblPais;
-        private System.Windows.Forms.Label lblProvincia;
-        private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.Label lblCidade;
-        private System.Windows.Forms.Label lblCondominio;
-        private System.Windows.Forms.Label lblCodPostal;
-        private System.Windows.Forms.Label lblCEP;
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Button btnInserir;
-        private System.Windows.Forms.MaskedTextBox mtxCEP;
-        private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.NumericUpDown nudNumero;
-        private System.Windows.Forms.Label lblRua;
-        private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.MenuStrip mnsPresentation;
         private System.Windows.Forms.ToolStripMenuItem tmsCondominio;
         private System.Windows.Forms.ToolStripMenuItem tmsPredio;
@@ -788,15 +790,35 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.MenuStrip mnsCondominio;
         private System.Windows.Forms.ToolStripMenuItem tsmCadastroMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmConsultarMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmModuloVisitante;
-        private System.Windows.Forms.ToolStripMenuItem tsmInserir;
-        private System.Windows.Forms.ToolStripMenuItem tsmConsultar;
-        private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
-        private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
-        private System.Windows.Forms.ToolStripMenuItem tsmDeletar;
+        private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Label lblCPFVisitante;
+        private System.Windows.Forms.Label lblIdApartamento;
+        private System.Windows.Forms.Label lblCodigoPredio;
+        private System.Windows.Forms.Label lblIdVisitante;
+        private System.Windows.Forms.Label lblNomeCondominio;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblNomePredio;
+        private System.Windows.Forms.Label lblIdCondominio;
+        private System.Windows.Forms.Label lblHoraSaida;
+        private System.Windows.Forms.Label lblDataChegada;
+        private System.Windows.Forms.Label lblDataSaida;
+        private System.Windows.Forms.Label lblHoraChegada;
+        private System.Windows.Forms.TextBox txtPredio;
+        private System.Windows.Forms.TextBox txtApartamento;
+        private System.Windows.Forms.TextBox txtCondominio;
+        private System.Windows.Forms.DateTimePicker dtpDataChegada;
+        private System.Windows.Forms.DateTimePicker dtpDataSaida;
+        private System.Windows.Forms.DateTimePicker dtpHoraSaida;
+        private System.Windows.Forms.DateTimePicker dtpHoraChegada;
+        private System.Windows.Forms.GroupBox groupDadosVisita;
+        private System.Windows.Forms.GroupBox groupDate;
+        private System.Windows.Forms.GroupBox groupCodigo;
+        private System.Windows.Forms.GroupBox groupConsultar;
+        private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.MaskedTextBox mtxCPF;
     }
 }

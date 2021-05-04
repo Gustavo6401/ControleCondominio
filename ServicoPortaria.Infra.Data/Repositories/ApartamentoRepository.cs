@@ -16,5 +16,20 @@ namespace ServicoPortaria.Infra.Data.Repositories
         {
             return Db.Apartamento.Where(p => p.IdMorador == id);
         }
+
+        IEnumerable<Apartamento> IApartamentoRepository.BuscarPorBloco(string bloco)
+        {
+            return Db.Apartamento.Where(p => p.Bloco.Contains(bloco));
+        }
+
+        IEnumerable<Apartamento> IApartamentoRepository.BuscarPorNumero(int numero)
+        {
+            return Db.Apartamento.Where(p => p.Numero == numero);
+        }
+
+        IEnumerable<Apartamento> IApartamentoRepository.BuscarPorRamal(string ramal)
+        {
+            return Db.Apartamento.Where(p => p.Ramal.Contains(ramal));
+        }
     }
 }

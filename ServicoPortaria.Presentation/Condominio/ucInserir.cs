@@ -53,10 +53,9 @@ namespace ServicoPortaria.Presentation.Condominio
             frmInserir form = new frmInserir();
             Dispose();
 
-            ucListarTodos userControl = new ucListarTodos();
-            form.Controls.Add(userControl);
+            frmConsultar consultar = new frmConsultar();
+            consultar.Show();
         }
-
         private void tsmConsultarComId_Click(object sender, EventArgs e)
         {
             frmConsultarPorId form = new frmConsultarPorId();
@@ -109,6 +108,11 @@ namespace ServicoPortaria.Presentation.Condominio
             Dispose();
 
             form.Show();
+        }
+
+        private void tsmInserir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

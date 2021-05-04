@@ -12,6 +12,7 @@ namespace ServicoPortaria.Domain.Entities
         public int IdMorador { get; set; }
         public string Marca { get; set; }
         public string Modelo { get; set; }
+        public string Placa { get; set; }
         [DisplayName("Código do Prédio")]
         public int IdPredio { get; set; }
         [DisplayName("Código do Condomínio")]

@@ -37,5 +37,15 @@ namespace ServicoPortaria.Infra.Data.Repositories
         {
             return Db.Visita.Where(t => t.IdVisitante == id);
         }
+
+        IEnumerable<Visita> IVisitaRepository.BuscarPorDataChegada(DateTime date)
+        {
+            return Db.Visita.Where(t => t.DataDaChegada == date.Date);
+        }
+
+        IEnumerable<Visita> IVisitaRepository.BuscarPorDataSaida(DateTime date)
+        {
+            return Db.Visita.Where(t => t.DataSaida == date.Date);
+        }
     }
 }

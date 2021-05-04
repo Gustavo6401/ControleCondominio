@@ -97,6 +97,17 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
+            // lblClose
+            // 
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1345, 0);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 25);
+            this.lblClose.TabIndex = 63;
+            this.lblClose.Text = "X";
+            // 
             // mnsPresentation
             // 
             this.mnsPresentation.BackColor = System.Drawing.Color.Black;
@@ -499,7 +510,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(28, 15);
             this.lblCPF.TabIndex = 64;
-            this.lblCPF.Text = "CPF";            
+            this.lblCPF.Text = "CPF";
             // 
             // txtNome
             // 
@@ -549,17 +560,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.btnConsultar.TabIndex = 70;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
-            //
-            // lblClose
-            //
-            this.lblClose.BackColor = System.Drawing.Color.Red;
-            this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(1345, 0);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(25, 25);
-            this.lblClose.Text = "X";
-            this.lblClose.TabIndex = 63;
             // 
             // groupBox1
             // 
@@ -606,10 +606,10 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.groupInformacoes);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
             this.Controls.Add(this.lblClose);
             this.Name = "ucConsultar";

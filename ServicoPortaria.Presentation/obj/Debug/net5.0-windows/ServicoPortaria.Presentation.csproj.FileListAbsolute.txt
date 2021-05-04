@@ -152,3 +152,4 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\VisioForge.Shared.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\VisioForge.Tools.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\VisioForge.Types.dll
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visita.ucConsultar.resources

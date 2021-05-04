@@ -37,7 +37,7 @@ namespace ServicoPortaria.Presentation.Login.Forms
             this.ucLogin1.BackColor = System.Drawing.Color.White;
             this.ucLogin1.Location = new System.Drawing.Point(1, -2);
             this.ucLogin1.Name = "ucLogin1";
-            this.ucLogin1.Size = new System.Drawing.Size(547, 334);
+            this.ucLogin1.Size = new System.Drawing.Size(569, 334);
             this.ucLogin1.TabIndex = 0;
             this.ucLogin1.Load += new System.EventHandler(this.ucLogin1_Load);
             // 
@@ -45,7 +45,7 @@ namespace ServicoPortaria.Presentation.Login.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 331);
+            this.ClientSize = new System.Drawing.Size(570, 331);
             this.Controls.Add(this.ucLogin1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
