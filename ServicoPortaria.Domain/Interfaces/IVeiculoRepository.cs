@@ -7,5 +7,8 @@ namespace ServicoPortaria.Domain.Interfaces
     {
         IEnumerable<Veiculo> ConsultarPorMorador(int id);
         IEnumerable<Veiculo> ConsultarPorPredio(int id);
+        IEnumerable<Veiculo> ConsultarPorModelo(string modelo);
+        IEnumerable<Veiculo> ConsultarPorMarca(string marca);
+        IEnumerable<Veiculo> ConsultarPorPlaca(string placa);
     }
 }

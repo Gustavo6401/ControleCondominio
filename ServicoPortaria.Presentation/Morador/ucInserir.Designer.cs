@@ -921,9 +921,9 @@ namespace ServicoPortaria.Presentation.Morador
             // 
             // imgWebCam
             // 
-            this.imgWebCam.Location = new System.Drawing.Point(822, 56);
+            this.imgWebCam.Location = new System.Drawing.Point(921, 56);
             this.imgWebCam.Name = "imgWebCam";
-            this.imgWebCam.Size = new System.Drawing.Size(231, 131);
+            this.imgWebCam.Size = new System.Drawing.Size(132, 131);
             this.imgWebCam.TabIndex = 86;
             this.imgWebCam.TabStop = false;
             // 

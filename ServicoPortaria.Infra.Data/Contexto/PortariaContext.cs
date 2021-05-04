@@ -7,6 +7,7 @@ namespace ServicoPortaria.Infra.Data.Contexto
 {
     public class PortariaContext : DbContext
     {
+        // Colocar no meu site de vagas de emprego algumas propriedades não listáveis no banco de dados.
         public DbSet<Condominio> Condominio { get; set; }
         public DbSet<Predio> Predio { get; set; }
         public DbSet<Morador> Morador { get; set; }

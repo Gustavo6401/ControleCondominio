@@ -7,5 +7,8 @@ namespace ServicoPortaria.Domain.Interfaces
     {
         IEnumerable<Apartamento> BuscarPorCondominio(int id);
         IEnumerable<Apartamento> BuscarPorMorador(int id);
+        IEnumerable<Apartamento> BuscarPorBloco(string bloco);
+        IEnumerable<Apartamento> BuscarPorRamal(string ramal);
+        IEnumerable<Apartamento> BuscarPorNumero(int numero);
     }
 }
