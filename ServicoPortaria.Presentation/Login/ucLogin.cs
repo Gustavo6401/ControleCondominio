@@ -38,76 +38,93 @@ namespace ServicoPortaria.Presentation.Login
 
             senha = CriptografarSenha(senha);
 
-            PortariaContext context = new PortariaContext();            
-
-            if (lblNivel.Visible == false && cmbNivelDeAcesso.Visible == false)
-            {
-                Usuario usuario;
-                usuario = context.Usuario.FirstOrDefault(t => t.UserName.Equals(user)
+            PortariaContext context = new PortariaContext();           
+            
+            Usuario usuario;
+            usuario = context.Usuario.FirstOrDefault(t => t.UserName.Equals(user)
                                                            && t.Senha.Equals(senha));
 
-                if (usuario != null)
-                {
-                    mstMenu.Enabled = true;
-                    lblUser.Visible = false;
-                    lblSenha.Visible = false;
-                    txtUser.Visible = false;
-                    txtPassword.Visible = false;
-                    btnLogin.Visible = false;
-                    lllRegistro.Visible = false;
-
-                    frmLogin form = new frmLogin();
-                    form.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Nome de Usuário e/ou senha incorretos.");
-                }
-            }
-            if(lblNivel.Visible == true && cmbNivelDeAcesso.Visible == true)
+            if (usuario != null)
             {
-                // Colhe os dados do usuário.
-                Usuario usuario = new Usuario();
-                usuario.UserName = txtUser.Text;
-                usuario.Senha = txtPassword.Text;
-                usuario.NivelDeAcesso = cmbNivelDeAcesso.Text;
+                 lblUser.Visible = false;
+                 lblSenha.Visible = false;
+                 txtUser.Visible = false;
+                 txtPassword.Visible = false;
+                 btnLogin.Visible = false;
+                 lllRegistro.Visible = false;
 
-                // Criptografa a Senha
-                usuario.Senha = CriptografarSenha(usuario.Senha);
-
-                UsuarioRepository repository = new UsuarioRepository();
-                repository.Inserir(usuario);
-
-                MessageBox.Show("Usuário Criado Com Sucesso!");
+                 frmLogin form = new frmLogin();
+                 form.Hide();
+            }
+            else
+            {
+                 MessageBox.Show("Nome de Usuário e/ou senha incorretos.");
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void tsmCondomínio_Click(object sender, EventArgs e)
+        {
+            frmInserir form = new frmInserir();
+            form.Show();
+        }
+
+        private void tsmPredio_Click(object sender, EventArgs e)
+        {
+            Predio.Forms.frmInserir form = new Predio.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void frnMorador_Click(object sender, EventArgs e)
+        {
+            Morador.Forms.frmInserir form = new Morador.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmApartamento_Click(object sender, EventArgs e)
+        {
+            Apartamento.Forms.frmInserir form = new Apartamento.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmVistante_Click(object sender, EventArgs e)
+        {
+            Visitante.Forms.frmInserir form = new Visitante.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmGaragem_Click(object sender, EventArgs e)
+        {
+            Garagem.Forms.frmInserir form = new Garagem.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmVeiculo_Click(object sender, EventArgs e)
+        {
+            Veiculo.Forms.frmInserir form = new Veiculo.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmPrestadorDeServicos_Click(object sender, EventArgs e)
+        {
+            PrestadorDeServicos.Forms.frmInserir form = new PrestadorDeServicos.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmSindico_Click(object sender, EventArgs e)
+        {
+            Sindico.Forms.frmInserir form = new Sindico.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void frmVisita_Click(object sender, EventArgs e)
+        {
+            Visita.Forms.frmInserir form = new Visita.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void lblClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void ucLogin_Load(object sender, EventArgs e)
-        {
-            mstMenu.Enabled = false;
-            lblNivel.Visible = false;
-            cmbNivelDeAcesso.Visible = false;
-        }
-
-        private void lllRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            // Altera as Informações do Form
-            btnLogin.Text = "Registre-se!";
-            lblNivel.Visible = true;
-            cmbNivelDeAcesso.Visible = true;
-        }
-
-        private void tsmCondominio_Click(object sender, EventArgs e)
-        {
-            Condominio.Forms.frmConsultarTodos form = new frmConsultarTodos();
-            form.Show();
-
-            Hide();
         }
     }
 }

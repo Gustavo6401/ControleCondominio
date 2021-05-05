@@ -100,8 +100,8 @@ namespace ServicoPortaria.Presentation.Morador
             this.txtSobrenome = new System.Windows.Forms.TextBox();
             this.groupNome = new System.Windows.Forms.GroupBox();
             this.mtxCPF = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.mtxRG = new System.Windows.Forms.MaskedTextBox();
+            this.txtDocCivil = new System.Windows.Forms.TextBox();
             this.cmbSexo = new System.Windows.Forms.ComboBox();
             this.groupDocCivil = new System.Windows.Forms.GroupBox();
             this.mtxCEP = new System.Windows.Forms.MaskedTextBox();
@@ -114,14 +114,18 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupEndereco = new System.Windows.Forms.GroupBox();
             this.nudNumero = new System.Windows.Forms.NumericUpDown();
             this.groupContato = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEMail = new System.Windows.Forms.TextBox();
+            this.txtFixo = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupCadastrar = new System.Windows.Forms.GroupBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.imgWebCam = new System.Windows.Forms.PictureBox();
             this.groupFoto = new System.Windows.Forms.GroupBox();
+            this.groupInformacoes = new System.Windows.Forms.GroupBox();
+            this.lblCondominio = new System.Windows.Forms.Label();
+            this.lblIdCondominio = new System.Windows.Forms.Label();
+            this.txtCondominio = new System.Windows.Forms.TextBox();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.groupNome.SuspendLayout();
@@ -132,6 +136,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupCadastrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgWebCam)).BeginInit();
             this.groupFoto.SuspendLayout();
+            this.groupInformacoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -706,20 +711,20 @@ namespace ServicoPortaria.Presentation.Morador
             this.mtxCPF.Size = new System.Drawing.Size(230, 23);
             this.mtxCPF.TabIndex = 71;
             // 
-            // maskedTextBox1
+            // mtxRG
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(205, 47);
-            this.maskedTextBox1.Mask = "00.000.000-0";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(230, 23);
-            this.maskedTextBox1.TabIndex = 72;
+            this.mtxRG.Location = new System.Drawing.Point(205, 47);
+            this.mtxRG.Mask = "00.000.000-0";
+            this.mtxRG.Name = "mtxRG";
+            this.mtxRG.Size = new System.Drawing.Size(230, 23);
+            this.mtxRG.TabIndex = 72;
             // 
-            // textBox1
+            // txtDocCivil
             // 
-            this.textBox1.Location = new System.Drawing.Point(205, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 23);
-            this.textBox1.TabIndex = 73;
+            this.txtDocCivil.Location = new System.Drawing.Point(205, 85);
+            this.txtDocCivil.Name = "txtDocCivil";
+            this.txtDocCivil.Size = new System.Drawing.Size(230, 23);
+            this.txtDocCivil.TabIndex = 73;
             // 
             // cmbSexo
             // 
@@ -737,8 +742,8 @@ namespace ServicoPortaria.Presentation.Morador
             // groupDocCivil
             // 
             this.groupDocCivil.Controls.Add(this.cmbSexo);
-            this.groupDocCivil.Controls.Add(this.textBox1);
-            this.groupDocCivil.Controls.Add(this.maskedTextBox1);
+            this.groupDocCivil.Controls.Add(this.txtDocCivil);
+            this.groupDocCivil.Controls.Add(this.mtxRG);
             this.groupDocCivil.Controls.Add(this.mtxCPF);
             this.groupDocCivil.Controls.Add(this.lblDocCivil);
             this.groupDocCivil.Controls.Add(this.lblSexo);
@@ -864,8 +869,8 @@ namespace ServicoPortaria.Presentation.Morador
             // 
             // groupContato
             // 
-            this.groupContato.Controls.Add(this.textBox4);
-            this.groupContato.Controls.Add(this.textBox2);
+            this.groupContato.Controls.Add(this.txtEMail);
+            this.groupContato.Controls.Add(this.txtFixo);
             this.groupContato.Controls.Add(this.textBox3);
             this.groupContato.Controls.Add(this.lblEmail);
             this.groupContato.Controls.Add(this.lblFixo);
@@ -877,19 +882,19 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupContato.TabStop = false;
             this.groupContato.Text = "Contato";
             // 
-            // textBox4
+            // txtEMail
             // 
-            this.textBox4.Location = new System.Drawing.Point(211, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(230, 23);
-            this.textBox4.TabIndex = 70;
+            this.txtEMail.Location = new System.Drawing.Point(211, 106);
+            this.txtEMail.Name = "txtEMail";
+            this.txtEMail.Size = new System.Drawing.Size(230, 23);
+            this.txtEMail.TabIndex = 70;
             // 
-            // textBox2
+            // txtFixo
             // 
-            this.textBox2.Location = new System.Drawing.Point(211, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 23);
-            this.textBox2.TabIndex = 69;
+            this.txtFixo.Location = new System.Drawing.Point(211, 68);
+            this.txtFixo.Name = "txtFixo";
+            this.txtFixo.Size = new System.Drawing.Size(230, 23);
+            this.txtFixo.TabIndex = 69;
             // 
             // textBox3
             // 
@@ -901,7 +906,7 @@ namespace ServicoPortaria.Presentation.Morador
             // groupCadastrar
             // 
             this.groupCadastrar.Controls.Add(this.btnCadastrar);
-            this.groupCadastrar.Location = new System.Drawing.Point(762, 389);
+            this.groupCadastrar.Location = new System.Drawing.Point(763, 519);
             this.groupCadastrar.Name = "groupCadastrar";
             this.groupCadastrar.Size = new System.Drawing.Size(479, 115);
             this.groupCadastrar.TabIndex = 85;
@@ -939,10 +944,48 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupFoto.TabStop = false;
             this.groupFoto.Text = "Foto";
             // 
+            // groupInformacoes
+            // 
+            this.groupInformacoes.Controls.Add(this.txtCondominio);
+            this.groupInformacoes.Controls.Add(this.lblIdCondominio);
+            this.groupInformacoes.Controls.Add(this.lblCondominio);
+            this.groupInformacoes.Location = new System.Drawing.Point(763, 392);
+            this.groupInformacoes.Name = "groupInformacoes";
+            this.groupInformacoes.Size = new System.Drawing.Size(585, 117);
+            this.groupInformacoes.TabIndex = 88;
+            this.groupInformacoes.TabStop = false;
+            this.groupInformacoes.Text = "Informações";
+            // 
+            // lblCondominio
+            // 
+            this.lblCondominio.AutoSize = true;
+            this.lblCondominio.Location = new System.Drawing.Point(26, 28);
+            this.lblCondominio.Name = "lblCondominio";
+            this.lblCondominio.Size = new System.Drawing.Size(74, 15);
+            this.lblCondominio.TabIndex = 0;
+            this.lblCondominio.Text = "Condomínio";
+            // 
+            // lblIdCondominio
+            // 
+            this.lblIdCondominio.AutoSize = true;
+            this.lblIdCondominio.Location = new System.Drawing.Point(23, 78);
+            this.lblIdCondominio.Name = "lblIdCondominio";
+            this.lblIdCondominio.Size = new System.Drawing.Size(133, 15);
+            this.lblIdCondominio.TabIndex = 1;
+            this.lblIdCondominio.Text = "Código do Condomínio";
+            // 
+            // txtCondominio
+            // 
+            this.txtCondominio.Location = new System.Drawing.Point(211, 25);
+            this.txtCondominio.Name = "txtCondominio";
+            this.txtCondominio.Size = new System.Drawing.Size(230, 23);
+            this.txtCondominio.TabIndex = 2;
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupInformacoes);
             this.Controls.Add(this.groupFoto);
             this.Controls.Add(this.groupCadastrar);
             this.Controls.Add(this.groupContato);
@@ -969,6 +1012,8 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupCadastrar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgWebCam)).EndInit();
             this.groupFoto.ResumeLayout(false);
+            this.groupInformacoes.ResumeLayout(false);
+            this.groupInformacoes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1045,8 +1090,8 @@ namespace ServicoPortaria.Presentation.Morador
         private System.Windows.Forms.TextBox txtSobrenome;
         private System.Windows.Forms.GroupBox groupNome;
         private System.Windows.Forms.MaskedTextBox mtxCPF;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.MaskedTextBox mtxRG;
+        private System.Windows.Forms.TextBox txtDocCivil;
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.GroupBox groupDocCivil;
         private System.Windows.Forms.Label lbl;
@@ -1060,13 +1105,18 @@ namespace ServicoPortaria.Presentation.Morador
         private System.Windows.Forms.GroupBox groupEndereco;
         private System.Windows.Forms.NumericUpDown nudNumero;
         private System.Windows.Forms.GroupBox groupContato;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEMail;
+        private System.Windows.Forms.TextBox txtFixo;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.GroupBox groupCadastrar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox imgWebCam;
         private System.Windows.Forms.GroupBox groupFoto;
+        private System.Windows.Forms.TextBox Fi;
+        private System.Windows.Forms.GroupBox groupInformacoes;
+        private System.Windows.Forms.Label lblIdCondominio;
+        private System.Windows.Forms.Label lblCondominio;
+        private System.Windows.Forms.TextBox txtCondominio;
     }
 }

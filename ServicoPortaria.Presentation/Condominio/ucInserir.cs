@@ -28,7 +28,7 @@ namespace ServicoPortaria.Presentation.Condominio
                 condominio.Rua = txtRua.Text;
                 condominio.Numero = Convert.ToInt32(nudNumero.Value);
                 condominio.Cidade = txtCidade.Text;
-                condominio.Estado = txtEstado.Text;
+                condominio.Estado = cmbEstado.Text;
                 condominio.Provincia = txtProvincia.Text;
                 condominio.Pais = txtPais.Text;
 
@@ -117,8 +117,92 @@ namespace ServicoPortaria.Presentation.Condominio
 
         private void tsmPredio_Click(object sender, EventArgs e)
         {
-            ServicoPortaria.Presentation.Predio.Forms.frmInserir inserir = new Predio.Forms.frmInserir();
+            Predio.Forms.frmInserir inserir = new Predio.Forms.frmInserir();
             inserir.Show();
+        }
+
+        private void tsmCondominio_Click(object sender, EventArgs e)
+        {
+            frmInserir form = new frmInserir();
+            form.Show();
+        }
+
+        private void tsmMorador_Click(object sender, EventArgs e)
+        {
+            Morador.Forms.frmInserir form = new Morador.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmApartamento_Click(object sender, EventArgs e)
+        {
+            Apartamento.Forms.frmInserir form = new Apartamento.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmVisitante_Click(object sender, EventArgs e)
+        {
+            Visitante.Forms.frmInserir form = new Visitante.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmGaragem_Click(object sender, EventArgs e)
+        {
+            Garagem.Forms.frmInserir form = new Garagem.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmVeiculo_Click(object sender, EventArgs e)
+        {
+            Veiculo.Forms.frmInserir form = new Veiculo.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmPrestadorDeServicos_Click(object sender, EventArgs e)
+        {
+            PrestadorDeServicos.Forms.frmInserir form = new PrestadorDeServicos.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmSindico_Click(object sender, EventArgs e)
+        {
+            Sindico.Forms.frmInserir form = new Sindico.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmHomePage_Click(object sender, EventArgs e)
+        {
+            Login.Forms.frmLogin form = new Login.Forms.frmLogin();
+            form.Show();
+        }
+
+        private void tsmVisita_Click(object sender, EventArgs e)
+        {
+            Visita.Forms.frmInserir form = new Visita.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void lllConsultar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmConsultar form = new frmConsultar();
+            form.Show();
+        }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmConsultarTodos form = new frmConsultarTodos();
+            form.Show();
+        }
+
+        private void lllModificarDados_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmModificar form = new frmModificar();
+            form.Show();
+        }
+
+        private void lllDeletarDados_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmDeletar form = new frmDeletar();
+            form.Show();
         }
     }
 }

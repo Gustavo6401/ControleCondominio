@@ -26,12 +26,33 @@ namespace ServicoPortaria.Presentation.Morador
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             var bitmap = new Bitmap(imgWebCam.Width, imgWebCam.Height);
+
             using (var graphics = Graphics.FromImage(bitmap))
             {
                 var webCamPoint = imgWebCam.PointToScreen(new Point(0, 0));
                 graphics.CopyFromScreen(webCamPoint.X, webCamPoint.Y, 0, 0, bitmap.Size);
             }
             bitmap.Save("snapshot.png", System.Drawing.Imaging.ImageFormat.Png);
+
+            Domain.Entities.Morador morador = new Domain.Entities.Morador();
+            morador.Nome = txtNome.Text;
+            morador.Sobrenome = txtSobrenome.Text;
+            morador.CPF = mtxCPF.Text;
+            morador.RG = mtxRG.Text;
+            morador.DocCivil = txtDocCivil.Text;
+            morador.Sexo = cmbSexo.Text;
+            morador.CEP = mtxCEP.Text;
+            morador.CodigoPostal = txtCodPostal.Text;
+            morador.Rua = txtRua.Text;
+            morador.Numero = Convert.ToInt32(nudNumero.Value);
+            morador.Cidade = txtCidade.Text;
+            morador.Estado = cmbEstado.Text;
+            morador.Provincia = txtProvincia.Text;
+            morador.Pais = txtPais.Text;
+            morador.Celular = txtCidade.Text;
+            morador.Fixo = txtFixo.Text;
+            morador.EMail = txtEMail.Text;
+
         }
     }
 }
