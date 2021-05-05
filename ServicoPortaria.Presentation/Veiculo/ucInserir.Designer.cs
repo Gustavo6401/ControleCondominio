@@ -78,21 +78,30 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmRemove = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblCPFMorador = new System.Windows.Forms.Label();
             this.lblNomeCondominio = new System.Windows.Forms.Label();
             this.lblPredio = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
-            this.mtxCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.txtPredio = new System.Windows.Forms.TextBox();
             this.txtCondominio = new System.Windows.Forms.TextBox();
             this.lblIdPredio = new System.Windows.Forms.Label();
             this.lblIdCondominio = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.lblPlaca = new System.Windows.Forms.Label();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
             this.lblIdMorador = new System.Windows.Forms.Label();
+            this.mtxCPF = new System.Windows.Forms.MaskedTextBox();
+            this.lblCPFMorador = new System.Windows.Forms.Label();
+            this.groupInformacoes = new System.Windows.Forms.GroupBox();
+            this.groupCarro = new System.Windows.Forms.GroupBox();
+            this.groupCadastrar = new System.Windows.Forms.GroupBox();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
+            this.groupInformacoes.SuspendLayout();
+            this.groupCarro.SuspendLayout();
+            this.groupCadastrar.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -479,19 +488,10 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.tsmRemove.Size = new System.Drawing.Size(92, 20);
             this.tsmRemove.Text = "Deletar Dados";
             // 
-            // lblCPFMorador
-            // 
-            this.lblCPFMorador.AutoSize = true;
-            this.lblCPFMorador.Location = new System.Drawing.Point(406, 265);
-            this.lblCPFMorador.Name = "lblCPFMorador";
-            this.lblCPFMorador.Size = new System.Drawing.Size(94, 15);
-            this.lblCPFMorador.TabIndex = 53;
-            this.lblCPFMorador.Text = "CPF do Morador";
-            // 
             // lblNomeCondominio
             // 
             this.lblNomeCondominio.AutoSize = true;
-            this.lblNomeCondominio.Location = new System.Drawing.Point(406, 470);
+            this.lblNomeCondominio.Location = new System.Drawing.Point(0, 145);
             this.lblNomeCondominio.Name = "lblNomeCondominio";
             this.lblNomeCondominio.Size = new System.Drawing.Size(127, 15);
             this.lblNomeCondominio.TabIndex = 54;
@@ -500,7 +500,7 @@ namespace ServicoPortaria.Presentation.Veiculo
             // lblPredio
             // 
             this.lblPredio.AutoSize = true;
-            this.lblPredio.Location = new System.Drawing.Point(406, 416);
+            this.lblPredio.Location = new System.Drawing.Point(0, 91);
             this.lblPredio.Name = "lblPredio";
             this.lblPredio.Size = new System.Drawing.Size(94, 15);
             this.lblPredio.TabIndex = 55;
@@ -509,7 +509,7 @@ namespace ServicoPortaria.Presentation.Veiculo
             // lblModelo
             // 
             this.lblModelo.AutoSize = true;
-            this.lblModelo.Location = new System.Drawing.Point(406, 367);
+            this.lblModelo.Location = new System.Drawing.Point(0, 84);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(48, 15);
             this.lblModelo.TabIndex = 56;
@@ -518,44 +518,36 @@ namespace ServicoPortaria.Presentation.Veiculo
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(406, 314);
+            this.lblMarca.Location = new System.Drawing.Point(0, 31);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(40, 15);
             this.lblMarca.TabIndex = 57;
             this.lblMarca.Text = "Marca";
             // 
-            // mtxCPF
-            // 
-            this.mtxCPF.Location = new System.Drawing.Point(669, 262);
-            this.mtxCPF.Mask = "000.000.000-00";
-            this.mtxCPF.Name = "mtxCPF";
-            this.mtxCPF.Size = new System.Drawing.Size(251, 23);
-            this.mtxCPF.TabIndex = 58;
-            // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(669, 311);
+            this.txtMarca.Location = new System.Drawing.Point(263, 28);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(251, 23);
             this.txtMarca.TabIndex = 59;
             // 
             // txtModelo
             // 
-            this.txtModelo.Location = new System.Drawing.Point(669, 364);
+            this.txtModelo.Location = new System.Drawing.Point(263, 81);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(251, 23);
             this.txtModelo.TabIndex = 60;
             // 
             // txtPredio
             // 
-            this.txtPredio.Location = new System.Drawing.Point(669, 413);
+            this.txtPredio.Location = new System.Drawing.Point(263, 88);
             this.txtPredio.Name = "txtPredio";
             this.txtPredio.Size = new System.Drawing.Size(251, 23);
             this.txtPredio.TabIndex = 61;
             // 
             // txtCondominio
             // 
-            this.txtCondominio.Location = new System.Drawing.Point(669, 467);
+            this.txtCondominio.Location = new System.Drawing.Point(263, 142);
             this.txtCondominio.Name = "txtCondominio";
             this.txtCondominio.Size = new System.Drawing.Size(251, 23);
             this.txtCondominio.TabIndex = 62;
@@ -563,7 +555,7 @@ namespace ServicoPortaria.Presentation.Veiculo
             // lblIdPredio
             // 
             this.lblIdPredio.AutoSize = true;
-            this.lblIdPredio.Location = new System.Drawing.Point(989, 417);
+            this.lblIdPredio.Location = new System.Drawing.Point(583, 92);
             this.lblIdPredio.Name = "lblIdPredio";
             this.lblIdPredio.Size = new System.Drawing.Size(100, 15);
             this.lblIdPredio.TabIndex = 63;
@@ -572,38 +564,116 @@ namespace ServicoPortaria.Presentation.Veiculo
             // lblIdCondominio
             // 
             this.lblIdCondominio.AutoSize = true;
-            this.lblIdCondominio.Location = new System.Drawing.Point(989, 470);
+            this.lblIdCondominio.Location = new System.Drawing.Point(583, 145);
             this.lblIdCondominio.Name = "lblIdCondominio";
             this.lblIdCondominio.Size = new System.Drawing.Size(133, 15);
             this.lblIdCondominio.TabIndex = 64;
             this.lblIdCondominio.Text = "Código do Condomínio";
             // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.Black;
+            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.Location = new System.Drawing.Point(28, 19);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(372, 84);
+            this.btnCadastrar.TabIndex = 66;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            // 
+            // lblPlaca
+            // 
+            this.lblPlaca.AutoSize = true;
+            this.lblPlaca.Location = new System.Drawing.Point(0, 139);
+            this.lblPlaca.Name = "lblPlaca";
+            this.lblPlaca.Size = new System.Drawing.Size(35, 15);
+            this.lblPlaca.TabIndex = 67;
+            this.lblPlaca.Text = "Placa";
+            // 
+            // txtPlaca
+            // 
+            this.txtPlaca.Location = new System.Drawing.Point(263, 136);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(251, 23);
+            this.txtPlaca.TabIndex = 68;
+            // 
             // lblIdMorador
             // 
             this.lblIdMorador.AutoSize = true;
-            this.lblIdMorador.Location = new System.Drawing.Point(989, 265);
+            this.lblIdMorador.Location = new System.Drawing.Point(583, 38);
             this.lblIdMorador.Name = "lblIdMorador";
             this.lblIdMorador.Size = new System.Drawing.Size(112, 15);
-            this.lblIdMorador.TabIndex = 65;
+            this.lblIdMorador.TabIndex = 71;
             this.lblIdMorador.Text = "Código do Morador";
+            // 
+            // mtxCPF
+            // 
+            this.mtxCPF.Location = new System.Drawing.Point(263, 35);
+            this.mtxCPF.Mask = "000.000.000-00";
+            this.mtxCPF.Name = "mtxCPF";
+            this.mtxCPF.Size = new System.Drawing.Size(251, 23);
+            this.mtxCPF.TabIndex = 70;
+            // 
+            // lblCPFMorador
+            // 
+            this.lblCPFMorador.AutoSize = true;
+            this.lblCPFMorador.Location = new System.Drawing.Point(0, 38);
+            this.lblCPFMorador.Name = "lblCPFMorador";
+            this.lblCPFMorador.Size = new System.Drawing.Size(94, 15);
+            this.lblCPFMorador.TabIndex = 69;
+            this.lblCPFMorador.Text = "CPF do Morador";
+            // 
+            // groupInformacoes
+            // 
+            this.groupInformacoes.Controls.Add(this.lblIdMorador);
+            this.groupInformacoes.Controls.Add(this.mtxCPF);
+            this.groupInformacoes.Controls.Add(this.lblCPFMorador);
+            this.groupInformacoes.Controls.Add(this.lblIdCondominio);
+            this.groupInformacoes.Controls.Add(this.lblIdPredio);
+            this.groupInformacoes.Controls.Add(this.txtCondominio);
+            this.groupInformacoes.Controls.Add(this.txtPredio);
+            this.groupInformacoes.Controls.Add(this.lblPredio);
+            this.groupInformacoes.Controls.Add(this.lblNomeCondominio);
+            this.groupInformacoes.Location = new System.Drawing.Point(406, 378);
+            this.groupInformacoes.Name = "groupInformacoes";
+            this.groupInformacoes.Size = new System.Drawing.Size(747, 180);
+            this.groupInformacoes.TabIndex = 72;
+            this.groupInformacoes.TabStop = false;
+            this.groupInformacoes.Text = "Informações";
+            // 
+            // groupCarro
+            // 
+            this.groupCarro.Controls.Add(this.txtPlaca);
+            this.groupCarro.Controls.Add(this.lblPlaca);
+            this.groupCarro.Controls.Add(this.txtModelo);
+            this.groupCarro.Controls.Add(this.txtMarca);
+            this.groupCarro.Controls.Add(this.lblMarca);
+            this.groupCarro.Controls.Add(this.lblModelo);
+            this.groupCarro.Location = new System.Drawing.Point(478, 171);
+            this.groupCarro.Name = "groupCarro";
+            this.groupCarro.Size = new System.Drawing.Size(561, 192);
+            this.groupCarro.TabIndex = 73;
+            this.groupCarro.TabStop = false;
+            this.groupCarro.Text = "Carro";
+            // 
+            // groupCadastrar
+            // 
+            this.groupCadastrar.Controls.Add(this.btnCadastrar);
+            this.groupCadastrar.Location = new System.Drawing.Point(543, 577);
+            this.groupCadastrar.Name = "groupCadastrar";
+            this.groupCadastrar.Size = new System.Drawing.Size(434, 114);
+            this.groupCadastrar.TabIndex = 74;
+            this.groupCadastrar.TabStop = false;
+            this.groupCadastrar.Text = "Cadastrar";
             // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblIdMorador);
-            this.Controls.Add(this.lblIdCondominio);
-            this.Controls.Add(this.lblIdPredio);
-            this.Controls.Add(this.txtCondominio);
-            this.Controls.Add(this.txtPredio);
-            this.Controls.Add(this.txtModelo);
-            this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.mtxCPF);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.lblModelo);
-            this.Controls.Add(this.lblPredio);
-            this.Controls.Add(this.lblNomeCondominio);
-            this.Controls.Add(this.lblCPFMorador);
+            this.Controls.Add(this.groupCadastrar);
+            this.Controls.Add(this.groupCarro);
+            this.Controls.Add(this.groupInformacoes);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
             this.Name = "ucInserir";
@@ -612,6 +682,11 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.mnsPresentation.PerformLayout();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
+            this.groupInformacoes.ResumeLayout(false);
+            this.groupInformacoes.PerformLayout();
+            this.groupCarro.ResumeLayout(false);
+            this.groupCarro.PerformLayout();
+            this.groupCadastrar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,18 +742,24 @@ namespace ServicoPortaria.Presentation.Veiculo
         private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
         private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
         private System.Windows.Forms.ToolStripMenuItem tsmRemove;
-        private System.Windows.Forms.Label lblCPFMorador;
         private System.Windows.Forms.Label lblNomeCondominio;
         private System.Windows.Forms.Label lblPredio;
         private System.Windows.Forms.Label lblModelo;
         private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.MaskedTextBox mtxCPF;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.TextBox txtPredio;
         private System.Windows.Forms.TextBox txtCondominio;
         private System.Windows.Forms.Label lblIdPredio;
         private System.Windows.Forms.Label lblIdCondominio;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Label lblPlaca;
+        private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label lblIdMorador;
+        private System.Windows.Forms.MaskedTextBox mtxCPF;
+        private System.Windows.Forms.Label lblCPFMorador;
+        private System.Windows.Forms.GroupBox groupInformacoes;
+        private System.Windows.Forms.GroupBox groupCarro;
+        private System.Windows.Forms.GroupBox groupCadastrar;
     }
 }

@@ -75,9 +75,16 @@ namespace ServicoPortaria.Presentation.RecuperacaoSenha
             this.tsmCadastroMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmConsultarMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmModuloVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultarTodos = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmUpdate = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmRemove = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblConfirmacaoSenha = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtConfirmacao = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.btnRecuperacao = new System.Windows.Forms.Button();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.SuspendLayout();
@@ -104,12 +111,11 @@ namespace ServicoPortaria.Presentation.RecuperacaoSenha
             this.helpToolStripMenuItem});
             this.mnsPresentation.Location = new System.Drawing.Point(0, 0);
             this.mnsPresentation.Name = "mnsPresentation";
-            this.mnsPresentation.Size = new System.Drawing.Size(137, 800);
-            this.mnsPresentation.TabIndex = 49;
+            this.mnsPresentation.Size = new System.Drawing.Size(137, 384);
+            this.mnsPresentation.TabIndex = 62;
             // 
             // tmsCondominio
             // 
-            this.tmsCondominio.AutoSize = false;
             this.tmsCondominio.Enabled = false;
             this.tmsCondominio.ForeColor = System.Drawing.Color.White;
             this.tmsCondominio.Name = "tmsCondominio";
@@ -414,14 +420,11 @@ namespace ServicoPortaria.Presentation.RecuperacaoSenha
             this.mnsCondominio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmCadastroMorador,
             this.tsmConsultarMorador,
-            this.tsmModuloVisitante,
-            this.tsmConsultarTodos,
-            this.tsmUpdate,
-            this.tsmRemove});
+            this.tsmModuloVisitante});
             this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
             this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(1233, 24);
-            this.mnsCondominio.TabIndex = 55;
+            this.mnsCondominio.Size = new System.Drawing.Size(544, 24);
+            this.mnsCondominio.TabIndex = 70;
             this.mnsCondominio.Text = "Condomínio";
             // 
             // tsmCadastroMorador
@@ -445,35 +448,114 @@ namespace ServicoPortaria.Presentation.RecuperacaoSenha
             this.tsmModuloVisitante.Size = new System.Drawing.Size(125, 20);
             this.tsmModuloVisitante.Text = "Módulo de Visitante";
             // 
-            // tsmConsultarTodos
+            // lblClose
             // 
-            this.tsmConsultarTodos.ForeColor = System.Drawing.Color.White;
-            this.tsmConsultarTodos.Name = "tsmConsultarTodos";
-            this.tsmConsultarTodos.Size = new System.Drawing.Size(101, 20);
-            this.tsmConsultarTodos.Text = "ConsultarTodos";
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(656, -1);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 25);
+            this.lblClose.TabIndex = 84;
+            this.lblClose.Text = "X";
             // 
-            // tsmUpdate
+            // lblCodigo
             // 
-            this.tsmUpdate.ForeColor = System.Drawing.Color.White;
-            this.tsmUpdate.Name = "tsmUpdate";
-            this.tsmUpdate.Size = new System.Drawing.Size(106, 20);
-            this.tsmUpdate.Text = "Modificar Dados";
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(227, 86);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(91, 15);
+            this.lblCodigo.TabIndex = 85;
+            this.lblCodigo.Text = "Código Enviado";
             // 
-            // tsmRemove
+            // lblSenha
             // 
-            this.tsmRemove.ForeColor = System.Drawing.Color.White;
-            this.tsmRemove.Name = "tsmRemove";
-            this.tsmRemove.Size = new System.Drawing.Size(92, 20);
-            this.tsmRemove.Text = "Deletar Dados";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Location = new System.Drawing.Point(227, 129);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(39, 15);
+            this.lblSenha.TabIndex = 86;
+            this.lblSenha.Text = "Senha";
+            // 
+            // lblConfirmacaoSenha
+            // 
+            this.lblConfirmacaoSenha.AutoSize = true;
+            this.lblConfirmacaoSenha.Location = new System.Drawing.Point(227, 177);
+            this.lblConfirmacaoSenha.Name = "lblConfirmacaoSenha";
+            this.lblConfirmacaoSenha.Size = new System.Drawing.Size(127, 15);
+            this.lblConfirmacaoSenha.TabIndex = 87;
+            this.lblConfirmacaoSenha.Text = "Confirmação de Senha";
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Location = new System.Drawing.Point(227, 221);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(47, 15);
+            this.lblUser.TabIndex = 88;
+            this.lblUser.Text = "Usuário";
+            // 
+            // txtCode
+            // 
+            this.txtCode.Location = new System.Drawing.Point(360, 83);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(273, 23);
+            this.txtCode.TabIndex = 89;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(360, 126);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(273, 23);
+            this.txtPassword.TabIndex = 90;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtConfirmacao
+            // 
+            this.txtConfirmacao.Location = new System.Drawing.Point(360, 174);
+            this.txtConfirmacao.Name = "txtConfirmacao";
+            this.txtConfirmacao.Size = new System.Drawing.Size(273, 23);
+            this.txtConfirmacao.TabIndex = 91;
+            this.txtConfirmacao.UseSystemPasswordChar = true;
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(360, 218);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(273, 23);
+            this.txtUser.TabIndex = 92;
+            // 
+            // btnRecuperacao
+            // 
+            this.btnRecuperacao.BackColor = System.Drawing.Color.Black;
+            this.btnRecuperacao.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRecuperacao.ForeColor = System.Drawing.Color.White;
+            this.btnRecuperacao.Location = new System.Drawing.Point(290, 278);
+            this.btnRecuperacao.Name = "btnRecuperacao";
+            this.btnRecuperacao.Size = new System.Drawing.Size(297, 70);
+            this.btnRecuperacao.TabIndex = 93;
+            this.btnRecuperacao.Text = "Recuperação";
+            this.btnRecuperacao.UseVisualStyleBackColor = false;
             // 
             // ucRecuperacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnRecuperacao);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.txtConfirmacao);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtCode);
+            this.Controls.Add(this.lblUser);
+            this.Controls.Add(this.lblConfirmacaoSenha);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
             this.Name = "ucRecuperacao";
-            this.Size = new System.Drawing.Size(1370, 800);
+            this.Size = new System.Drawing.Size(681, 384);
             this.mnsPresentation.ResumeLayout(false);
             this.mnsPresentation.PerformLayout();
             this.mnsCondominio.ResumeLayout(false);
@@ -530,8 +612,15 @@ namespace ServicoPortaria.Presentation.RecuperacaoSenha
         private System.Windows.Forms.ToolStripMenuItem tsmCadastroMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmConsultarMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmModuloVisitante;
-        private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
-        private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
-        private System.Windows.Forms.ToolStripMenuItem tsmRemove;
+        private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.Label lblConfirmacaoSenha;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtConfirmacao;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Button btnRecuperacao;
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ServicoPortaria.Presentation.Garagem
+namespace ServicoPortaria.Presentation.Visita
 {
     public partial class ucModificar : UserControl
     {

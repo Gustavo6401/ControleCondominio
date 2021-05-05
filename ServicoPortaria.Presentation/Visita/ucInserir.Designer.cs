@@ -101,13 +101,13 @@ namespace ServicoPortaria.Presentation.Visita
             this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupCadastrar = new System.Windows.Forms.GroupBox();
             this.btnCadastrarVisita = new System.Windows.Forms.Button();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.groupInfo.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupCadastrar.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -712,15 +712,15 @@ namespace ServicoPortaria.Presentation.Visita
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data da Visita";
             // 
-            // groupBox2
+            // groupCadastrar
             // 
-            this.groupBox2.Controls.Add(this.btnCadastrarVisita);
-            this.groupBox2.Location = new System.Drawing.Point(478, 555);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(440, 97);
-            this.groupBox2.TabIndex = 80;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupCadastrar.Controls.Add(this.btnCadastrarVisita);
+            this.groupCadastrar.Location = new System.Drawing.Point(478, 555);
+            this.groupCadastrar.Name = "groupCadastrar";
+            this.groupCadastrar.Size = new System.Drawing.Size(440, 97);
+            this.groupCadastrar.TabIndex = 80;
+            this.groupCadastrar.TabStop = false;
+            this.groupCadastrar.Text = "Cadastrar";
             // 
             // btnCadastrarVisita
             // 
@@ -738,7 +738,7 @@ namespace ServicoPortaria.Presentation.Visita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupCadastrar);
             this.Controls.Add(this.lblIdCondominio);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
@@ -754,7 +754,7 @@ namespace ServicoPortaria.Presentation.Visita
             this.groupInfo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.groupCadastrar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -833,7 +833,7 @@ namespace ServicoPortaria.Presentation.Visita
         private System.Windows.Forms.DateTimePicker dtpDataSaida;
         private System.Windows.Forms.DateTimePicker dtpHoraSaida;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupCadastrar;
         private System.Windows.Forms.Button btnCadastrarVisita;
     }
 }

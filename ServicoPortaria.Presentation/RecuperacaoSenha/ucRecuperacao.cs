@@ -16,5 +16,10 @@ namespace ServicoPortaria.Presentation.RecuperacaoSenha
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

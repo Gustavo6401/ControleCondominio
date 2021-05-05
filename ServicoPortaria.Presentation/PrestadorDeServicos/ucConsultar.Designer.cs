@@ -102,7 +102,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblClose.BackColor = System.Drawing.Color.Red;
             this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(1345, 0);
+            this.lblClose.Location = new System.Drawing.Point(1345, -1);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 63;
@@ -606,12 +606,12 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.groupInformacoes);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mnsPresentation);
-            this.Controls.Add(this.lblClose);
             this.Name = "ucConsultar";
             this.Size = new System.Drawing.Size(1370, 800);
             this.mnsPresentation.ResumeLayout(false);

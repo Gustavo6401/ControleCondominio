@@ -64,9 +64,6 @@
     <Compile Update="Garagem\ucListarTodos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Garagem\ucModificar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="Login\Forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +173,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Visita\ucListarTodos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Visita\ucModificar.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

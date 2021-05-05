@@ -1,5 +1,5 @@
 ﻿
-namespace ServicoPortaria.Presentation.Garagem
+namespace ServicoPortaria.Presentation.Visita
 {
     partial class ucModificar
     {
@@ -31,6 +31,7 @@ namespace ServicoPortaria.Presentation.Garagem
         {
             components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Size = new System.Drawing.Size(1370, 800);
         }
 
         #endregion

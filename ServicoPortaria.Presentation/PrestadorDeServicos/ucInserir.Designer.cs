@@ -84,11 +84,14 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblPredio = new System.Windows.Forms.Label();
             this.lblCondominio = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.mtxCNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.mtxCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txtNomePredio = new System.Windows.Forms.TextBox();
+            this.txtCondominio = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.lblIdPredio = new System.Windows.Forms.Label();
+            this.lblIdCondominio = new System.Windows.Forms.Label();
+            this.lblClose = new System.Windows.Forms.Label();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.SuspendLayout();
@@ -529,33 +532,35 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.txtNome.Size = new System.Drawing.Size(218, 23);
             this.txtNome.TabIndex = 60;
             // 
-            // maskedTextBox1
+            // mtxCNPJ
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(642, 303);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(218, 23);
-            this.maskedTextBox1.TabIndex = 61;
+            this.mtxCNPJ.Location = new System.Drawing.Point(642, 303);
+            this.mtxCNPJ.Mask = "00.000.000/0000-00";
+            this.mtxCNPJ.Name = "mtxCNPJ";
+            this.mtxCNPJ.Size = new System.Drawing.Size(218, 23);
+            this.mtxCNPJ.TabIndex = 61;
             // 
-            // maskedTextBox2
+            // mtxCPF
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(642, 343);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(218, 23);
-            this.maskedTextBox2.TabIndex = 62;
+            this.mtxCPF.Location = new System.Drawing.Point(642, 343);
+            this.mtxCPF.Mask = "000.000.000-00";
+            this.mtxCPF.Name = "mtxCPF";
+            this.mtxCPF.Size = new System.Drawing.Size(218, 23);
+            this.mtxCPF.TabIndex = 62;
             // 
-            // textBox2
+            // txtNomePredio
             // 
-            this.textBox2.Location = new System.Drawing.Point(642, 386);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 23);
-            this.textBox2.TabIndex = 63;
+            this.txtNomePredio.Location = new System.Drawing.Point(642, 386);
+            this.txtNomePredio.Name = "txtNomePredio";
+            this.txtNomePredio.Size = new System.Drawing.Size(218, 23);
+            this.txtNomePredio.TabIndex = 63;
             // 
-            // textBox3
+            // txtCondominio
             // 
-            this.textBox3.Location = new System.Drawing.Point(642, 429);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(218, 23);
-            this.textBox3.TabIndex = 64;
+            this.txtCondominio.Location = new System.Drawing.Point(642, 429);
+            this.txtCondominio.Name = "txtCondominio";
+            this.txtCondominio.Size = new System.Drawing.Size(218, 23);
+            this.txtCondominio.TabIndex = 64;
             // 
             // btnCadastrar
             // 
@@ -569,15 +574,47 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.btnCadastrar.Text = "Cadastrar Prestador";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
+            // lblIdPredio
+            // 
+            this.lblIdPredio.AutoSize = true;
+            this.lblIdPredio.Location = new System.Drawing.Point(949, 389);
+            this.lblIdPredio.Name = "lblIdPredio";
+            this.lblIdPredio.Size = new System.Drawing.Size(100, 15);
+            this.lblIdPredio.TabIndex = 66;
+            this.lblIdPredio.Text = "Código do Prédio";
+            // 
+            // lblIdCondominio
+            // 
+            this.lblIdCondominio.AutoSize = true;
+            this.lblIdCondominio.Location = new System.Drawing.Point(949, 432);
+            this.lblIdCondominio.Name = "lblIdCondominio";
+            this.lblIdCondominio.Size = new System.Drawing.Size(133, 15);
+            this.lblIdCondominio.TabIndex = 67;
+            this.lblIdCondominio.Text = "Código do Condomínio";
+            // 
+            // lblClose
+            // 
+            this.lblClose.BackColor = System.Drawing.Color.Red;
+            this.lblClose.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1345, 0);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 25);
+            this.lblClose.TabIndex = 69;
+            this.lblClose.Text = "X";
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblClose);
+            this.Controls.Add(this.lblIdCondominio);
+            this.Controls.Add(this.lblIdPredio);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.txtCondominio);
+            this.Controls.Add(this.txtNomePredio);
+            this.Controls.Add(this.mtxCPF);
+            this.Controls.Add(this.mtxCNPJ);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblCondominio);
             this.Controls.Add(this.lblPredio);
@@ -653,10 +690,13 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         private System.Windows.Forms.Label lblPredio;
         private System.Windows.Forms.Label lblCondominio;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.MaskedTextBox mtxCNPJ;
+        private System.Windows.Forms.MaskedTextBox mtxCPF;
+        private System.Windows.Forms.TextBox txtNomePredio;
+        private System.Windows.Forms.TextBox txtCondominio;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Label lblIdPredio;
+        private System.Windows.Forms.Label lblIdCondominio;
+        private System.Windows.Forms.Label lblClose;
     }
 }
