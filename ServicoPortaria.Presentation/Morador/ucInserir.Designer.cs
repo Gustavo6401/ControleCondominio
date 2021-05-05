@@ -121,6 +121,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.imgWebCam = new System.Windows.Forms.PictureBox();
+            this.groupFoto = new System.Windows.Forms.GroupBox();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.groupNome.SuspendLayout();
@@ -130,6 +131,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupContato.SuspendLayout();
             this.groupCadastrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgWebCam)).BeginInit();
+            this.groupFoto.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -921,17 +923,27 @@ namespace ServicoPortaria.Presentation.Morador
             // 
             // imgWebCam
             // 
-            this.imgWebCam.Location = new System.Drawing.Point(921, 56);
+            this.imgWebCam.Location = new System.Drawing.Point(29, 20);
             this.imgWebCam.Name = "imgWebCam";
             this.imgWebCam.Size = new System.Drawing.Size(132, 131);
             this.imgWebCam.TabIndex = 86;
             this.imgWebCam.TabStop = false;
             // 
+            // groupFoto
+            // 
+            this.groupFoto.Controls.Add(this.imgWebCam);
+            this.groupFoto.Location = new System.Drawing.Point(882, 36);
+            this.groupFoto.Name = "groupFoto";
+            this.groupFoto.Size = new System.Drawing.Size(190, 170);
+            this.groupFoto.TabIndex = 87;
+            this.groupFoto.TabStop = false;
+            this.groupFoto.Text = "Foto";
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.imgWebCam);
+            this.Controls.Add(this.groupFoto);
             this.Controls.Add(this.groupCadastrar);
             this.Controls.Add(this.groupContato);
             this.Controls.Add(this.groupEndereco);
@@ -956,6 +968,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupContato.PerformLayout();
             this.groupCadastrar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgWebCam)).EndInit();
+            this.groupFoto.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1054,5 +1067,6 @@ namespace ServicoPortaria.Presentation.Morador
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox imgWebCam;
+        private System.Windows.Forms.GroupBox groupFoto;
     }
 }

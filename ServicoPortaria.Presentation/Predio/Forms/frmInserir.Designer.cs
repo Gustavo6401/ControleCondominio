@@ -29,25 +29,32 @@ namespace ServicoPortaria.Presentation.Predio.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.Inserir = new ucInserir();
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 800);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Controls.Add(this.Inserir);
-            this.Text = "frmInserir";
+            this.ucInserir = new ucInserir();
+            this.SuspendLayout();
             //
             // ucInserir
             //
-            this.Inserir.BackColor = System.Drawing.Color.White;
-            this.Inserir.Location = new System.Drawing.Point(1, 1);
-            this.Inserir.Name = "ucInserir";
-            this.Inserir.Size = new System.Drawing.Size(1370, 800);
-            this.Inserir.TabIndex = 0;
+            this.ucInserir.BackColor = System.Drawing.Color.White;
+            this.ucInserir.Location = new System.Drawing.Point(1, 1);
+            this.ucInserir.Name = "ucInserir";
+            this.ucInserir.Size = new System.Drawing.Size(1370, 800);
+            this.ucInserir.TabIndex = 0;
+            // 
+            // frmInserir
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Controls.Add(ucInserir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmInserir";
+            this.Text = "frmInserir";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private ucInserir Inserir;
+        private ucInserir ucInserir;
     }
 }

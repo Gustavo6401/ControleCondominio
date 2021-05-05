@@ -187,7 +187,7 @@ namespace ServicoPortaria.Presentation.Login
             this.btnLogin.Location = new System.Drawing.Point(363, 241);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(120, 56);
-            this.btnLogin.TabIndex = 4;
+            this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -197,7 +197,7 @@ namespace ServicoPortaria.Presentation.Login
             this.txtPassword.Location = new System.Drawing.Point(335, 185);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(148, 23);
-            this.txtPassword.TabIndex = 5;
+            this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUser
@@ -205,7 +205,7 @@ namespace ServicoPortaria.Presentation.Login
             this.txtUser.Location = new System.Drawing.Point(335, 152);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(148, 23);
-            this.txtUser.TabIndex = 6;
+            this.txtUser.TabIndex = 5;
             // 
             // label1
             // 

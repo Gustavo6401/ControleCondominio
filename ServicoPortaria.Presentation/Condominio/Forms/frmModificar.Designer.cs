@@ -29,12 +29,28 @@ namespace ServicoPortaria.Presentation.Condominio.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.ucModificar = new ucModificar();
+            //
+            // ucModificar
+            //
+            this.ucModificar.BackColor = System.Drawing.Color.White;
+            this.ucModificar.Location = new System.Drawing.Point(0, 0);
+            this.ucModificar.Name = "ucModificar";
+            this.Size = new System.Drawing.Size(1370, 800);
+            this.ucModificar.TabIndex = 0;
+            //
+            // frmModificar
+            //
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Controls.Add(ucModificar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Text = "frmModificar";
         }
 
         #endregion
+
+        private ucModificar ucModificar;
     }
 }

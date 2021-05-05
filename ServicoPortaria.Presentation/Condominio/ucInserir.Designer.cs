@@ -32,7 +32,6 @@ namespace ServicoPortaria.Presentation.Condominio
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucInserir));
             this.txtPais = new System.Windows.Forms.TextBox();
             this.txtProvincia = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtCodPostal = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -100,6 +99,7 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmCadastroMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmConsultarMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmModuloVisitante = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
@@ -118,13 +118,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(243, 23);
             this.txtProvincia.TabIndex = 33;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(719, 416);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(243, 23);
-            this.txtEstado.TabIndex = 32;
             // 
             // txtCidade
             // 
@@ -688,10 +681,47 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmModuloVisitante.Size = new System.Drawing.Size(125, 20);
             this.tsmModuloVisitante.Text = "Módulo de Visitante";
             // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AM",
+            "AP",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MG",
+            "MS",
+            "MT",
+            "PA",
+            "PB",
+            "PE",
+            "PI",
+            "PR",
+            "RJ",
+            "RN",
+            "RO",
+            "RR",
+            "RS",
+            "SC",
+            "SE",
+            "SP",
+            "TO"});
+            this.cmbEstado.Location = new System.Drawing.Point(719, 416);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(243, 23);
+            this.cmbEstado.TabIndex = 82;
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
@@ -702,7 +732,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.txtPais);
             this.Controls.Add(this.txtProvincia);
-            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtCodPostal);
             this.Controls.Add(this.txtNome);
@@ -730,7 +759,6 @@ namespace ServicoPortaria.Presentation.Condominio
 
         private System.Windows.Forms.TextBox txtPais;
         private System.Windows.Forms.TextBox txtProvincia;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtCodPostal;
         private System.Windows.Forms.TextBox txtNome;
@@ -799,5 +827,6 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.ToolStripMenuItem tsmConsultarTodos;
         private System.Windows.Forms.ToolStripMenuItem tsmUpdate;
         private System.Windows.Forms.ToolStripMenuItem tsmDeletar;
+        private System.Windows.Forms.ComboBox cmbEstado;
     }
 }

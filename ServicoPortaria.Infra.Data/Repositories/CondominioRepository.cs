@@ -43,7 +43,6 @@ namespace ServicoPortaria.Infra.Data.Repositories
         {
             return Db.Condominio.Where(t => t.Numero == numero);
         }
-
         public IEnumerable<Condominio> BuscarComTodosOsFiltros(string nome, string cep, string codPostal, int numero, string cidade)
         {
             return Db.Condominio.Where(t => t.Nome.Contains(nome)
